@@ -1,4 +1,5 @@
 #include "tmnSolver.h"
+#include <filesystem>
 
 // Define the size of the params, residual, and Jacobian
 #define XROT_SIZE  3                                        // Size of a control rot
@@ -116,13 +117,56 @@ tmnSolver::tmnSolver(ros::NodeHandlePtr &nh_) : nh(nh_)
     pma = new PointToMapAssoc(nh_);
 
     // Maximum number of iterations
-    nh->getParam("/max_outer_iters", max_outer_iters);
+    nh->param("/max_outer_iters", max_outer_iters, 1);
 
     // Maximum number of iterations
     nh->getParam("/prior_weight", prior_weight);
 
     // Reset the marginalization
     knot_x_keep.clear();
+
+    nh->param<std::string>("/solver_backend", comparison_backend_name, "");
+    if (!comparison_backend_name.empty())
+    {
+        comparison_options.backend = slict::comparison::ParseBackend(comparison_backend_name);
+        nh->param("/solver_threads", comparison_options.threads, 1);
+        nh->param("/comparison_iterations", comparison_options.iterations, 1);
+        comparison_options.step_limit = dx_thres;
+        comparison_fuse_imu = GetBoolParam(nh, "/fuse_imu", true);
+        comparison_fuse_lidar = GetBoolParam(nh, "/fuse_lidar", true);
+        int reassociation; nh->param("/reassoc_rate", reassociation, 0);
+        double lidar_loss, imu_loss, early_stop;
+        nh->param("/lidar_loss_thres", lidar_loss, -1.0);
+        nh->param("/imu_loss_thres", imu_loss, -1.0);
+        nh->param("/dj_thres", early_stop, 0.0);
+        if (SPLINE_N != 4 || reassociation != 0 || lidar_loss >= 0 || imu_loss >= 0 || early_stop != 0 ||
+            GetBoolParam(nh, "/fuse_poseprop", false) || GetBoolParam(nh, "/fuse_velprop", false))
+            throw std::invalid_argument("A/B/C requires SPLINE_N=4, reassoc_rate=0, negative loss thresholds, dj_thres=0 and no pose/velocity propagation factors; use launch/run_abc.launch");
+        if (comparison_options.iterations != 1)
+            throw std::invalid_argument("ROS A/B/C requires comparison_iterations=1: solve one step, update/deskew, associate, then solve again. Change max_outer_iters for more cycles; multi-step frozen problems belong in slict_solver_benchmark.");
+        int reassociated_clouds; nh->param("/reassociate_steps", reassociated_clouds, 0);
+        if (comparison_options.threads < 1 || max_outer_iters < 1 || reassociated_clouds < 1)
+            throw std::invalid_argument("A/B/C requires positive solver_threads, max_outer_iters and reassociate_steps");
+        if (GetBoolParam(nh, "/ensure_real_time", true))
+            throw std::invalid_argument("A/B/C requires ensure_real_time=0 so every backend completes the same outer cycles");
+        nh->param<std::string>("/comparison_snapshot_dir", comparison_snapshot_dir, "");
+        nh->param("/comparison_snapshot_stride", comparison_snapshot_stride, 10);
+        nh->param("/comparison_snapshot_limit", comparison_snapshot_limit, 500);
+        if (comparison_snapshot_stride < 1 || comparison_snapshot_limit < 0)
+            throw std::invalid_argument("Invalid comparison snapshot stride/limit");
+        std::string csv_path;nh->param<std::string>("/comparison_csv", csv_path, "");
+        if (!csv_path.empty())
+        {
+            const auto parent = std::filesystem::path(csv_path).parent_path();
+            if (!parent.empty()) std::filesystem::create_directories(parent);
+            comparison_csv.open(csv_path);
+            if (!comparison_csv) throw std::runtime_error("Cannot open comparison CSV: " + csv_path);
+            slict::comparison::WriteCsvHeader(comparison_csv);
+        }
+        ROS_INFO_STREAM("A/B/C backend=" << comparison_backend_name << ", threads=" << comparison_options.threads
+                        << ", steps per association=1, outer cycles=" << max_outer_iters
+                        << ", reassociated clouds=" << reassociated_clouds << ", common square-root prior=" << fuse_marg);
+    }
 };
 
 // Change the size of variable dimension and observation dimension
@@ -436,6 +480,13 @@ void tmnSolver::RelocalizePrior(SE3d tf)
     {
         se3 = tf*se3;
     }
+    for (std::size_t i = 0; i < comparison_prior.reference.rotations.size(); ++i)
+    {
+        comparison_prior.reference.rotations[i] = tf.so3() * comparison_prior.reference.rotations[i];
+        comparison_prior.reference.positions[i] = tf * comparison_prior.reference.positions[i];
+        comparison_prior.sqrt_information.middleCols(6*i+3, 3) =
+            (comparison_prior.sqrt_information.middleCols(6*i+3, 3) * tf.so3().matrix().transpose()).eval();
+    }
 }
 
 // Solving the problem
@@ -458,6 +509,9 @@ bool tmnSolver::Solve
     slict::TimeLog            &tlog
 )
 {
+    if (!comparison_backend_name.empty())
+        return SolveComparison(traj, BIG, BIA, curr_knot_x, swNextBase, iter, SwImuBundle,
+                               SwLidarCoef, imuSelected, featureSelected, bsu_report, report, tlog);
     TicToc tt_bsu;
 
     /* #region  */ TicToc tt_prep;

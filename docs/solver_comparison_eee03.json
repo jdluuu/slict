@@ -1,0 +1,1044 @@
+{
+  "date": "2026-09-06",
+  "dataset": "NTU VIRAL eee_03",
+  "scope": "Single full replay per backend; five repeated frozen-window runs per backend and thread count. Native backend uses the common normalized marginalization model.",
+  "bag": {
+    "path": "/home/jiadong/workspace/datasets/ntu/eee_03/eee_03.bag",
+    "start": 1609060334.7557085,
+    "end": 1609060516.1090264,
+    "duration": 181.35331797599792,
+    "topics": {
+      "/dji_sdk/attitude": {
+        "type": "geometry_msgs/QuaternionStamped",
+        "messages": 18136,
+        "frequency": 103.3971157401701
+      },
+      "/dji_sdk/gps_health": {
+        "type": "std_msgs/UInt8",
+        "messages": 9068,
+        "frequency": 50.0704803743673
+      },
+      "/dji_sdk/gps_position": {
+        "type": "sensor_msgs/NavSatFix",
+        "messages": 9068,
+        "frequency": 50.07526265520535
+      },
+      "/dji_sdk/height_above_takeoff": {
+        "type": "std_msgs/Float32",
+        "messages": 9068,
+        "frequency": 50.073469192841706
+      },
+      "/dji_sdk/imu": {
+        "type": "sensor_msgs/Imu",
+        "messages": 72544,
+        "frequency": 426.72743921049954
+      },
+      "/imu/imu": {
+        "type": "sensor_msgs/Imu",
+        "messages": 70475,
+        "frequency": 26132.73520249221
+      },
+      "/imu/magnetic_field": {
+        "type": "sensor_msgs/MagneticField",
+        "messages": 70475,
+        "frequency": 37786.52252252252
+      },
+      "/imu/temperature": {
+        "type": "sensor_msgs/Temperature",
+        "messages": 70475,
+        "frequency": 41527.762376237624
+      },
+      "/left/image_raw": {
+        "type": "sensor_msgs/Image",
+        "messages": 1813,
+        "frequency": 9.996184375003724
+      },
+      "/leica/pose/relative": {
+        "type": "geometry_msgs/PoseStamped",
+        "messages": 2990,
+        "frequency": 19.99839795548605
+      },
+      "/node_pos_marker_sc": {
+        "type": "visualization_msgs/Marker",
+        "messages": 1025,
+        "frequency": 5.714404050202456
+      },
+      "/node_pos_sc": {
+        "type": "nav_msgs/Path",
+        "messages": 1025,
+        "frequency": 5.714462441440883
+      },
+      "/os1_cloud_node1/imu": {
+        "type": "sensor_msgs/Imu",
+        "messages": 18135,
+        "frequency": 99.98102548211008
+      },
+      "/os1_cloud_node1/points": {
+        "type": "sensor_msgs/PointCloud2",
+        "messages": 1814,
+        "frequency": 9.70771121536642
+      },
+      "/os1_cloud_node2/imu": {
+        "type": "sensor_msgs/Imu",
+        "messages": 18135,
+        "frequency": 99.97864225781846
+      },
+      "/os1_cloud_node2/points": {
+        "type": "sensor_msgs/PointCloud2",
+        "messages": 1813,
+        "frequency": 9.706835023536327
+      },
+      "/right/image_raw": {
+        "type": "sensor_msgs/Image",
+        "messages": 1813,
+        "frequency": 9.996053346552397
+      },
+      "/uwb_endorange_info": {
+        "type": "uwb_driver/UwbRange",
+        "messages": 10907,
+        "frequency": 41.588910427708065
+      },
+      "/uwb_exorange_info": {
+        "type": "uwb_driver/UwbEcho",
+        "messages": 1025,
+        "frequency": 5.714380694041208
+      }
+    },
+    "ground_truth_samples": 2990
+  },
+  "live_environment": {
+    "git_head": "0a79e9756c532cb2ba93990ff15edfc059367c58",
+    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "cpu_model": "AMD Ryzen 9 9950X 16-Core Processor",
+    "sha256": {
+      "/home/jiadong/workspace/datasets/ntu/eee_03/eee_03.bag": "1539fdbe89487ffdff543afad9e58971c4334c679d474cbdfc3bd378d31507c8",
+      "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_estimator": "52b77bebd069b7258ea2f6a99c552a39b3cffb57796458f2c89e0e0a90e5e09b",
+      "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_sensorsync": "a1a22eac79b0f98ea59ef83775eb032f1fa9232385e5023a6369ed350ddb877d",
+      "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/libslict_comparison.so": "d5d043246355454003b49b4f53f5df2ebb7ae1f761582c3569e14898f5fe6803",
+      "/home/jiadong/workspace/slam_algorithms/slict/config/abc_common.yaml": "16724eff00d127ecb24215fd78a2ffc56e7153be459b4b64cb4f2d4355e03c73",
+      "/home/jiadong/workspace/slam_algorithms/slict/config/abc_ntuviral.yaml": "0b19c26e843c84d7f196f2e6eb6c847ddeac493482c68c6468a82b5fc4136adc",
+      "/home/jiadong/workspace/slam_algorithms/slict/config/ntuviral.yaml": "769560b929c20c57610fc6af2eabf0daba3aaf15fa7fbbf40ff56732b10650a0",
+      "/home/jiadong/workspace/slam_algorithms/slict/launch/run_abc.launch": "baa266cdf9cf2ed7d04891baaa82e038e4dca126d299ae49a870bd4f6b4de2ec",
+      "/home/jiadong/workspace/slam_algorithms/slict/scripts/run_abc_replay.py": "30dde5bd2447461297bf817e2413803710e4bb57eb69ab963fd3bc077b7c9b07",
+      "/home/jiadong/workspace/slam_algorithms/slict/src/Estimator.cpp": "f1aec0ab59f19b696ec88bdb6fc761eafd31e58d8dc3ca03e9290b69b9a29930",
+      "/home/jiadong/workspace/slam_algorithms/slict/src/tmnSolver.cpp": "27a8d9a89d990cf1befec5a5764b96f06feb962c91e866cb5e8e88daec236533",
+      "/home/jiadong/workspace/slam_algorithms/slict/src/comparison/ros_bridge.cpp": "24effeb2c502a597126fc41befd1289210d1a7494c5540e5d4bfa7aa78e3e7e9"
+    },
+    "schedule": "one optimization step, update state, deskew, associate; 3 cycles per frame",
+    "threads": 4,
+    "bag_rate": 1.0,
+    "snapshots": false,
+    "run_order": [
+      "ceres_scalar",
+      "ceres_batch",
+      "native"
+    ],
+    "ceres_radius_policy": "carry final Ceres trust-region radius to the next solver call, across outer cycles and frames"
+  },
+  "replay": [
+    {
+      "backend": "ceres_scalar",
+      "dataset": "ntuviral",
+      "iteration_limit": 1,
+      "outer_iterations": 3,
+      "single_step_association_cadence": true,
+      "ceres_radius_continuity": true,
+      "returncode": 0,
+      "wall_seconds": 277.8493887470031,
+      "optimization_rows": 5418,
+      "frames": 1806,
+      "unusable": 0,
+      "coverage_seconds": 180.4800000190735,
+      "fatal_node_exit_codes": [],
+      "empty_lidar_frames": 0,
+      "max_empty_lidar_streak": 0,
+      "captures_snapshots": false,
+      "timed_out": false,
+      "frame_csv_rows": 1806,
+      "same_scan_timestamps": true,
+      "regular_scan_intervals": true,
+      "frame_mean_ms": 139.29021290310078,
+      "frame_p95_ms": 156.00514600000002,
+      "max_queued_packets": 487,
+      "command": [
+        "roslaunch",
+        "--port",
+        "47343",
+        "slict",
+        "run_abc.launch",
+        "bag_file:=/home/jiadong/workspace/datasets/ntu/eee_03/eee_03.bag",
+        "backend:=ceres_scalar",
+        "dataset:=ntuviral",
+        "threads:=4",
+        "outer_iterations:=3",
+        "output_dir:=/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_single_step/ceres_scalar",
+        "duration:=0.0",
+        "rate:=1.0",
+        "snapshot_stride:=2",
+        "snapshot_limit:=500"
+      ],
+      "ros_master_uri": "http://127.0.0.1:47343"
+    },
+    {
+      "backend": "ceres_batch",
+      "dataset": "ntuviral",
+      "iteration_limit": 1,
+      "outer_iterations": 3,
+      "single_step_association_cadence": true,
+      "ceres_radius_continuity": true,
+      "returncode": 0,
+      "wall_seconds": 206.5463916489971,
+      "optimization_rows": 5418,
+      "frames": 1806,
+      "unusable": 0,
+      "coverage_seconds": 180.4800000190735,
+      "fatal_node_exit_codes": [],
+      "empty_lidar_frames": 0,
+      "max_empty_lidar_streak": 0,
+      "captures_snapshots": false,
+      "timed_out": false,
+      "frame_csv_rows": 1806,
+      "same_scan_timestamps": true,
+      "regular_scan_intervals": true,
+      "frame_mean_ms": 70.30674369822813,
+      "frame_p95_ms": 80.216171,
+      "max_queued_packets": 1,
+      "command": [
+        "roslaunch",
+        "--port",
+        "53879",
+        "slict",
+        "run_abc.launch",
+        "bag_file:=/home/jiadong/workspace/datasets/ntu/eee_03/eee_03.bag",
+        "backend:=ceres_batch",
+        "dataset:=ntuviral",
+        "threads:=4",
+        "outer_iterations:=3",
+        "output_dir:=/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_single_step/ceres_batch",
+        "duration:=0.0",
+        "rate:=1.0",
+        "snapshot_stride:=2",
+        "snapshot_limit:=500"
+      ],
+      "ros_master_uri": "http://127.0.0.1:53879"
+    },
+    {
+      "backend": "native",
+      "dataset": "ntuviral",
+      "iteration_limit": 1,
+      "outer_iterations": 3,
+      "single_step_association_cadence": true,
+      "ceres_radius_continuity": true,
+      "returncode": 0,
+      "wall_seconds": 206.39013510400036,
+      "optimization_rows": 5418,
+      "frames": 1806,
+      "unusable": 0,
+      "coverage_seconds": 180.4800000190735,
+      "fatal_node_exit_codes": [],
+      "empty_lidar_frames": 0,
+      "max_empty_lidar_streak": 0,
+      "captures_snapshots": false,
+      "timed_out": false,
+      "frame_csv_rows": 1806,
+      "same_scan_timestamps": true,
+      "regular_scan_intervals": true,
+      "frame_mean_ms": 77.62775799723146,
+      "frame_p95_ms": 88.560781,
+      "max_queued_packets": 1,
+      "command": [
+        "roslaunch",
+        "--port",
+        "33295",
+        "slict",
+        "run_abc.launch",
+        "bag_file:=/home/jiadong/workspace/datasets/ntu/eee_03/eee_03.bag",
+        "backend:=native",
+        "dataset:=ntuviral",
+        "threads:=4",
+        "outer_iterations:=3",
+        "output_dir:=/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_single_step/native",
+        "duration:=0.0",
+        "rate:=1.0",
+        "snapshot_stride:=2",
+        "snapshot_limit:=500"
+      ],
+      "ros_master_uri": "http://127.0.0.1:33295"
+    }
+  ],
+  "replay_extra_metrics": {
+    "native": {
+      "actual_iterations_counts": {
+        "1": 5418
+      },
+      "mean_call_ms": {
+        "total_ms": 8.217369737356957,
+        "build_ms": 0.011804148578811369,
+        "evaluate_ms": 3.7820274143595425,
+        "linear_ms": 0.24645369232189,
+        "solve_ms": 8.202326105389442,
+        "diagnostic_ms": 9.440568251384274,
+        "marginalize_ms": 0.9493446842008121,
+        "input_ms": 0.4122257918050941
+      }
+    },
+    "ceres_scalar": {
+      "actual_iterations_counts": {
+        "1": 5417,
+        "0": 1
+      },
+      "mean_call_ms": {
+        "total_ms": 28.575779779808048,
+        "build_ms": 2.70292919324474,
+        "evaluate_ms": 4.093342357211643,
+        "linear_ms": 15.898288066381015,
+        "solve_ms": 23.86904080509413,
+        "diagnostic_ms": 9.377443262827612,
+        "marginalize_ms": 1.0237931598375785,
+        "input_ms": 0.3915675819490587
+      },
+      "initial_radius_distribution": {
+        "min": 1250.0,
+        "max": 1e+16,
+        "max_count": 5387,
+        "total_count": 5418,
+        "first_max_call_1based": 32
+      }
+    },
+    "ceres_batch": {
+      "actual_iterations_counts": {
+        "1": 5417,
+        "0": 1
+      },
+      "mean_call_ms": {
+        "total_ms": 5.628860698412699,
+        "build_ms": 1.4648383205980067,
+        "evaluate_ms": 2.1938875004038594,
+        "linear_ms": 1.1579250224448958,
+        "solve_ms": 4.0867367836840165,
+        "diagnostic_ms": 9.462201708010335,
+        "marginalize_ms": 0.9855463512366187,
+        "input_ms": 0.41225535898855664
+      },
+      "initial_radius_distribution": {
+        "min": 1250.0,
+        "max": 1e+16,
+        "max_count": 5387,
+        "total_count": 5418,
+        "first_max_call_1based": 32
+      }
+    }
+  },
+  "accuracy": {
+    "ground_truth_source": "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_inputs/ground_truth.csv",
+    "ground_truth_total": 2990,
+    "common_samples": 2990,
+    "ground_truth_coverage_fraction": 1.0,
+    "common_start": 1609060363.469352,
+    "common_end": 1609060514.223515,
+    "evaluation": "Evaluate cubic SO(3)+R3 spline at GT header timestamps, transform body to prism, rigid SE(3) position alignment; no scale or time-offset fitting",
+    "prism_offset_body_m": [
+      -0.293656,
+      -0.012288,
+      -0.273095
+    ],
+    "calibration_sha256": "baa57f4242e5fbcbe89d987bb70afd2b48df38757ed44e343f240ba7841fde3f",
+    "groups": [
+      {
+        "backend": "native",
+        "samples": 2990,
+        "ate_rmse_m": 0.026049617052440324,
+        "median_m": 0.021061398092044888,
+        "p95_m": 0.047698991350841304,
+        "max_m": 0.071505345217833,
+        "axis_rmse_m": [
+          0.01858143606509249,
+          0.016125726667759077,
+          0.008560007112987328
+        ],
+        "alignment_rotation": [
+          [
+            -0.9586626307360433,
+            0.28377857092739334,
+            -0.02087302356286348
+          ],
+          [
+            -0.28357545531800105,
+            -0.9588725391705061,
+            -0.012182559907310727
+          ],
+          [
+            -0.02347171854462285,
+            -0.005759887769139472,
+            0.9997079084019745
+          ]
+        ],
+        "alignment_translation": [
+          -0.2553776797008709,
+          -0.09373682125530891,
+          -0.2775525876347551
+        ],
+        "spline_sha256": "3da395aed84ffba5613b077fd0aa4a5b8c539b9988977ff1b30f4db860849ee6"
+      },
+      {
+        "backend": "ceres_scalar",
+        "samples": 2990,
+        "ate_rmse_m": 0.02639830234954091,
+        "median_m": 0.021250025433521107,
+        "p95_m": 0.047945792521109636,
+        "max_m": 0.07074550518322284,
+        "axis_rmse_m": [
+          0.018606074102298465,
+          0.01621952120221234,
+          0.009360101784090722
+        ],
+        "alignment_rotation": [
+          [
+            -0.9587378048578585,
+            0.283561259252141,
+            -0.020367468857863735
+          ],
+          [
+            -0.2833574760194928,
+            -0.9589349924946236,
+            -0.012337785587388253
+          ],
+          [
+            -0.023029596613892877,
+            -0.006057426902389586,
+            0.9997164324242778
+          ]
+        ],
+        "alignment_translation": [
+          -0.2580425134950124,
+          -0.09602950145077926,
+          -0.28364607373302464
+        ],
+        "spline_sha256": "96825527ecdbae31c12cee2eae6179df88dadd1aec658ce25b9f3e33fae5cd9b"
+      },
+      {
+        "backend": "ceres_batch",
+        "samples": 2990,
+        "ate_rmse_m": 0.02617343830311418,
+        "median_m": 0.0210500820635595,
+        "p95_m": 0.047719817761678586,
+        "max_m": 0.07143706851510294,
+        "axis_rmse_m": [
+          0.018384568032068074,
+          0.016080351171401195,
+          0.009406318997652699
+        ],
+        "alignment_rotation": [
+          [
+            -0.9587392778551875,
+            0.28355855732786084,
+            -0.020335723834103356
+          ],
+          [
+            -0.28335348605043215,
+            -0.9589353419451311,
+            -0.01240209303474209
+          ],
+          [
+            -0.023017363897335125,
+            -0.0061281754802693135,
+            0.9997162829645734
+          ]
+        ],
+        "alignment_translation": [
+          -0.2584099824518562,
+          -0.09468446736973846,
+          -0.28452901375446915
+        ],
+        "spline_sha256": "320fcf32b9c79bae3aeba72a40889fdc966aeb7d576cde01fd4bbff9ddd102d4"
+      }
+    ]
+  },
+  "spline_evaluation_validation": {
+    "samples": 2990,
+    "max_position_error_m": 7.32410687763558e-15,
+    "max_rotation_error_rad": 7.774798659618321e-16,
+    "reference": "Repository basalt::Se3Spline<4>::pose evaluated at identical timestamps"
+  },
+  "capture": [
+    {
+      "backend": "native",
+      "dataset": "ntuviral",
+      "iteration_limit": 1,
+      "outer_iterations": 3,
+      "single_step_association_cadence": true,
+      "ceres_radius_continuity": true,
+      "returncode": 0,
+      "wall_seconds": 206.43986188300187,
+      "optimization_rows": 5418,
+      "frames": 1806,
+      "unusable": 0,
+      "coverage_seconds": 180.4800000190735,
+      "fatal_node_exit_codes": [],
+      "empty_lidar_frames": 0,
+      "max_empty_lidar_streak": 0,
+      "captures_snapshots": true,
+      "timed_out": false,
+      "frame_csv_rows": 1806,
+      "same_scan_timestamps": true,
+      "regular_scan_intervals": true,
+      "frame_mean_ms": 77.58620533499446,
+      "frame_p95_ms": 89.812179,
+      "max_queued_packets": 1,
+      "command": [
+        "roslaunch",
+        "--port",
+        "49117",
+        "slict",
+        "run_abc.launch",
+        "bag_file:=/home/jiadong/workspace/datasets/ntu/eee_03/eee_03.bag",
+        "backend:=native",
+        "dataset:=ntuviral",
+        "threads:=4",
+        "outer_iterations:=3",
+        "output_dir:=/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/native",
+        "duration:=0.0",
+        "rate:=1.0",
+        "snapshot_stride:=18",
+        "snapshot_limit:=200",
+        "snapshot_dir:=/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots"
+      ],
+      "ros_master_uri": "http://127.0.0.1:49117"
+    }
+  ],
+  "frozen": {
+    "groups": [
+      {
+        "threads": 1,
+        "iteration_limit": 1,
+        "backend": "ceres_batch",
+        "samples": 505,
+        "mean_ms": 8.96730649108911,
+        "p50_ms": 9.425314,
+        "p95_ms": 9.532084,
+        "p99_ms": 9.597411,
+        "peak_rss_mib": 91.3671875,
+        "mean_final_cost": 158.23268352439572,
+        "cost_increase_samples": 0,
+        "unusable": 0,
+        "mean_build_ms": 1.0620156396039604,
+        "mean_evaluate_ms": 6.385844768864094,
+        "mean_assemble_ms": 0.0,
+        "mean_linear_ms": 1.0656696735042157,
+        "mean_solve_ms": 7.885525077227723,
+        "mean_destroy_ms": 0.01917871683168317,
+        "mean_diagnostic_ms": 9.034618227722772,
+        "mean_cost_reduction": 1125.587937349628
+      },
+      {
+        "threads": 1,
+        "iteration_limit": 1,
+        "backend": "ceres_scalar",
+        "samples": 505,
+        "mean_ms": 32.90052458019802,
+        "p50_ms": 34.963952,
+        "p95_ms": 35.628234,
+        "p99_ms": 35.891684,
+        "peak_rss_mib": 98.36328125,
+        "mean_final_cost": 158.2326835243958,
+        "cost_increase_samples": 0,
+        "unusable": 0,
+        "mean_build_ms": 1.6754314356435644,
+        "mean_evaluate_ms": 10.85938274270237,
+        "mean_assemble_ms": 0.0,
+        "mean_linear_ms": 16.230791866189183,
+        "mean_solve_ms": 30.62494931683168,
+        "mean_destroy_ms": 0.5909992653465347,
+        "mean_diagnostic_ms": 9.080414425742575,
+        "mean_cost_reduction": 1125.5879373496282
+      },
+      {
+        "threads": 1,
+        "iteration_limit": 1,
+        "backend": "native",
+        "samples": 505,
+        "mean_ms": 16.626029184158416,
+        "p50_ms": 17.432241,
+        "p95_ms": 17.862554,
+        "p99_ms": 18.209262,
+        "peak_rss_mib": 115.51953125,
+        "mean_final_cost": 335.2524256215614,
+        "cost_increase_samples": 5,
+        "unusable": 0,
+        "mean_build_ms": 0.00021923168316831683,
+        "mean_evaluate_ms": 12.529229405940594,
+        "mean_assemble_ms": 3.4365685722772277,
+        "mean_linear_ms": 0.2463454594059406,
+        "mean_solve_ms": 16.6251060990099,
+        "mean_destroy_ms": 0.00017313069306930693,
+        "mean_diagnostic_ms": 9.084192651485148,
+        "mean_cost_reduction": 948.5681952524842
+      },
+      {
+        "threads": 4,
+        "iteration_limit": 1,
+        "backend": "ceres_batch",
+        "samples": 505,
+        "mean_ms": 5.480516748514852,
+        "p50_ms": 5.593435,
+        "p95_ms": 6.210229,
+        "p99_ms": 6.395483,
+        "peak_rss_mib": 91.57421875,
+        "mean_final_cost": 158.23268352439572,
+        "cost_increase_samples": 0,
+        "unusable": 0,
+        "mean_build_ms": 1.2661344099009901,
+        "mean_evaluate_ms": 2.3980905513952275,
+        "mean_assemble_ms": 0.0,
+        "mean_linear_ms": 1.0803397339169343,
+        "mean_solve_ms": 4.135490948514851,
+        "mean_destroy_ms": 0.07811542376237623,
+        "mean_diagnostic_ms": 9.082964637623762,
+        "mean_cost_reduction": 1125.587937349628
+      },
+      {
+        "threads": 4,
+        "iteration_limit": 1,
+        "backend": "ceres_scalar",
+        "samples": 505,
+        "mean_ms": 29.798293857425744,
+        "p50_ms": 31.417945,
+        "p95_ms": 32.814773,
+        "p99_ms": 33.362776,
+        "peak_rss_mib": 99.0703125,
+        "mean_final_cost": 158.2326835243958,
+        "cost_increase_samples": 0,
+        "unusable": 0,
+        "mean_build_ms": 2.7715833564356434,
+        "mean_evaluate_ms": 4.256177184605362,
+        "mean_assemble_ms": 0.0,
+        "mean_linear_ms": 16.31885330275734,
+        "mean_solve_ms": 24.809635306930694,
+        "mean_destroy_ms": 2.206111138613861,
+        "mean_diagnostic_ms": 9.075946568316832,
+        "mean_cost_reduction": 1125.5879373496284
+      },
+      {
+        "threads": 4,
+        "iteration_limit": 1,
+        "backend": "native",
+        "samples": 505,
+        "mean_ms": 7.754257221782178,
+        "p50_ms": 7.994792,
+        "p95_ms": 8.550939,
+        "p99_ms": 9.517246,
+        "peak_rss_mib": 116.53125,
+        "mean_final_cost": 335.2524256215614,
+        "cost_increase_samples": 5,
+        "unusable": 0,
+        "mean_build_ms": 0.0005783841584158416,
+        "mean_evaluate_ms": 3.647155097029703,
+        "mean_assemble_ms": 3.4294190613861386,
+        "mean_linear_ms": 0.2458760198019802,
+        "mean_solve_ms": 7.736331342574258,
+        "mean_destroy_ms": 0.01682638811881188,
+        "mean_diagnostic_ms": 9.140035,
+        "mean_cost_reduction": 948.5681952524842
+      },
+      {
+        "threads": 8,
+        "iteration_limit": 1,
+        "backend": "ceres_batch",
+        "samples": 505,
+        "mean_ms": 4.660697384158416,
+        "p50_ms": 4.712363,
+        "p95_ms": 5.328433,
+        "p99_ms": 5.564073,
+        "peak_rss_mib": 92.15234375,
+        "mean_final_cost": 158.23268352439572,
+        "cost_increase_samples": 0,
+        "unusable": 0,
+        "mean_build_ms": 1.331719112871287,
+        "mean_evaluate_ms": 1.3169071461894724,
+        "mean_assemble_ms": 0.0,
+        "mean_linear_ms": 1.0937317763224688,
+        "mean_solve_ms": 3.2102537267326734,
+        "mean_destroy_ms": 0.11776055247524753,
+        "mean_diagnostic_ms": 9.139397417821781,
+        "mean_cost_reduction": 1125.587937349628
+      },
+      {
+        "threads": 8,
+        "iteration_limit": 1,
+        "backend": "ceres_scalar",
+        "samples": 505,
+        "mean_ms": 28.492591877227724,
+        "p50_ms": 30.062386,
+        "p95_ms": 31.525852,
+        "p99_ms": 32.142593,
+        "peak_rss_mib": 98.6015625,
+        "mean_final_cost": 158.2326835243958,
+        "cost_increase_samples": 0,
+        "unusable": 0,
+        "mean_build_ms": 2.762728077227723,
+        "mean_evaluate_ms": 2.586926564131633,
+        "mean_assemble_ms": 0.0,
+        "mean_linear_ms": 16.372480486879255,
+        "mean_solve_ms": 23.403094386138616,
+        "mean_destroy_ms": 2.3138277663366336,
+        "mean_diagnostic_ms": 9.123660265346535,
+        "mean_cost_reduction": 1125.587937349628
+      },
+      {
+        "threads": 8,
+        "iteration_limit": 1,
+        "backend": "native",
+        "samples": 505,
+        "mean_ms": 6.795802227722772,
+        "p50_ms": 6.695007,
+        "p95_ms": 8.175391,
+        "p99_ms": 8.851536,
+        "peak_rss_mib": 115.84765625,
+        "mean_final_cost": 335.2524256215614,
+        "cost_increase_samples": 5,
+        "unusable": 0,
+        "mean_build_ms": 0.0006808514851485149,
+        "mean_evaluate_ms": 2.4091796435643564,
+        "mean_assemble_ms": 3.6669683564356435,
+        "mean_linear_ms": 0.2571195782178218,
+        "mean_solve_ms": 6.794420055445545,
+        "mean_destroy_ms": 0.00014967524752475248,
+        "mean_diagnostic_ms": 9.264605623762376,
+        "mean_cost_reduction": 948.5681952524842
+      },
+      {
+        "threads": 16,
+        "iteration_limit": 1,
+        "backend": "ceres_batch",
+        "samples": 505,
+        "mean_ms": 4.555540821782178,
+        "p50_ms": 4.646921,
+        "p95_ms": 5.086484,
+        "p99_ms": 5.402514,
+        "peak_rss_mib": 92.28515625,
+        "mean_final_cost": 158.23268352439572,
+        "cost_increase_samples": 0,
+        "unusable": 0,
+        "mean_build_ms": 1.3191856277227723,
+        "mean_evaluate_ms": 0.91255254084521,
+        "mean_assemble_ms": 0.0,
+        "mean_linear_ms": 1.103909653012115,
+        "mean_solve_ms": 3.0521639821782176,
+        "mean_destroy_ms": 0.18311043168316832,
+        "mean_diagnostic_ms": 9.201134580198019,
+        "mean_cost_reduction": 1125.587937349628
+      },
+      {
+        "threads": 16,
+        "iteration_limit": 1,
+        "backend": "ceres_scalar",
+        "samples": 505,
+        "mean_ms": 27.78281036237624,
+        "p50_ms": 29.071739,
+        "p95_ms": 31.312331,
+        "p99_ms": 33.770501,
+        "peak_rss_mib": 98.65234375,
+        "mean_final_cost": 158.2326835243958,
+        "cost_increase_samples": 0,
+        "unusable": 0,
+        "mean_build_ms": 2.6093614297029704,
+        "mean_evaluate_ms": 1.8242297786297184,
+        "mean_assemble_ms": 0.0,
+        "mean_linear_ms": 16.54280435920942,
+        "mean_solve_ms": 22.97399980990099,
+        "mean_destroy_ms": 2.1862508118811883,
+        "mean_diagnostic_ms": 9.254596803960396,
+        "mean_cost_reduction": 1125.587937349628
+      },
+      {
+        "threads": 16,
+        "iteration_limit": 1,
+        "backend": "native",
+        "samples": 505,
+        "mean_ms": 6.411091891089109,
+        "p50_ms": 6.267119,
+        "p95_ms": 7.545606,
+        "p99_ms": 8.635523,
+        "peak_rss_mib": 108.984375,
+        "mean_final_cost": 335.2524256215614,
+        "cost_increase_samples": 5,
+        "unusable": 0,
+        "mean_build_ms": 0.0002873366336633663,
+        "mean_evaluate_ms": 1.6025736316831682,
+        "mean_assemble_ms": 4.040763683168317,
+        "mean_linear_ms": 0.25484239603960396,
+        "mean_solve_ms": 6.410111526732673,
+        "mean_destroy_ms": 0.00012090693069306931,
+        "mean_diagnostic_ms": 9.191108938613862,
+        "mean_cost_reduction": 948.5681952524842
+      }
+    ],
+    "paired": [
+      {
+        "threads": 1,
+        "iteration_limit": 1,
+        "median_native_over_batch": 1.8498862139242465,
+        "median_scalar_over_batch": 3.704387373266236,
+        "max_B_C_relative_cost_difference": 7.395311602006151e-13,
+        "B_C_cost_agreement_passes": true
+      },
+      {
+        "threads": 4,
+        "iteration_limit": 1,
+        "median_native_over_batch": 1.4051030672998974,
+        "median_scalar_over_batch": 5.419449461717296,
+        "max_B_C_relative_cost_difference": 7.395311602006151e-13,
+        "B_C_cost_agreement_passes": true
+      },
+      {
+        "threads": 8,
+        "iteration_limit": 1,
+        "median_native_over_batch": 1.4199226706173378,
+        "median_scalar_over_batch": 6.159486310908674,
+        "max_B_C_relative_cost_difference": 7.395311602006151e-13,
+        "B_C_cost_agreement_passes": true
+      },
+      {
+        "threads": 16,
+        "iteration_limit": 1,
+        "median_native_over_batch": 1.3973017905786251,
+        "median_scalar_over_batch": 6.137462361449528,
+        "max_B_C_relative_cost_difference": 7.395311602006151e-13,
+        "B_C_cost_agreement_passes": true
+      }
+    ]
+  },
+  "frozen_validation": {
+    "snapshots": 101,
+    "max_relative_hessian_error": 1.40977e-15,
+    "max_relative_gradient_error": 2.34173e-12,
+    "max_relative_initial_cost_error": 4.15911e-13,
+    "max_B_C_state_error": 2.41451e-11,
+    "state_check_iteration_limits": [
+      1,
+      8
+    ]
+  },
+  "frozen_snapshot_dimensions": {
+    "knots": {
+      "min": 31,
+      "max": 35,
+      "mean": 33.89108910891089
+    },
+    "imu_observations": {
+      "min": 116,
+      "max": 135,
+      "mean": 128.73267326732673
+    },
+    "lidar_observations": {
+      "min": 4951,
+      "max": 8001,
+      "mean": 7562.6732673267325
+    },
+    "prior_rows": {
+      "min": 0,
+      "max": 24,
+      "mean": 23.762376237623762
+    },
+    "scalar_residuals": {
+      "min": 6409,
+      "max": 9645,
+      "mean": 9131.227722772277
+    }
+  },
+  "mean_residual_blocks": {
+    "native": 7692.39603960396,
+    "ceres_scalar": 7692.39603960396,
+    "ceres_batch": 62.23762376237624
+  },
+  "frozen_environment": {
+    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+    "cpu_count": 32,
+    "cpu_model": "AMD Ryzen 9 9950X 16-Core Processor",
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "binary": "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+    "binary_sha256": "512abce4cc7cc1bd886f4d3d6e4d9b2bf8a66c12611af9ec3187266b840de5f0",
+    "shared_libraries": {
+      "libslict_comparison.so": {
+        "path": "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/libslict_comparison.so",
+        "sha256": "d5d043246355454003b49b4f53f5df2ebb7ae1f761582c3569e14898f5fe6803"
+      },
+      "libgomp.so.1": {
+        "path": "/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0",
+        "sha256": "135f3c8f006d2fe5e68e51281c7974cb991a03de3bfb3593d68d174dfcf854d1"
+      },
+      "libceres.so.3": {
+        "path": "/home/jiadong/workspace/slam_algorithms/slict/build/deps/install/lib/libceres.so.2.1.0",
+        "sha256": "cc3a760fcb98c9a2bc21fbc5a344f1d5dfcb0b0e8e0796f5f7a8372a5ebec337"
+      },
+      "libcholmod.so.5": {
+        "path": "/usr/lib/x86_64-linux-gnu/libcholmod.so.5.2.0",
+        "sha256": "f72594b896387b607d6c885ae9f1d73f19a419cde5e1d1c04c1b8f804c0c68eb"
+      },
+      "libspqr.so.4": {
+        "path": "/usr/lib/x86_64-linux-gnu/libspqr.so.4.3.2",
+        "sha256": "cf255ac76596918d3f79de6d9bb36106fbbfbf17cf3b071d26c39d22a407c24e"
+      },
+      "libsuitesparseconfig.so.7": {
+        "path": "/usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so.7.6.1",
+        "sha256": "e1619265d8ad8e3f04902aebc2e415c5c3f1f9d0595fb948f29c60218a334679"
+      }
+    },
+    "source_sha256": {
+      "src/comparison/evaluators.h": "570f547264f2320b7fb13ef4e6dd5749cd674652a23a2dd0e3958668eeb74d34",
+      "src/comparison/snapshot_io.cpp": "2d11dff4f1a8439cfd5d597560b604c8ea94acc6031a6d1fefd6a5c1b389d965",
+      "src/comparison/problem.cpp": "ae9160ec286a8868b6a4eef0d2c43408865e30e1b6e8a6765e40b8a289eb370f",
+      "src/comparison/benchmark.cpp": "a4e40dd7c29c8953ee7dc322df294e2b33c842ebd7e810d9032cc9dae182b3f8",
+      "src/comparison/native.cpp": "edfab160062719e9053aaa1d03830a9b293f8048f6943f0c183ba2c55ca7ad60",
+      "src/comparison/internal.h": "d4766f3ca773cf1b17209ba26cb4027baf49007dfb590906c0d2bc9da78f4f6b",
+      "src/comparison/ceres_backend.cpp": "41d445426c78a6c1f7905e666ee5f25f9c3b528b2d5313ccc4d94877b592f9c6",
+      "src/comparison/ros_bridge.cpp": "24effeb2c502a597126fc41befd1289210d1a7494c5540e5d4bfa7aa78e3e7e9",
+      "CMakeLists.txt": "b0975dd7bc8d8379333a3fac0da35c44863f3f7b543dbde6308c7d715cd9b6cb",
+      "include/slict/solver_comparison.h": "605c5ce351141f65e74aa32a50f3b2ff9e03ab3085c8525ba6ce3686ab705b2d",
+      "scripts/run_abc_benchmark.py": "a6d7789e2a0618e40b39d6db32e00c638272ddc0dd30092be114ae7c02fffbab"
+    },
+    "git_head": "0a79e9756c532cb2ba93990ff15edfc059367c58",
+    "controlled_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_MAX_ACTIVE_LEVELS": "1"
+    },
+    "snapshots": "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+    "threads": [
+      1,
+      4,
+      8,
+      16
+    ],
+    "iterations": [
+      1
+    ],
+    "rounds": 5,
+    "ceres_initial_trust_region_radius": 1e+16,
+    "timing": "total_ms includes reset/build/solve/destruction; excludes common validation, final cost diagnostic, I/O and marginalization"
+  },
+  "excluded_failed_trial": {
+    "status": "stopped_after_tracking_failure",
+    "native_completed": true,
+    "ceres_scalar_completed": false,
+    "ceres_batch_started": false,
+    "reason": "B lost LiDAR constraints during single-step replay with Ceres trust-region radius reset on each call. Interruption preserves the failed trial; later low timings are excluded from successful-SLAM results.",
+    "B_recorded_frames": 656,
+    "B_empty_lidar_frames": 505,
+    "B_first_empty_lidar_frame": 152,
+    "B_last_window_time": 1609060400.7559795
+  },
+  "verification": {
+    "build": "cmake --build build/noetic --parallel 16",
+    "cpp_ctest": "slict_solver_comparison passed",
+    "python_evaluation_tests": "3 tests passed",
+    "frozen_runs": 60,
+    "frozen_timed_samples": 6060
+  },
+  "artifact_sha256": {
+    "build/abc_eee03_single_step/replay_manifest.json": "694bd1e3c3273aedca297963869360ccf589d907fbe16f6df400134a48bf6f13",
+    "build/abc_eee03_accuracy/accuracy.json": "405f6682175d13598c274aaaf758cd299d1153a839a57f31590586619fb403a5",
+    "build/abc_eee03_frozen/all.csv": "a79dd85666018d7d4aadefd21b067567b4a311a186c8cfee4baf2dc88ef17047",
+    "build/abc_eee03_frozen/summary.json": "cb4ecce2cd74d439b2ccbc3b209b691962f029007300580970e408b5f2d4b5ce",
+    "build/abc_eee03_frozen/manifest.json": "15d0141b94d19ac9a0e0a622feb77248bddde38832e0b6797920ea37c62aa47c",
+    "build/abc_eee03_frozen/validation.log": "8451015c7bdc0103976440d8f4aaf1f43cb25e1fdedfa2a4cd6eea02c748c4ed",
+    "scripts/evaluate_ntuviral.py": "f1d9d310fe11712c4c7f1fb754a091a55153f87a78e334a907cae0ca58946cf0",
+    "tests/test_ntuviral_evaluation.py": "096be3093db821d251d2ece5d967a22f91edd8c719bfb2b3e701aae04caa4558"
+  },
+  "derived_comparisons": {
+    "four_threads_core_C_time_reduction_vs_A": 0.2932247935856773,
+    "four_threads_core_C_time_reduction_vs_B": 0.8160795119768541,
+    "four_threads_frame_C_time_reduction_vs_A": 0.09430923277810521,
+    "four_threads_frame_C_time_reduction_vs_B": 0.4952499372864193
+  },
+  "startup_cost_review": {
+    "note": "All native cost-increase samples are repeats of snapshot frame 1; no windows excluded from timing or cost statistics. B/C reject the startup trial step.",
+    "by_backend": {
+      "native": {
+        "first_frame_initial_cost": 14493.777680332076,
+        "first_frame_final_cost": 32372.768490485207,
+        "median_final_cost_all_101_windows": 14.439006881249744
+      },
+      "ceres_scalar": {
+        "first_frame_initial_cost": 14493.777680332081,
+        "first_frame_final_cost": 14493.777680332076,
+        "median_final_cost_all_101_windows": 14.439033464772063
+      },
+      "ceres_batch": {
+        "first_frame_initial_cost": 14493.77768033205,
+        "first_frame_final_cost": 14493.777680332076,
+        "median_final_cost_all_101_windows": 14.43903346476997
+      }
+    }
+  },
+  "bag_metadata_note": "Topic frequency fields are rosbag record-arrival interval statistics; bursty recording can make them unlike sensor sample rates. Message counts and bag duration are retained verbatim."
+}

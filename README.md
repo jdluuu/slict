@@ -53,6 +53,26 @@ More details can be find at our [RA-L paper](https://ieeexplore.ieee.org/documen
 
 # Build & Run
 
+## A/B/C solver comparison
+
+This checkout includes `native`, `ceres_scalar`, and `ceres_batch` backends with
+shared problem snapshots, numerical checks, and replay/benchmark scripts. See the
+[comparison guide](docs/solver_comparison.md) and [local Noetic build record](docs/build_noetic.md).
+The comparison backends use a common marginalization model; leaving `solver_backend`
+unset preserves the original `use_ceres` selection.
+All comparison replay backends take one optimization step per state update, deskew,
+and association cycle, with three cycles per frame by default. The replay tool
+supports NTU VIRAL (horizontal lidar) and R3LIVE; see the
+[paper datasets and download guide](docs/slict_datasets.md).
+Ceres backends carry the trust-region radius between single-step calls. The NTU
+evaluation script samples the saved spline, compensates the prism offset, and
+reports position error on identical ground-truth timestamps for all backends.
+The [NTU VIRAL eee_03 results](docs/solver_comparison_eee03.md) include a full
+single-step replay, ground-truth evaluation, and repeated frozen-input timings.
+An additional `native_batch` backend (D) registers the same SPLBATCH costs with
+the native SLICT solver, retaining its matrix assembly, damping and step clipping.
+See the [native adapter and A/D comparison](docs/native_batch_adaptation.md).
+
 ## Prerequisites
 
 The software was developed on the following dependencies. Ubuntu 20.04 and ROS Noetic is a must for compiling SLICT due to UFOMap's [minimum requirement](https://github.com/UnknownFreeOccupied/ufomap/wiki/Setup#installation). However **<u>a docker</u>** can be used to run SLICT with older OS versions. Please find the instructions below.

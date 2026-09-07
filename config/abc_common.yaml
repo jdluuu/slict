@@ -1,0 +1,32 @@
+# Shared A/B/C problem and scheduling settings. Sensor calibration is separate.
+SPLINE_N: 4
+deltaT: 0.01
+WINDOW_SIZE: 3
+N_SUB_SEG: 4
+max_lidar_factor: 8000
+fuse_lidar: 1
+fuse_imu: 1
+fuse_marg: 1
+fuse_poseprop: 0
+fuse_velprop: 0
+# Each solver call takes one step, then the frontend updates, deskews and
+# associates the latest two clouds before the next call (all clouds initially).
+comparison_iterations: 1
+max_outer_iters: 3
+reassociate_steps: 2
+# Disable reassociation inside residual/Jacobian evaluation only.
+reassoc_rate: 0
+lidar_loss_thres: -1.0
+imu_loss_thres: -1.0
+dj_thres: 0.0
+solver_threads: 1
+ensure_real_time: 0
+find_factor_cost: 0
+fit_spline: 0
+loop_en: 0
+refine_kf: 0
+show_report: 0
+show_preop_times: 0
+show_lioop_times: 0
+publish_map: 0
+autoexit: 1

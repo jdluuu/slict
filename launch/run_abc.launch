@@ -1,0 +1,38 @@
+<launch>
+  <arg name="bag_file"/>
+  <arg name="dataset" default="ntuviral"/>
+  <arg name="backend" default="native"/>
+  <arg name="threads" default="1"/>
+  <arg name="outer_iterations" default="3"/>
+  <arg name="output_dir" default="$(find slict)/build/abc_live/$(arg dataset)/$(arg backend)"/>
+  <arg name="snapshot_dir" default=""/>
+  <arg name="snapshot_stride" default="10"/>
+  <arg name="snapshot_limit" default="500"/>
+  <arg name="rate" default="0.5"/>
+  <arg name="duration" default="-1"/>
+  <arg name="duration_arg" default="$(eval '--duration=' + str(arg('duration')) if float(arg('duration')) &gt; 0 else '')"/>
+  <arg name="start" default="0"/>
+  <arg name="play_bag" default="true"/>
+  <arg name="sensor_config" value="$(eval {'ntuviral': 'abc_ntuviral.yaml', 'r3live': 'abc_r3live.yaml'}[arg('dataset')])"/>
+  <arg name="bag_topics" value="$(eval {'ntuviral': '/os1_cloud_node1/points /imu/imu', 'r3live': '/livox/lidar /livox/imu'}[arg('dataset')])"/>
+  <rosparam file="$(find slict)/config/ntuviral.yaml" command="load"/>
+  <rosparam file="$(find slict)/config/abc_common.yaml" command="load"/>
+  <rosparam file="$(find slict)/config/$(arg sensor_config)" command="load"/>
+  <param name="/solver_backend" value="$(arg backend)"/>
+  <param name="/solver_threads" type="int" value="$(arg threads)"/>
+  <!-- One solver step per frontend update/deskew/association cycle for A/B/C. -->
+  <param name="/comparison_iterations" type="int" value="1"/>
+  <param name="/max_outer_iters" type="int" value="$(arg outer_iterations)"/>
+  <param name="/comparison_csv" value="$(arg output_dir)/optimization.csv"/>
+  <param name="/comparison_frame_csv" value="$(arg output_dir)/frames.csv"/>
+  <param name="/comparison_snapshot_dir" value="$(arg snapshot_dir)"/>
+  <param name="/comparison_snapshot_stride" type="int" value="$(arg snapshot_stride)"/>
+  <param name="/comparison_snapshot_limit" type="int" value="$(arg snapshot_limit)"/>
+  <param name="/log_dir" value="$(arg output_dir)/trajectory"/>
+  <param name="/use_sim_time" value="true"/>
+  <node if="$(eval arg('dataset') == 'r3live')" pkg="slict" type="slict_livox_to_ouster" name="slict_livox_converter" output="log" required="true"/>
+  <node pkg="slict" type="slict_sensorsync" name="slict_sensorsync" output="log" required="true"/>
+  <node pkg="slict" type="slict_estimator" name="slict_estimator" output="log" required="true"/>
+  <node if="$(arg play_bag)" pkg="rosbag" type="play" name="abc_bag_player" output="log"
+        args="--clock --delay=3 --rate=$(arg rate) --start=$(arg start) $(arg duration_arg) &quot;$(arg bag_file)&quot; --topics $(arg bag_topics)"/>
+</launch>

@@ -1,0 +1,61 @@
+{
+  "source_project": "CT-RIO",
+  "source_path": "src/crepes3/crepes/include/ct_batch",
+  "source_repository_head": "2b29698f0db78c2cc8fa9278be5d39ad9cd0dd5c",
+  "source_status": "The original headers were untracked; per-file source hashes identify the imported working-tree snapshot.",
+  "adaptation": "Mechanical rename of ct_batch to splbatch in public headers and namespace. Numerical implementations are unchanged.",
+  "headers": {
+    "batch_binding.hpp": {
+      "source_sha256": "bb0570cfc3ab0805d0274e7663851f2db3110f8c6e901e5dc71965df93b9217b",
+      "initial_splbatch_sha256": "201745943f66c1376383010e68b99c4686f2fdd64dc46982c182d90c0466f8a8"
+    },
+    "compressed_segment_batch_cost_function.hpp": {
+      "source_sha256": "19acf834cd97142ef4204e2e790106e59987951e3e240cbd68b727105e671303",
+      "initial_splbatch_sha256": "71ce30bb3d33db4009c42a6a7466e72677369830823b594e3c6a88af9b00a552"
+    },
+    "dense_jacobian_structure_adapter.hpp": {
+      "source_sha256": "844f495bad42125ef66e007466cfbebf8afc49748ce0aab2580714821e54f7b9",
+      "initial_splbatch_sha256": "958d68274934ff2a64e61e1dbce289b0425bd870b44c21fb62dd1c247ef87f2d"
+    },
+    "evaluation_request.hpp": {
+      "source_sha256": "ac99c76104927ed5115163f09d6cdce0f6c6a6209e4927eb4b31b8f865afadcc",
+      "initial_splbatch_sha256": "75d2a8da272079f5f9dab28cb24a384318196128f88644561221b6ac2b8a789f"
+    },
+    "evaluator_base.hpp": {
+      "source_sha256": "5326ddad717e5a81d08b61463b6066fb407d1d531ee7d712258fe186ad53848e",
+      "initial_splbatch_sha256": "1d4702e0ddb33ba5d3532eb301a5c51fa88893eed3d71b7700443c3427460e91"
+    },
+    "incremental_diagnostics.hpp": {
+      "source_sha256": "abfc4402082c5b1ae5b8ca9851dd7f919246ecff7601a78f1a0b5416cb9350a1",
+      "initial_splbatch_sha256": "3903d084ffdea981dc07049f6e0b5d085274abd6891e9d641b697fe0a283f3e1"
+    },
+    "incremental_problem_batcher.hpp": {
+      "source_sha256": "8478739f8315fce7ace99d5dd18a2e3ea726f173f925eea97c2e2e5b759c600e",
+      "initial_splbatch_sha256": "a74df95295007251d010453622478be3e1edc62a629d57f850984ba04f5b3dbd"
+    },
+    "jacobian_structure.hpp": {
+      "source_sha256": "986838908d0994961d1b8a0ce6d0f94ad4d3a818eb745114cc7e56c4e4e8a68a",
+      "initial_splbatch_sha256": "62d2219944fd26d28e1b6ac6273b48d7dd2e3529a77652d875ca075cdc177eaa"
+    },
+    "jacobian_writer.hpp": {
+      "source_sha256": "35e3a36d5842ee79633b751f93c4954d4b6d4da7472a90c012f85b96608e5f1e",
+      "initial_splbatch_sha256": "7f3f264bf787222614a8425de7c55a37dca7a1006bba5e6e413690434daf6d9e"
+    },
+    "loss_policy.hpp": {
+      "source_sha256": "dec4503d9296427f8b0c8117694d21ea45a46aa495f017e9295e73d38bc10ea6",
+      "initial_splbatch_sha256": "6d7000a4272b5dc05e15a7eff65c4c15e3ee17297515f71cbfbca690405acc23"
+    },
+    "normal_equation_compressor.hpp": {
+      "source_sha256": "2e13f8f5fc8cea578ad87be25b86861fab084ab97c38f999f18050336878311d",
+      "initial_splbatch_sha256": "981fc593ba98935b6fdc623f26c865d9bacf2c108248f6bba53bff49c91a8651"
+    },
+    "problem_batcher.hpp": {
+      "source_sha256": "907e99985b6a368d2d24315274efeb731a97bb73ddc06756671283d27fe0f03f",
+      "initial_splbatch_sha256": "0ea48c7985a56d4b7d23f6ee4ebc84ab08a87f4a56f93272af9ecba1b7255be5"
+    },
+    "segment_batch_cost_function.hpp": {
+      "source_sha256": "527e6dbb899bc8b89b989cea253c4b813227b56243a78e7442e1699fd325a3bf",
+      "initial_splbatch_sha256": "60c9d2b185e6e7f320846677da18ef827e534c76b1912895ba6a4eadc803f924"
+    }
+  }
+}

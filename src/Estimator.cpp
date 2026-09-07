@@ -166,6 +166,7 @@ private:
     // Synchronized data buffer
     mutex packet_buf_mtx;
     deque<slict::FeatureCloud::ConstPtr> packet_buf;
+    std::ofstream comparison_frame_csv;
 
     bool ALL_INITED  = false;
     int  WINDOW_SIZE = 4;
@@ -449,7 +450,15 @@ private:
     
 public:
     // Destructor
-    ~Estimator() {}
+    ~Estimator() { JoinWorkers(); }
+
+    // The ROS spinner must have stopped before joining these workers.
+    void JoinWorkers()
+    {
+        if (thread_update_map.joinable()) thread_update_map.join();
+        if (reloc_init.joinable()) reloc_init.join();
+        if (initPriorMapThread.joinable()) initPriorMapThread.join();
+    }
 
     Estimator(ros::NodeHandlePtr &nh_ptr_) : nh_ptr(nh_ptr_)
     {   
@@ -504,6 +513,23 @@ public:
         nh_ptr->param("/reassoc_rate", reassoc_rate, 3);
 
         use_ceres = GetBoolParam("/use_ceres", false);
+        // Empty selection preserves the legacy use_ceres switch.
+        std::string solver_backend;
+        nh_ptr->param<std::string>("/solver_backend", solver_backend, "");
+        if (!solver_backend.empty()) {
+            slict::comparison::ParseBackend(solver_backend);
+            use_ceres = false;
+            std::string frame_csv_path;
+            nh_ptr->param<std::string>("/comparison_frame_csv", frame_csv_path, "");
+            if (!frame_csv_path.empty()) {
+                const auto parent = std::filesystem::path(frame_csv_path).parent_path();
+                if (!parent.empty()) std::filesystem::create_directories(parent);
+                comparison_frame_csv.open(frame_csv_path);
+                if (!comparison_frame_csv) throw std::runtime_error("Cannot open comparison frame CSV");
+                comparison_frame_csv.precision(17);
+                comparison_frame_csv << "frame,scan_end_time,frame_ms,queued_packets,optimizer_calls,post_opt_deskew_passes,post_opt_association_passes\n";
+            }
+        }
 
         // Initialize the states in the sliding window
         ssQua = sfQua = deque<deque<Quaternd>>(WINDOW_SIZE, deque<Quaternd>(N_SUB_SEG, Quaternd::Identity()));
@@ -655,6 +681,17 @@ public:
         nh_ptr->param("/max_outer_iters",  max_outer_iters,  1);
         nh_ptr->param("/max_lidar_factor", max_lidar_factor, 4000);
         nh_ptr->param("/dj_thres",         dj_thres,         0.1);
+
+        // Validate before processing the first frame: tmnSolver is constructed
+        // lazily inside LIOOptimization, after the outer-loop report is indexed.
+        if (!solver_backend.empty()) {
+            int comparison_iterations;
+            nh_ptr->param("/comparison_iterations", comparison_iterations, 1);
+            if (comparison_iterations != 1)
+                throw std::invalid_argument("ROS A/B/C requires comparison_iterations=1; change max_outer_iters for more solve/update/deskew/associate cycles");
+            if (max_outer_iters < 1 || reassociate_steps < 1 || ensure_real_time)
+                throw std::invalid_argument("ROS A/B/C requires positive max_outer_iters and reassociate_steps, and ensure_real_time=0");
+        }
 
         printf("max_outer_iters: %d.\n"
                "dj_thres:        %f.\n" 
@@ -1089,7 +1126,7 @@ public:
     {
         ros::Publisher relocPub = nh_ptr->advertise<geometry_msgs::PoseStamped>("/reloc_pose", 100);
         geometry_msgs::PoseStamped relocPose = relocPose_;
-        while(true)
+        while(ros::ok())
         {
             if(reloc_stat != RELOCALIZED)
             {
@@ -1225,8 +1262,9 @@ public:
             if ( (data_time_out != -1) && (tt_time_out.Toc()/1000.0 - data_time_out) > 20 && (packet_buf.size() == 0) && autoexit)
             {
                 printf(KYEL "Data timeout, Buf: %d. exit!\n" RESET, packet_buf.size());
-                SaveTrajLog();
-                exit(0);
+                // Let main join the workers before saving shared trajectory data.
+                ros::shutdown();
+                return true;
             }
 
             /* #region STEP 0: Loop if there is no new data ---------------------------------------------------------*/
@@ -1519,6 +1557,7 @@ public:
             string printout, lioop_times_report = "", DVAReport;
 
             int outer_iter = max_outer_iters;
+            int optimizer_calls = 0, post_opt_deskew_passes = 0, post_opt_association_passes = 0;
             while(true)
             {
                 // Decrement outer interation counter
@@ -1582,6 +1621,7 @@ public:
                 LIOOptimization(report, lioop_times_report, LocalTraj,
                                 prev_knot_x, curr_knot_x, swNextBase, outer_iter,
                                 imuSelected, featureSelected, tlog);
+                ++optimizer_calls;
 
                 // Load the knot values back to the global traj
                 for(int knot_idx = 0; knot_idx < LocalTraj.numKnots(); knot_idx++)
@@ -1645,6 +1685,7 @@ public:
                         DeskewByImu(SwPropState[i], SwTimeStep[i], SwCloud[i], SwCloudDsk[i], SwCloudDskDS[i], assoc_spacing);
 
                 tlog.t_desk.push_back(tt_deskew_.Toc());
+                ++post_opt_deskew_passes;
                 pstop_times_report += myprintf("dsk: %.1f, ", tlog.t_desk.back());
 
                 TicToc tt_assoc_;
@@ -1663,6 +1704,7 @@ public:
                 }
 
                 tlog.t_assoc.push_back(tt_assoc_.Toc());
+                ++post_opt_association_passes;
                 pstop_times_report += myprintf("assoc: %.1f, ", tlog.t_assoc.back());
 
                 tt_posproc.Toc();
@@ -1968,9 +2010,23 @@ public:
 
             // Publish the loop time
             tlog.t_loop = tt_whileloop.Toc();
+            if (comparison_frame_csv.is_open()) {
+                std::size_t queued;
+                {
+                    lock_guard<mutex> lock(packet_buf_mtx);
+                    queued = packet_buf.size();
+                }
+                comparison_frame_csv << tlog.OptNum << ',' << tlog.header.stamp.toSec()
+                                     << ',' << tlog.t_loop << ',' << queued
+                                     << ',' << optimizer_calls << ',' << post_opt_deskew_passes
+                                     << ',' << post_opt_association_passes << '\n';
+                comparison_frame_csv.flush();
+                if (!comparison_frame_csv) throw std::runtime_error("Writing comparison frame CSV failed");
+            }
             static ros::Publisher tlog_pub = nh_ptr->advertise<slict::TimeLog>("/time_log", 100);
             tlog_pub.publish(tlog);
         }
+        return true;
     }
 
     void PublishAssocCloud(vector<lidarFeaIdx> &featureSelected, deque<vector<LidarCoef>> &SwLidarCoef)
@@ -4885,6 +4941,8 @@ int main(int argc, char **argv)
     ros::MultiThreadedSpinner spinner(0);
     spinner.spin();
 
+    if (process_data.joinable()) process_data.join();
+    estimator.JoinWorkers();
     estimator.SaveTrajLog();
 
     return 0;

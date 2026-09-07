@@ -38,6 +38,8 @@ find_package(Eigen3 REQUIRED)
 find_package(Ceres  REQUIRED)
 find_package(Sophus REQUIRED)
 
+add_subdirectory(third_party/splbatch)
+
 ## Generate messages in the 'msg' folder
 add_message_files(
   DIRECTORY msg
@@ -113,11 +115,52 @@ include_directories(
 
 ## Declare a C++ library
 
+set(SLICT_COMPARISON_SOURCES
+  src/comparison/problem.cpp
+  src/comparison/native.cpp
+  src/comparison/native_batch.cpp
+  src/comparison/ceres_backend.cpp
+  src/comparison/snapshot_io.cpp)
+add_library(slict_comparison ${SLICT_COMPARISON_SOURCES})
+target_compile_options(slict_comparison PRIVATE ${OpenMP_CXX_FLAGS})
+target_link_libraries(slict_comparison PUBLIC
+  splbatch::splbatch Sophus::Sophus ${OpenMP_CXX_FLAGS}
+  ${catkin_LIBRARIES} ${PCL_LIBRARIES} UFO::Map)
+
+add_executable(slict_solver_benchmark src/comparison/benchmark.cpp)
+target_link_libraries(slict_solver_benchmark slict_comparison)
+
+# Separate processes/libraries keep construction probes out of production and
+# avoid mixing differently instrumented header-template instantiations.
+add_library(slict_comparison_diagnostics SHARED EXCLUDE_FROM_ALL ${SLICT_COMPARISON_SOURCES})
+target_compile_definitions(slict_comparison_diagnostics PUBLIC SPLBATCH_CONSTRUCTION_DIAGNOSTICS=1)
+target_compile_options(slict_comparison_diagnostics PRIVATE ${OpenMP_CXX_FLAGS})
+target_link_libraries(slict_comparison_diagnostics PUBLIC
+  splbatch::splbatch Sophus::Sophus ${OpenMP_CXX_FLAGS}
+  ${catkin_LIBRARIES} ${PCL_LIBRARIES} UFO::Map)
+add_executable(slict_construction_control EXCLUDE_FROM_ALL src/comparison/construction_benchmark.cpp)
+target_link_libraries(slict_construction_control slict_comparison)
+add_executable(slict_construction_diagnostics EXCLUDE_FROM_ALL src/comparison/construction_benchmark.cpp)
+target_link_libraries(slict_construction_diagnostics slict_comparison_diagnostics)
+
+if(CATKIN_ENABLE_TESTING)
+  add_executable(slict_solver_comparison_test tests/solver_comparison_test.cpp)
+  target_include_directories(slict_solver_comparison_test PRIVATE src/comparison)
+  target_link_libraries(slict_solver_comparison_test slict_comparison)
+  add_test(NAME slict_solver_comparison COMMAND slict_solver_comparison_test)
+  add_executable(slict_splbatch_ingestion_test tests/splbatch_ingestion_test.cpp)
+  target_link_libraries(slict_splbatch_ingestion_test PRIVATE splbatch::splbatch)
+  add_test(NAME slict_splbatch_ingestion COMMAND slict_splbatch_ingestion_test)
+  add_executable(slict_splbatch_incremental_test third_party/splbatch/tests/test_incremental.cpp)
+  target_link_libraries(slict_splbatch_incremental_test PRIVATE splbatch::splbatch)
+  add_test(NAME slict_splbatch_incremental COMMAND slict_splbatch_incremental_test)
+endif()
+
 # Main LIO
-add_executable(${PROJECT_NAME}_estimator src/Estimator.cpp include/ikdTree/ikd_Tree.cpp src/tmnSolver.cpp src/PointToMapAssoc.cpp)
+add_executable(${PROJECT_NAME}_estimator src/Estimator.cpp include/ikdTree/ikd_Tree.cpp src/tmnSolver.cpp src/PointToMapAssoc.cpp src/comparison/ros_bridge.cpp)
 add_dependencies(${PROJECT_NAME}_estimator ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_generate_messages_cpp)
 target_compile_options(${PROJECT_NAME}_estimator PRIVATE ${OpenMP_CXX_FLAGS})
-target_link_libraries(${PROJECT_NAME}_estimator ${catkin_LIBRARIES} ${CERES_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBRARIES} ${OpenMP_CXX_FLAGS} UFO::Map Sophus::Sophus)
+target_link_libraries(${PROJECT_NAME}_estimator ${catkin_LIBRARIES} ${CERES_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBRARIES} ${OpenMP_CXX_FLAGS} UFO::Map Sophus::Sophus slict_comparison)
 # Synchronizer for lidar and IMU
 add_executable(${PROJECT_NAME}_sensorsync src/SensorSync.cpp)
 add_dependencies(${PROJECT_NAME}_sensorsync ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_generate_messages_cpp)

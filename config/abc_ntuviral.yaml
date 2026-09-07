@@ -1,0 +1,18 @@
+# SLICT2 paper, Sec. IV-A: horizontal 16-channel lidar and /imu/imu.
+# Keep the original NTU calibration; do not merge the vertical lidar.
+lidar_topic: ["/os1_cloud_node1/points"]
+# The last entry is SLICT's end-of-scan timestamp flag, not a transform entry.
+lidar_extr: [1, 0, 0, -0.050,
+             0, 1, 0, 0.000,
+             0, 0, 1, 0.055,
+             0, 0, 0, 0]
+imu_topic: "/imu/imu"
+imu_extr: [1, 0, 0, 0,
+           0, 1, 0, 0,
+           0, 0, 1, 0,
+           0, 0, 0, 1]
+acce_scale: 1.0
+GRAV: 9.81007
+ds_rate: [1]
+sweep_len: 1
+min_range: 0.5

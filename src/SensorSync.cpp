@@ -111,7 +111,11 @@ private:
 
 public:
     // Destructor
-    ~SensorSync() {}
+    ~SensorSync()
+    {
+        if (sync_lidar.joinable()) sync_lidar.join();
+        if (sync_data.joinable()) sync_data.join();
+    }
 
     SensorSync(ros::NodeHandlePtr &nh_ptr_) : nh_ptr(nh_ptr_)
     {
@@ -357,7 +361,7 @@ public:
     
     void SyncLidar()
     {
-        while(ros::ok)
+        while(ros::ok())
         {
             // Loop if the secondary buffers don't over lap
             if(!LidarBufReady())
@@ -572,7 +576,7 @@ public:
 
     void SyncData()
     {
-        while (true)
+        while (ros::ok())
         {
             /* #region Probing the key buffers ----------------------------------------------------------------------*/
 

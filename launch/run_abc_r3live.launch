@@ -1,0 +1,18 @@
+<launch>
+  <!-- Compatibility entry point; all scheduling lives in run_abc.launch. -->
+  <arg name="bag_file"/>
+  <arg name="backend" default="native"/>
+  <arg name="threads" default="1"/>
+  <arg name="outer_iterations" default="3"/>
+  <arg name="output_dir" default="$(find slict)/build/abc_live/r3live/$(arg backend)"/>
+  <arg name="snapshot_dir" default=""/>
+  <arg name="snapshot_stride" default="10"/>
+  <arg name="snapshot_limit" default="500"/>
+  <arg name="rate" default="0.5"/>
+  <arg name="duration" default="-1"/>
+  <arg name="start" default="0"/>
+  <arg name="play_bag" default="true"/>
+  <include file="$(find slict)/launch/run_abc.launch" pass_all_args="true">
+    <arg name="dataset" value="r3live"/>
+  </include>
+</launch>

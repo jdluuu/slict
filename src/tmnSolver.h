@@ -1,6 +1,8 @@
 #include <Eigen/Dense>
 #include <Eigen/Sparse>
 #include <Eigen/OrderingMethods>
+#include "slict/solver_comparison.h"
+#include <fstream>
 
 // Basalt
 #include "basalt/spline/se3_spline.h"
@@ -112,6 +114,24 @@ public:
     void RelocalizePrior(SE3d tf);
 
 private:
+
+    bool SolveComparison(PoseSplineX &traj, Vector3d &BIG, Vector3d &BIA,
+                         map<int, int> &curr_knot_x, int swNextBase, int iter,
+                         deque<deque<ImuSequence>> &SwImuBundle,
+                         deque<vector<LidarCoef>> &SwLidarCoef,
+                         vector<ImuIdx> &imuSelected, vector<lidarFeaIdx> &featureSelected,
+                         string &description, slict::OptStat &report, slict::TimeLog &tlog);
+    std::string comparison_backend_name;
+    slict::comparison::Options comparison_options;
+    slict::comparison::Prior comparison_prior;
+    int comparison_prior_base = -1;
+    Vector3d comparison_bg_reference = Vector3d::Zero();
+    Vector3d comparison_ba_reference = Vector3d::Zero();
+    std::uint64_t comparison_frame = 0;
+    bool comparison_fuse_imu = true, comparison_fuse_lidar = true;
+    std::string comparison_snapshot_dir;
+    int comparison_snapshot_stride = 10, comparison_snapshot_limit = 500, comparison_saved = 0;
+    std::ofstream comparison_csv;
 
     // Node handle to get information needed
     ros::NodeHandlePtr nh;

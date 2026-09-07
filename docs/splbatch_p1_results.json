@@ -1,0 +1,3945 @@
+{
+  "date": "2026-09-07",
+  "scope": "P1 only; P2-P4 not implemented",
+  "formal_artifacts": "build/p1_eee03_frozen",
+  "summary": {
+    "groups": [
+      {
+        "threads": 1,
+        "backend": "ceres_batch",
+        "version": "before",
+        "samples": 505,
+        "build_ms": {
+          "mean": 1.1013880514851486,
+          "p95": 1.255177
+        },
+        "evaluate_ms": {
+          "mean": 6.40198547061127,
+          "p95": 7.021188735961914
+        },
+        "assemble_ms": {
+          "mean": 0.0,
+          "p95": 0.0
+        },
+        "linear_ms": {
+          "mean": 1.110132613984665,
+          "p95": 1.230001449584961
+        },
+        "solve_ms": {
+          "mean": 8.00643542970297,
+          "p95": 8.856718
+        },
+        "destroy_ms": {
+          "mean": 0.02389011881188119,
+          "p95": 0.033432
+        },
+        "total_ms": {
+          "mean": 9.133074156435644,
+          "p95": 10.20529
+        },
+        "diagnostic_ms": {
+          "mean": 9.261704247524753,
+          "p95": 10.367223
+        },
+        "peak_rss_mib": 91.2734375
+      },
+      {
+        "threads": 1,
+        "backend": "ceres_batch",
+        "version": "p1",
+        "samples": 505,
+        "build_ms": {
+          "mean": 0.7811012752475247,
+          "p95": 0.864837
+        },
+        "evaluate_ms": {
+          "mean": 6.29594349625087,
+          "p95": 6.731271743774414
+        },
+        "assemble_ms": {
+          "mean": 0.0,
+          "p95": 0.0
+        },
+        "linear_ms": {
+          "mean": 1.102763827484433,
+          "p95": 1.2021064758300781
+        },
+        "solve_ms": {
+          "mean": 7.884390152475247,
+          "p95": 8.465597
+        },
+        "destroy_ms": {
+          "mean": 0.023150239603960395,
+          "p95": 0.028573
+        },
+        "total_ms": {
+          "mean": 8.690024259405941,
+          "p95": 9.325304
+        },
+        "diagnostic_ms": {
+          "mean": 9.263114045544555,
+          "p95": 9.910428
+        },
+        "peak_rss_mib": 91.40625
+      },
+      {
+        "threads": 1,
+        "backend": "native",
+        "version": "before",
+        "samples": 505,
+        "build_ms": {
+          "mean": 0.00030994851485148517,
+          "p95": 0.000491
+        },
+        "evaluate_ms": {
+          "mean": 13.044481700990099,
+          "p95": 14.44114
+        },
+        "assemble_ms": {
+          "mean": 3.7107207485148517,
+          "p95": 4.169996
+        },
+        "linear_ms": {
+          "mean": 0.25568637029702973,
+          "p95": 0.282618
+        },
+        "solve_ms": {
+          "mean": 17.487230722772278,
+          "p95": 19.291427
+        },
+        "destroy_ms": {
+          "mean": 0.0001803980198019802,
+          "p95": 0.000311
+        },
+        "total_ms": {
+          "mean": 17.488315574257427,
+          "p95": 19.292358
+        },
+        "diagnostic_ms": {
+          "mean": 9.29510419009901,
+          "p95": 10.31193
+        },
+        "peak_rss_mib": 115.9296875
+      },
+      {
+        "threads": 1,
+        "backend": "native_batch",
+        "version": "before",
+        "samples": 505,
+        "build_ms": {
+          "mean": 1.1713643663366338,
+          "p95": 1.306472
+        },
+        "evaluate_ms": {
+          "mean": 3.029529128712871,
+          "p95": 3.357076
+        },
+        "assemble_ms": {
+          "mean": 3.6821909128712873,
+          "p95": 4.085778
+        },
+        "linear_ms": {
+          "mean": 0.25683829702970296,
+          "p95": 0.283329
+        },
+        "solve_ms": {
+          "mean": 7.4241603346534655,
+          "p95": 8.161138
+        },
+        "destroy_ms": {
+          "mean": 0.07991129306930693,
+          "p95": 0.105357
+        },
+        "total_ms": {
+          "mean": 8.676330235643565,
+          "p95": 9.559231
+        },
+        "diagnostic_ms": {
+          "mean": 9.27046022970297,
+          "p95": 9.992342
+        },
+        "peak_rss_mib": 133.79296875
+      },
+      {
+        "threads": 1,
+        "backend": "native_batch",
+        "version": "p1",
+        "samples": 505,
+        "build_ms": {
+          "mean": 0.8728315227722773,
+          "p95": 0.970725
+        },
+        "evaluate_ms": {
+          "mean": 3.006678499009901,
+          "p95": 3.368458
+        },
+        "assemble_ms": {
+          "mean": 3.6503190653465345,
+          "p95": 4.004977
+        },
+        "linear_ms": {
+          "mean": 0.2604681188118812,
+          "p95": 0.28911
+        },
+        "solve_ms": {
+          "mean": 7.35177199009901,
+          "p95": 8.084094
+        },
+        "destroy_ms": {
+          "mean": 0.07834915445544555,
+          "p95": 0.102622
+        },
+        "total_ms": {
+          "mean": 8.303892500990099,
+          "p95": 9.163071
+        },
+        "diagnostic_ms": {
+          "mean": 9.341391598019802,
+          "p95": 10.159504
+        },
+        "peak_rss_mib": 124.71875
+      },
+      {
+        "threads": 4,
+        "backend": "ceres_batch",
+        "version": "before",
+        "samples": 505,
+        "build_ms": {
+          "mean": 1.2944839188118813,
+          "p95": 1.457925
+        },
+        "evaluate_ms": {
+          "mean": 2.256728634975924,
+          "p95": 2.8951168060302734
+        },
+        "assemble_ms": {
+          "mean": 0.0,
+          "p95": 0.0
+        },
+        "linear_ms": {
+          "mean": 1.12470541850175,
+          "p95": 1.2350082397460938
+        },
+        "solve_ms": {
+          "mean": 4.129769001980198,
+          "p95": 4.853934
+        },
+        "destroy_ms": {
+          "mean": 0.08339732475247524,
+          "p95": 0.101189
+        },
+        "total_ms": {
+          "mean": 5.5091533287128716,
+          "p95": 6.303404
+        },
+        "diagnostic_ms": {
+          "mean": 9.229067700990099,
+          "p95": 10.006837
+        },
+        "peak_rss_mib": 91.921875
+      },
+      {
+        "threads": 4,
+        "backend": "ceres_batch",
+        "version": "p1",
+        "samples": 505,
+        "build_ms": {
+          "mean": 1.0093651742574257,
+          "p95": 1.135113
+        },
+        "evaluate_ms": {
+          "mean": 2.2535173019560255,
+          "p95": 2.9261112213134766
+        },
+        "assemble_ms": {
+          "mean": 0.0,
+          "p95": 0.0
+        },
+        "linear_ms": {
+          "mean": 1.1271811947964205,
+          "p95": 1.2328624725341797
+        },
+        "solve_ms": {
+          "mean": 4.139135457425742,
+          "p95": 4.946288
+        },
+        "destroy_ms": {
+          "mean": 0.0827962495049505,
+          "p95": 0.10118
+        },
+        "total_ms": {
+          "mean": 5.232780895049505,
+          "p95": 6.12473
+        },
+        "diagnostic_ms": {
+          "mean": 9.328179889108911,
+          "p95": 10.314523
+        },
+        "peak_rss_mib": 91.58984375
+      },
+      {
+        "threads": 4,
+        "backend": "native",
+        "version": "before",
+        "samples": 505,
+        "build_ms": {
+          "mean": 0.000758219801980198,
+          "p95": 0.001463
+        },
+        "evaluate_ms": {
+          "mean": 3.8183839564356434,
+          "p95": 4.776019
+        },
+        "assemble_ms": {
+          "mean": 3.850944615841584,
+          "p95": 4.624736
+        },
+        "linear_ms": {
+          "mean": 0.2588849425742574,
+          "p95": 0.29434
+        },
+        "solve_ms": {
+          "mean": 8.391632647524753,
+          "p95": 9.87964
+        },
+        "destroy_ms": {
+          "mean": 0.017696815841584158,
+          "p95": 0.000301
+        },
+        "total_ms": {
+          "mean": 8.410677085148516,
+          "p95": 10.006557
+        },
+        "diagnostic_ms": {
+          "mean": 9.360260586138613,
+          "p95": 10.479932
+        },
+        "peak_rss_mib": 117.09375
+      },
+      {
+        "threads": 4,
+        "backend": "native_batch",
+        "version": "before",
+        "samples": 505,
+        "build_ms": {
+          "mean": 1.1966228851485148,
+          "p95": 1.362938
+        },
+        "evaluate_ms": {
+          "mean": 1.736855405940594,
+          "p95": 2.217515
+        },
+        "assemble_ms": {
+          "mean": 3.7336091762376236,
+          "p95": 4.414383
+        },
+        "linear_ms": {
+          "mean": 0.262208500990099,
+          "p95": 0.289952
+        },
+        "solve_ms": {
+          "mean": 6.2208189603960395,
+          "p95": 7.083502
+        },
+        "destroy_ms": {
+          "mean": 0.09070257227722772,
+          "p95": 0.109846
+        },
+        "total_ms": {
+          "mean": 7.50913220990099,
+          "p95": 8.507003
+        },
+        "diagnostic_ms": {
+          "mean": 9.353496647524752,
+          "p95": 10.453243
+        },
+        "peak_rss_mib": 132.66015625
+      },
+      {
+        "threads": 4,
+        "backend": "native_batch",
+        "version": "p1",
+        "samples": 505,
+        "build_ms": {
+          "mean": 0.8782887841584158,
+          "p95": 1.008716
+        },
+        "evaluate_ms": {
+          "mean": 1.7048371821782178,
+          "p95": 2.154197
+        },
+        "assemble_ms": {
+          "mean": 3.6132984554455447,
+          "p95": 3.976925
+        },
+        "linear_ms": {
+          "mean": 0.2610322376237624,
+          "p95": 0.290323
+        },
+        "solve_ms": {
+          "mean": 6.021900283168317,
+          "p95": 6.773343
+        },
+        "destroy_ms": {
+          "mean": 0.0762920198019802,
+          "p95": 0.100638
+        },
+        "total_ms": {
+          "mean": 6.9774095287128715,
+          "p95": 7.821402
+        },
+        "diagnostic_ms": {
+          "mean": 9.35991286930693,
+          "p95": 10.28109
+        },
+        "peak_rss_mib": 124.078125
+      },
+      {
+        "threads": 8,
+        "backend": "ceres_batch",
+        "version": "before",
+        "samples": 505,
+        "build_ms": {
+          "mean": 1.3606504257425742,
+          "p95": 1.520934
+        },
+        "evaluate_ms": {
+          "mean": 1.2808743089732557,
+          "p95": 1.7442703247070312
+        },
+        "assemble_ms": {
+          "mean": 0.0,
+          "p95": 0.0
+        },
+        "linear_ms": {
+          "mean": 1.1469637993538733,
+          "p95": 1.2619495391845703
+        },
+        "solve_ms": {
+          "mean": 3.3532731445544552,
+          "p95": 3.925398
+        },
+        "destroy_ms": {
+          "mean": 0.1337984198019802,
+          "p95": 0.155952
+        },
+        "total_ms": {
+          "mean": 4.8494150930693065,
+          "p95": 5.492498
+        },
+        "diagnostic_ms": {
+          "mean": 9.280018592079207,
+          "p95": 10.17951
+        },
+        "peak_rss_mib": 91.9453125
+      },
+      {
+        "threads": 8,
+        "backend": "ceres_batch",
+        "version": "p1",
+        "samples": 505,
+        "build_ms": {
+          "mean": 1.1740510178217822,
+          "p95": 1.773345
+        },
+        "evaluate_ms": {
+          "mean": 1.336582580415329,
+          "p95": 1.8589496612548828
+        },
+        "assemble_ms": {
+          "mean": 0.0,
+          "p95": 0.0
+        },
+        "linear_ms": {
+          "mean": 1.2140868914009322,
+          "p95": 1.6231536865234375
+        },
+        "solve_ms": {
+          "mean": 3.5154876693069306,
+          "p95": 4.555746
+        },
+        "destroy_ms": {
+          "mean": 0.14094818811881188,
+          "p95": 0.173364
+        },
+        "total_ms": {
+          "mean": 4.832260237623762,
+          "p95": 6.441001
+        },
+        "diagnostic_ms": {
+          "mean": 10.555014526732673,
+          "p95": 16.523579
+        },
+        "peak_rss_mib": 92.33984375
+      },
+      {
+        "threads": 8,
+        "backend": "native",
+        "version": "before",
+        "samples": 505,
+        "build_ms": {
+          "mean": 0.0007633366336633663,
+          "p95": 0.001863
+        },
+        "evaluate_ms": {
+          "mean": 2.6218070792079207,
+          "p95": 3.359
+        },
+        "assemble_ms": {
+          "mean": 4.020442758415841,
+          "p95": 4.829799
+        },
+        "linear_ms": {
+          "mean": 0.2686366693069307,
+          "p95": 0.32649
+        },
+        "solve_ms": {
+          "mean": 7.480562077227723,
+          "p95": 8.93308
+        },
+        "destroy_ms": {
+          "mean": 0.00017696633663366338,
+          "p95": 0.0003
+        },
+        "total_ms": {
+          "mean": 7.4821304356435645,
+          "p95": 8.934261
+        },
+        "diagnostic_ms": {
+          "mean": 9.642354500990098,
+          "p95": 10.716794
+        },
+        "peak_rss_mib": 116.078125
+      },
+      {
+        "threads": 8,
+        "backend": "native_batch",
+        "version": "before",
+        "samples": 505,
+        "build_ms": {
+          "mean": 1.2365184554455446,
+          "p95": 1.421938
+        },
+        "evaluate_ms": {
+          "mean": 1.2073685683168316,
+          "p95": 1.600712
+        },
+        "assemble_ms": {
+          "mean": 3.9909585465346535,
+          "p95": 4.726516
+        },
+        "linear_ms": {
+          "mean": 0.2637850950495049,
+          "p95": 0.290473
+        },
+        "solve_ms": {
+          "mean": 6.027821247524752,
+          "p95": 7.069425
+        },
+        "destroy_ms": {
+          "mean": 0.09660312673267327,
+          "p95": 0.108372
+        },
+        "total_ms": {
+          "mean": 7.3619717564356435,
+          "p95": 8.497855
+        },
+        "diagnostic_ms": {
+          "mean": 9.409985891089109,
+          "p95": 10.537289
+        },
+        "peak_rss_mib": 124.046875
+      },
+      {
+        "threads": 8,
+        "backend": "native_batch",
+        "version": "p1",
+        "samples": 505,
+        "build_ms": {
+          "mean": 0.9122055762376238,
+          "p95": 1.04848
+        },
+        "evaluate_ms": {
+          "mean": 1.215565706930693,
+          "p95": 1.586857
+        },
+        "assemble_ms": {
+          "mean": 4.025969304950495,
+          "p95": 4.835128
+        },
+        "linear_ms": {
+          "mean": 0.2634477386138614,
+          "p95": 0.293468
+        },
+        "solve_ms": {
+          "mean": 6.0317134,
+          "p95": 7.138515
+        },
+        "destroy_ms": {
+          "mean": 0.08731471089108911,
+          "p95": 0.108483
+        },
+        "total_ms": {
+          "mean": 7.0322176732673265,
+          "p95": 8.201622
+        },
+        "diagnostic_ms": {
+          "mean": 9.448673988118811,
+          "p95": 10.7466
+        },
+        "peak_rss_mib": 131.828125
+      },
+      {
+        "threads": 16,
+        "backend": "ceres_batch",
+        "version": "before",
+        "samples": 505,
+        "build_ms": {
+          "mean": 1.2952400178217822,
+          "p95": 1.458927
+        },
+        "evaluate_ms": {
+          "mean": 0.9327562728730758,
+          "p95": 1.2197494506835938
+        },
+        "assemble_ms": {
+          "mean": 0.0,
+          "p95": 0.0
+        },
+        "linear_ms": {
+          "mean": 1.155752710776754,
+          "p95": 1.260995864868164
+        },
+        "solve_ms": {
+          "mean": 3.2477228376237623,
+          "p95": 3.702632
+        },
+        "destroy_ms": {
+          "mean": 0.20551443564356436,
+          "p95": 0.250608
+        },
+        "total_ms": {
+          "mean": 4.750165336633663,
+          "p95": 5.340483
+        },
+        "diagnostic_ms": {
+          "mean": 9.27480091881188,
+          "p95": 10.174299
+        },
+        "peak_rss_mib": 92.60546875
+      },
+      {
+        "threads": 16,
+        "backend": "ceres_batch",
+        "version": "p1",
+        "samples": 505,
+        "build_ms": {
+          "mean": 1.0253051861386138,
+          "p95": 1.308175
+        },
+        "evaluate_ms": {
+          "mean": 0.9141988093310064,
+          "p95": 1.1699199676513672
+        },
+        "assemble_ms": {
+          "mean": 0.0,
+          "p95": 0.0
+        },
+        "linear_ms": {
+          "mean": 1.1717484729124767,
+          "p95": 1.3699531555175781
+        },
+        "solve_ms": {
+          "mean": 3.250881310891089,
+          "p95": 3.767102
+        },
+        "destroy_ms": {
+          "mean": 0.2129156099009901,
+          "p95": 0.256961
+        },
+        "total_ms": {
+          "mean": 4.490795605940594,
+          "p95": 5.239665
+        },
+        "diagnostic_ms": {
+          "mean": 9.739975295049504,
+          "p95": 11.183215
+        },
+        "peak_rss_mib": 92.68359375
+      },
+      {
+        "threads": 16,
+        "backend": "native",
+        "version": "before",
+        "samples": 505,
+        "build_ms": {
+          "mean": 0.0003519960396039604,
+          "p95": 0.000541
+        },
+        "evaluate_ms": {
+          "mean": 1.7024460693069308,
+          "p95": 2.077914
+        },
+        "assemble_ms": {
+          "mean": 4.096862172277228,
+          "p95": 4.75033
+        },
+        "linear_ms": {
+          "mean": 0.254203099009901,
+          "p95": 0.280495
+        },
+        "solve_ms": {
+          "mean": 6.634113914851485,
+          "p95": 7.678634
+        },
+        "destroy_ms": {
+          "mean": 0.000131190099009901,
+          "p95": 0.00023
+        },
+        "total_ms": {
+          "mean": 6.635250255445545,
+          "p95": 7.679746
+        },
+        "diagnostic_ms": {
+          "mean": 9.324961766336633,
+          "p95": 10.512571
+        },
+        "peak_rss_mib": 108.8359375
+      },
+      {
+        "threads": 16,
+        "backend": "native_batch",
+        "version": "before",
+        "samples": 505,
+        "build_ms": {
+          "mean": 1.2439259683168318,
+          "p95": 1.398875
+        },
+        "evaluate_ms": {
+          "mean": 0.9174523821782178,
+          "p95": 1.237092
+        },
+        "assemble_ms": {
+          "mean": 4.253931788118812,
+          "p95": 4.812225
+        },
+        "linear_ms": {
+          "mean": 0.2599539306930693,
+          "p95": 0.292217
+        },
+        "solve_ms": {
+          "mean": 6.090585201980198,
+          "p95": 6.964639
+        },
+        "destroy_ms": {
+          "mean": 0.09046890495049505,
+          "p95": 0.111608
+        },
+        "total_ms": {
+          "mean": 7.425860807920792,
+          "p95": 8.354898
+        },
+        "diagnostic_ms": {
+          "mean": 9.278644944554456,
+          "p95": 10.292801
+        },
+        "peak_rss_mib": 132.00390625
+      },
+      {
+        "threads": 16,
+        "backend": "native_batch",
+        "version": "p1",
+        "samples": 505,
+        "build_ms": {
+          "mean": 0.9516820138613862,
+          "p95": 1.103153
+        },
+        "evaluate_ms": {
+          "mean": 0.9476798534653466,
+          "p95": 1.279181
+        },
+        "assemble_ms": {
+          "mean": 4.233649354455445,
+          "p95": 4.827334
+        },
+        "linear_ms": {
+          "mean": 0.2607509346534653,
+          "p95": 0.292797
+        },
+        "solve_ms": {
+          "mean": 6.004473289108911,
+          "p95": 6.953238
+        },
+        "destroy_ms": {
+          "mean": 0.09285086930693069,
+          "p95": 0.105126
+        },
+        "total_ms": {
+          "mean": 7.04994201980198,
+          "p95": 8.041983
+        },
+        "diagnostic_ms": {
+          "mean": 9.33285377029703,
+          "p95": 10.311896
+        },
+        "peak_rss_mib": 130.63671875
+      }
+    ],
+    "paired": [
+      {
+        "threads": 1,
+        "backend": "native_batch",
+        "max_relative_cost_difference": 0.0,
+        "build_ms_reduction_percent": 25.485907898837546,
+        "total_ms_reduction_percent": 4.292572142118811
+      },
+      {
+        "threads": 1,
+        "backend": "ceres_batch",
+        "max_relative_cost_difference": 0.0,
+        "build_ms_reduction_percent": 29.080284265453805,
+        "total_ms_reduction_percent": 4.851048939720981
+      },
+      {
+        "threads": 4,
+        "backend": "native_batch",
+        "max_relative_cost_difference": 0.0,
+        "build_ms_reduction_percent": 26.60270875152032,
+        "total_ms_reduction_percent": 7.081013708708284
+      },
+      {
+        "threads": 4,
+        "backend": "ceres_batch",
+        "max_relative_cost_difference": 0.0,
+        "build_ms_reduction_percent": 22.02566910341742,
+        "total_ms_reduction_percent": 5.016604497517896
+      },
+      {
+        "threads": 8,
+        "backend": "native_batch",
+        "max_relative_cost_difference": 0.0,
+        "build_ms_reduction_percent": 26.227904466744402,
+        "total_ms_reduction_percent": 4.479154417837239
+      },
+      {
+        "threads": 8,
+        "backend": "ceres_batch",
+        "max_relative_cost_difference": 0.0,
+        "build_ms_reduction_percent": 13.713985928380945,
+        "total_ms_reduction_percent": 0.3537510218513118
+      },
+      {
+        "threads": 16,
+        "backend": "native_batch",
+        "max_relative_cost_difference": 0.0,
+        "build_ms_reduction_percent": 23.493677429283334,
+        "total_ms_reduction_percent": 5.062292410838587
+      },
+      {
+        "threads": 16,
+        "backend": "ceres_batch",
+        "max_relative_cost_difference": 0.0,
+        "build_ms_reduction_percent": 20.840525923304977,
+        "total_ms_reduction_percent": 5.460225325059498
+      }
+    ]
+  },
+  "validation": {
+    "H": {
+      "count": 303,
+      "maximum": 1.40977e-15
+    },
+    "gradient": {
+      "count": 303,
+      "maximum": 2.34173e-12
+    },
+    "cost": {
+      "count": 505,
+      "maximum": 1.01592e-10
+    },
+    "B_C_max_state_error": {
+      "count": 202,
+      "maximum": 1.24083e-12
+    },
+    "A_D_max_state_error": {
+      "count": 202,
+      "maximum": 2.87176e-11
+    }
+  },
+  "manifest": {
+    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "threads": [
+      1,
+      4,
+      8,
+      16
+    ],
+    "rounds": 5,
+    "variants": {
+      "before": {
+        "binary": "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+        "binary_sha256": "2e46e6067d23d0cd3e2857719ab07688752d359a93d7235ca29beeff5df7bd28",
+        "library": "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/libslict_comparison.so",
+        "library_sha256": "ec088fdc342c9ba309544b15c5ad6608f5ddefe244d811e1470c73fc25490129",
+        "source_sha256": {
+          "src/comparison/evaluators.h": "570f547264f2320b7fb13ef4e6dd5749cd674652a23a2dd0e3958668eeb74d34",
+          "src/comparison/snapshot_io.cpp": "26d9fe91a99bf2eb2d7e6b7ac5cdb111b26927b0a3323dad51dc56ffc665d000",
+          "src/comparison/problem.cpp": "aa283b5957776e5c439f1c263b542dbf8dd4f5a77d7a68a779fc3927e01b2212",
+          "src/comparison/native_batch.cpp": "b5e0bd3870eb8ebd10b8a32db277e003b3b40d9c6390f31bde3404710fef85e9",
+          "src/comparison/benchmark.cpp": "e901d344d373ac6d09e71ae8e72de2ea2a3b53d59d9abd7fd96a7b6e2b151bbc",
+          "src/comparison/native.cpp": "7d21a2e47293a12a8607f1be047bf7a2f2ca07c8e1d269e77d3a6cd2366033e3",
+          "src/comparison/construction_benchmark.cpp": "81e85cc554f3672c761d9a4773b4e80d17f3a819a57bd5c9146b83fd4978d082",
+          "src/comparison/internal.h": "87e4fe8470f7a9b321c390637392be5e1094b4609ff840c97b1e389bbea25825",
+          "src/comparison/ceres_backend.cpp": "41d445426c78a6c1f7905e666ee5f25f9c3b528b2d5313ccc4d94877b592f9c6",
+          "src/comparison/ros_bridge.cpp": "dc46dc86c773a6ca11581c72aac4cb67e69413645951bfbf5ded721ce0b4f41d",
+          "third_party/splbatch/include/splbatch/jacobian_structure.hpp": "62d2219944fd26d28e1b6ac6273b48d7dd2e3529a77652d875ca075cdc177eaa",
+          "third_party/splbatch/include/splbatch/incremental_problem_batcher.hpp": "a74df95295007251d010453622478be3e1edc62a629d57f850984ba04f5b3dbd",
+          "third_party/splbatch/include/splbatch/problem_batcher.hpp": "c38d63b417a30da78c1d4b27335b138f546c092107dbbc7323e6bc5fcc17b522",
+          "third_party/splbatch/include/splbatch/batch_binding.hpp": "201745943f66c1376383010e68b99c4686f2fdd64dc46982c182d90c0466f8a8",
+          "third_party/splbatch/include/splbatch/evaluator_base.hpp": "1d4702e0ddb33ba5d3532eb301a5c51fa88893eed3d71b7700443c3427460e91",
+          "third_party/splbatch/include/splbatch/incremental_diagnostics.hpp": "3903d084ffdea981dc07049f6e0b5d085274abd6891e9d641b697fe0a283f3e1",
+          "third_party/splbatch/include/splbatch/construction_diagnostics.hpp": "86b4f39fba52614ef230d1416566b8bf6147c61dc05760a53a23a9e2afa6d307",
+          "third_party/splbatch/include/splbatch/jacobian_writer.hpp": "7f3f264bf787222614a8425de7c55a37dca7a1006bba5e6e413690434daf6d9e",
+          "third_party/splbatch/include/splbatch/residual_registry.hpp": "51848b362086af08d8c612b52f226cd9b319fe2cd6305b2be22e33c193ad23c9",
+          "third_party/splbatch/include/splbatch/loss_policy.hpp": "6d7000a4272b5dc05e15a7eff65c4c15e3ee17297515f71cbfbca690405acc23",
+          "third_party/splbatch/include/splbatch/compressed_segment_batch_cost_function.hpp": "71ce30bb3d33db4009c42a6a7466e72677369830823b594e3c6a88af9b00a552",
+          "third_party/splbatch/include/splbatch/evaluation_request.hpp": "75d2a8da272079f5f9dab28cb24a384318196128f88644561221b6ac2b8a789f",
+          "third_party/splbatch/include/splbatch/segment_batch_cost_function.hpp": "60c9d2b185e6e7f320846677da18ef827e534c76b1912895ba6a4eadc803f924",
+          "third_party/splbatch/include/splbatch/dense_jacobian_structure_adapter.hpp": "958d68274934ff2a64e61e1dbce289b0425bd870b44c21fb62dd1c247ef87f2d",
+          "third_party/splbatch/include/splbatch/normal_equation_compressor.hpp": "981fc593ba98935b6fdc623f26c865d9bacf2c108248f6bba53bff49c91a8651"
+        }
+      },
+      "p1": {
+        "binary": "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+        "binary_sha256": "d94254591f94a1ced2c9e56752ef2f7bc5e51bbec2ef102c4b2da24dd434557d",
+        "library": "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/libslict_comparison.so",
+        "library_sha256": "a8bb55a7791749c36ca2b4dbdea2a3d8b0c14800ef0979392ba36c1a19d4f92e",
+        "source_sha256": {
+          "src/comparison/evaluators.h": "570f547264f2320b7fb13ef4e6dd5749cd674652a23a2dd0e3958668eeb74d34",
+          "src/comparison/snapshot_io.cpp": "26d9fe91a99bf2eb2d7e6b7ac5cdb111b26927b0a3323dad51dc56ffc665d000",
+          "src/comparison/problem.cpp": "aa283b5957776e5c439f1c263b542dbf8dd4f5a77d7a68a779fc3927e01b2212",
+          "src/comparison/native_batch.cpp": "b5e0bd3870eb8ebd10b8a32db277e003b3b40d9c6390f31bde3404710fef85e9",
+          "src/comparison/benchmark.cpp": "e901d344d373ac6d09e71ae8e72de2ea2a3b53d59d9abd7fd96a7b6e2b151bbc",
+          "src/comparison/native.cpp": "7d21a2e47293a12a8607f1be047bf7a2f2ca07c8e1d269e77d3a6cd2366033e3",
+          "src/comparison/construction_benchmark.cpp": "81e85cc554f3672c761d9a4773b4e80d17f3a819a57bd5c9146b83fd4978d082",
+          "src/comparison/internal.h": "87e4fe8470f7a9b321c390637392be5e1094b4609ff840c97b1e389bbea25825",
+          "src/comparison/ceres_backend.cpp": "41d445426c78a6c1f7905e666ee5f25f9c3b528b2d5313ccc4d94877b592f9c6",
+          "src/comparison/ros_bridge.cpp": "dc46dc86c773a6ca11581c72aac4cb67e69413645951bfbf5ded721ce0b4f41d",
+          "third_party/splbatch/include/splbatch/jacobian_structure.hpp": "62d2219944fd26d28e1b6ac6273b48d7dd2e3529a77652d875ca075cdc177eaa",
+          "third_party/splbatch/include/splbatch/incremental_problem_batcher.hpp": "a74df95295007251d010453622478be3e1edc62a629d57f850984ba04f5b3dbd",
+          "third_party/splbatch/include/splbatch/problem_batcher.hpp": "a705cf27d29fce18d0bbc35cf85cf68e4e91aaa16c9e83d4af5e08580b21183a",
+          "third_party/splbatch/include/splbatch/batch_binding.hpp": "0050157180d3ae2dc65feabf118affca68fdda628b57e44fbe8e0646501ec714",
+          "third_party/splbatch/include/splbatch/evaluator_base.hpp": "1d4702e0ddb33ba5d3532eb301a5c51fa88893eed3d71b7700443c3427460e91",
+          "third_party/splbatch/include/splbatch/incremental_diagnostics.hpp": "3903d084ffdea981dc07049f6e0b5d085274abd6891e9d641b697fe0a283f3e1",
+          "third_party/splbatch/include/splbatch/construction_diagnostics.hpp": "86b4f39fba52614ef230d1416566b8bf6147c61dc05760a53a23a9e2afa6d307",
+          "third_party/splbatch/include/splbatch/jacobian_writer.hpp": "7f3f264bf787222614a8425de7c55a37dca7a1006bba5e6e413690434daf6d9e",
+          "third_party/splbatch/include/splbatch/residual_registry.hpp": "51848b362086af08d8c612b52f226cd9b319fe2cd6305b2be22e33c193ad23c9",
+          "third_party/splbatch/include/splbatch/loss_policy.hpp": "6d7000a4272b5dc05e15a7eff65c4c15e3ee17297515f71cbfbca690405acc23",
+          "third_party/splbatch/include/splbatch/compressed_segment_batch_cost_function.hpp": "71ce30bb3d33db4009c42a6a7466e72677369830823b594e3c6a88af9b00a552",
+          "third_party/splbatch/include/splbatch/evaluation_request.hpp": "75d2a8da272079f5f9dab28cb24a384318196128f88644561221b6ac2b8a789f",
+          "third_party/splbatch/include/splbatch/segment_batch_cost_function.hpp": "60c9d2b185e6e7f320846677da18ef827e534c76b1912895ba6a4eadc803f924",
+          "third_party/splbatch/include/splbatch/dense_jacobian_structure_adapter.hpp": "958d68274934ff2a64e61e1dbce289b0425bd870b44c21fb62dd1c247ef87f2d",
+          "third_party/splbatch/include/splbatch/normal_equation_compressor.hpp": "981fc593ba98935b6fdc623f26c865d9bacf2c108248f6bba53bff49c91a8651"
+        }
+      }
+    },
+    "runs": [
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "0",
+          "--validate",
+          "101",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t4_r-1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "4103596e00b8d75ace35e948840409fea4eb43a94c59eefa7898a4d676804a82",
+        "validation": true
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t1_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "dc4118178113639bc9e85bc701e082139b7f7688a0f93c5dbe9cc5c907224b89",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t1_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "7b05ea8d8791e009dc7b7c26b6f77140f56e5ad49825f543c2ecf6f295fbeb93",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t1_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "8304c63050b76fad7bc523668e85e7b907c056ee95361bb8c2271c8e450abdfd",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t1_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "4ac339549eae837ea0f6c7bf66221e987f4a2babb3e4da20f9994488d3bdb75c",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t1_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "f2eac740c3ef6aaa232b218d4b3e8878fe039973647cf6b514a28dc74958391f",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t1_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "194f3fd168f87a9774b98e830e89bff58ddbb0ff2810eda872b9d5f7ed4cefcf",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t1_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "ab5e1003d141684abd26e29943b7f8a37d2c257535283e7c9d4f5d8b5d54783c",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t1_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "7d5571ad15edc931e93ff30f218e487d095e206f779e72761e57ca868ab634ab",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t1_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "acfe64da7f9b11851364a711e309540cdbad384ab38dc800abc07b21203633f4",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t1_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "57c2b4e7cc89fd8a13029eba733eb9b7a172ccb2d8661d52dc9ad37f625ac647",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t1_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "cc92461c2ee4c0c12d67ab7e6dd825dd65739e0f8a87c6acdffde32f38348153",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t1_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "1f680111f8468b01f7c35b0b1709fd4ca80f664be41470c34d4daed56e30503c",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t1_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "973b7cd1c0c8b5a0af85ec8333f578a1cf4700344effbe065c68c5617122b8db",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t1_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "48471b319cee1e2b97608f6d7fe2f27c2b321a11bfd003f488aea1da98303c5f",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t1_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "99daa9587e1cd26a7e77b7e7287d507056a1bed1561f4faf2405d1749f8f0c8b",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t1_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "c18e16803826cef016515f8e8efdc54bc5dd3b44acdbbfed9bfd1f5d42110ae9",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t1_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "1a70a4808690b144eb79630d7a90b5c382fb8f3b7780e13d9fbe4e776776b59d",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t1_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "a57c4e7abfcaef4a17a9bc46c363dd3185f021850c6a8345a7105d7537c51b09",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t1_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "fe96118d6e334a18949ad2b225533027113194dcbc4441852ff2d7fd8ad0350a",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t1_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "6101f4d82ae5e65527222ea1ab7e550b38ef9dbb194b8be4da95742bb6c0ceec",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t1_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "864fabc6ebdc12f97d4d6d48a71823427ac883bc2b3e893d1ff58a4b2a92b13a",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t1_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "37f2678fd113e1b801c715bfa94839b66137a1f8a8470985d41a71523f885b4d",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t1_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "6543ca105de4cdeb394c6bc11c46890934ea99856c508b7e9ec1a0741f1bfccb",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t1_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "04cc60de552a1dc4e251b593a83f65f12cc63eb0128f61b21e3290d54d2a5c85",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "1",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t1_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "359cfa5eab96793bb9ae1c7aad19c429532a0dfab1ca4cd6d9eac4e7d84bf0ab",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t4_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "2eed78a5fa2a4a90adf7f9fcaee988f24fc9f8de6a8ab5f76d7746c9cdfdb73c",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t4_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "2520b63ba0aef009de659b4e6fa108786754ad553c75539b5671e6cf0e08f7aa",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t4_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "b06a38212e6b2261e046840a7434b571527d06f2b566bf687817ed360aa8359a",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t4_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "1fc0ddbc7f79dbdb666e69da9fffbda18fd65e88c5967a9757d9c8e671973780",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t4_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "ff8501f1c6428c29f439db4c5f1a59109d663d59eb80f428ce2bad2d86499f34",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t4_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "47dbc9d9bdd9a0f99c906dac54fe439f501fa8fefbe2c4d80a6dd04a0e6043cd",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t4_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "2fb69ea05dc92cd2b4ca6f101c14b5e29f4d0d8f4acf59c0f49169458b8e42a4",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t4_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "65d6e700f5c797b604aeee691bb9114072aa66512695a97dfe4a5dc62276915a",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t4_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "88d8d3f2b4e0c2ae485db173821636db830c4bda48a6777e58ce2c857c82b909",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t4_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "53e12eb15cce3d879a4834a3afa441151f3660b9bddceef198a59947854a5056",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t4_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "e4c75d4b05fb826e3589cc68eff42741e9b0597c2f952c13a2a48fd44b8630b9",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t4_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "7912b62084375723478c0c571eb5870d1524c97170214f7ebbaa28623606afb1",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t4_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "81cd46b54378d91d908243b01b4b5fbbbc3b7814f257329fc589b02fd302ec30",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t4_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "d69ad202cd7b5356caebb0195a6eae267eb10620cd9ff55aab1ba0009cbbe152",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t4_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "07152461cb1fcd73dcd984aacdfe3ce335064c42d2af34dfdfad13edc3757893",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t4_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "037793e7875b5100c9f38d4c5bce6b6288f07e42764bb35dd5a6113c8b8d21a1",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t4_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "9d978977c593f02378dbe29782e71ba1532fdecc0f5a2481a2f472b3c2b1c1c2",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t4_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "4f4803c5e7b692f59639f1c5156079527a7b64b52536592736c2a363a8016b97",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t4_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "2c4f6aa261f06d04ca7f3d19867daffd57718f4ead9db7e97edef5687e828bfd",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t4_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "689bd076c1aa8a5a78e95e239b0850e28600a53dea35c2338c7ecd6eac6f1919",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t4_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "41c1595d3e35a9eee6a6d5e4fd04940d852d2046a5c84c6ee411e59326185d35",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t4_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "07e34f77c364a98850828940fb588b87b890b453d0d0fdddecdcb15f6f9419ae",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t4_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "41635e166a6d1c461d827ce5be1e31bd470fde5236dcd2ac0b12fa67fd31b778",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t4_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "f3f399b8d9499dde3b6f8325139f50fd80e11ae729b26b2a5dc42f520bcb0ece",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "4",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t4_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "8cb76dcf5836e2061244bbd2ddad37dceff002d3bc1d6890c7bba0204b94d6c6",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t8_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "2eca7fb26076f68c92f7029c3560cd072c6a4322ccf0cb4ced469cbb93864a15",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t8_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "7de214fa186b85f54563c20d6df4caa4835a5bc66a6fe1af57525baaccfaf806",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t8_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "6bb77dc5243155227320af17be4d632abda374ac4fd10071e47a587e87f9341f",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t8_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "f99c64aca83f6ddd7c850fd2e5a059d66a4c61acd49e0f9b3fdcd7ea86d8415c",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t8_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "addb0e1f2b4050c7e8a902d55549e1dac56932850a8f067ac1537cc8272d4d4e",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t8_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "a124f59ba8f2ab2f9e886d0bc5de396d9a6aed7a3c75c2451e279622d5c23e6c",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t8_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "754fe2469098d47dcc7d01433d3cf36a1940ca71746edd8709a861bf5073cdbb",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t8_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "1c899d5dbd5e5244adb867f473d9a1476342976dd73f9b43ab236c3fd9ad32a4",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t8_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "ce8eb792f96e5a49143ff65b191320463b499df0eb0ec5df2bfeddcad0c8d8dc",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t8_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "719a3ffa0eddaafdce46abf4f7b313fcd055090d8141daae3c64c43eb3500463",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t8_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "33929ac19378001a6c700259688482c668b8ccfb42787d686eda3f56abf2c745",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t8_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "43d6a6f0612c8ad97e003446e3fbcdadfa86ccb07b72468a8171d93969f634ac",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t8_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "a9841772d86654592063704f8d3d5b4320e194457fe1f535c72cacc8aab84683",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t8_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "de84c28ab0ea89584b81623d67acef2a3fef236fe901aaa8c74e0b27e31dd0b7",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t8_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "6d7f6bbeaa9a3c25ed78982dfd666d8654dc7791a05dc42516dbe2010ae44b26",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t8_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "85fa72f116583fe48ed6eb3a7577477061bb409dae2ed4ff557a32d229bfec47",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t8_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "44e343d5b71fb14f70cf3e565e192e24e7b3d1dd1b03a308957bc68713b84878",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t8_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "e4f0195e940d538ebe79772d2c9cd0c9d0fab7f61f613e057bac2b6cb205ab16",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t8_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "a2951e6867fa0b859df746004e498079b601faa76b2f67d5a22bfbbad99438a3",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t8_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "1514a7de100e83a07f1c2b9dc6d563c2f43b3e944c3c4989ef2621976cc74c78",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t8_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "00dca705e12f1a7fe973d17a108e067ef0e826d6a875fe9d8331c702abcc488f",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t8_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "85127e59b09d16b6319ca6323e0c9be206379b2d4ae856a5735124d73066658a",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t8_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "cd74d9057692e43b8da695bd315d03d159105b628119f97cc033535eba61e9a1",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t8_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "a22af146478c81beb286c7af6fb88ce8a0a9a7693eeb2bd153a82ae0d4f88410",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "8",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t8_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "187f515bb7f66d805670885d3403eb84b1370dc500a3dc7f75f863e0988151a6",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t16_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "432b664c476fd5fa2a9864ed738db76eb3a0a2e28243ea5b50da52d7af023b5e",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t16_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "0211e681b63362954bfad2287d07b1fa83c24329c17ce2cc53b116af5437775c",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t16_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "7fa6df1a81b0a7a6de87476e2eeae90e12fbcec2b61c8301d7ef8c8eeacce76a",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t16_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "efe99658e30b015a98995304cd5f67a8e8e808dc90f9a0e947a872d83878506c",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t16_r0.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "c8775807ad24f0aa4cad1713e83846d9329bb51687f33720a64d7803b514f007",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t16_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "4eb99d1e7e9f031312837d70b16d0eec5bf7cb507585a36bf9d24f7902462861",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t16_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "20294119053b06b2b025e66a7cd41174d9f9a5df838d841dca99c12cc47c5ec2",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t16_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "d808f3b3391e013cf22f5fe24590f1162f364acc20abdaa01f617fef19f0a5b0",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t16_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "305fa8dab65a0890a72480c25393154a0078607d4012f4765d886a50c9c9d8a8",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t16_r1.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "eae7899aa9e3cf97050a412e5b38e315eb368214dd4ff078db3d1b293f034e0a",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t16_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "2b4b78c16aaba6f628c36d28f1cc9730e8b714863ad210d98f5801c08c713d76",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t16_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "5be7606d3e29ecd6e266913610fe5cbecd819da7645cfd8e66f88fe3806b9890",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t16_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "404b9d1a7afb0208338899855f4efe771e49f733e945160f9a2622c2dbc597dc",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t16_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "dbd37814b5ec1926cf256c96bda8e4445c0362c63c5beaa0b337c5005a8b0a29",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t16_r2.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "71a950a33e17b615082316e6d1080ab271dc11972cd30b7d9fa7b5507c5995b6",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t16_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "76c3a50fed38465996d519858e1f62faf77f9b058eb20830c15d3464dd95d330",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t16_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "86a3ec6b1cda5195a59fb2de972403b211571f4fb1a822c42af08f4a54f2bea3",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t16_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "08e107a26db3583ac5add14b7045ef3f69d13af6751605318e8d7df0acf42ed4",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t16_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "0ba132fc74a1c7ee62bf2ed43f89a81265ce5a9ba124c3058699e47d7dcab2c0",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t16_r3.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "1daeb7aab43fa357e65f1514984ad65c7ef12288bcb4187abd919d271426ab40",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_native_batch_t16_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "0d9e8f23945fcbeaca9d2dfe14fa7694f38dcc7fbbf035fcbc100c3e15f00934",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_t16_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "29ba6a1d0bb1ce10d9332962e88d885222e6358cc2b755e0b253565e97697a0f",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_ceres_batch_t16_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "a6b6c9ccfd017147b4361536842d12b22eafbcd57dc4af2b037e1f47c585ec04",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "ceres_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/p1_ceres_batch_t16_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "749164f97c851b2c9e92f6c9899f7a1fb8fa66bb92a7e50f2db8360f4873fc3a",
+        "validation": false
+      },
+      {
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_solver_benchmark",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--backend",
+          "native_batch",
+          "--threads",
+          "16",
+          "--iterations",
+          "1",
+          "--repeat",
+          "1",
+          "--warmup",
+          "1",
+          "--validate",
+          "0",
+          "--max-snapshots",
+          "101",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_frozen/before_native_batch_t16_r4.csv"
+        ],
+        "rows": 101,
+        "csv_sha256": "beea186f454c7f05a53369c8369b57be84319929885a5ff176a3bcaa8bfccde7",
+        "validation": false
+      }
+    ],
+    "controlled_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_MAX_ACTIVE_LEVELS": "1"
+    },
+    "timing": "No construction probes. Independent processes, full warmup pass, one solver step; rotated A, before/after C and before/after D. No overlapping measured processes.",
+    "snapshots": {
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000001.slict": "8e8d60be1c61ff9cc3bab4286dff3857612971dbd0f71858460b9b1bc000717a",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000019.slict": "ef2781cc673a6ceca015ab8cb921df4edcfa65e37aa764d5fec50a120ceacd10",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000037.slict": "cc0e6ec9a7bcf2888381ff5d630cdafa4dfa1b36aab013bba89f83b82a63e5ea",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000055.slict": "6983c54dae07f3c4918c29e89790ef3c8f22dd7ca60dbb5d890e99ac7391ad2a",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000073.slict": "48b395e0ad78c8125fd24c26ced4f5fa3d2af2b0f33b7b96daa34d3c06fd4a11",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000091.slict": "26c79cfd43a6dda0525eb730d7c012fd8eb138e02dc1748d10fb3db146dcd010",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000109.slict": "7a2d4bf98e9fd9b3c1352cd9511e3b6bfa9f3f6ff152e36273fa20c0e6fa2adb",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000127.slict": "53946b16886c4f00eebec1258b0df3b397ff5d9c03295be14233c861a8aee382",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000145.slict": "7a74eb1b08724c25967e0ea4a488a1f324f42f852693f3b06c8e24bba3676ab3",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000163.slict": "356426430d213cac705f1934187d015b39afa2d5b33655396d699815d1200ff8",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000181.slict": "3626cb079c9c3a4595a3666cad434f40e505c790c18e1c4948f268f2302e29c3",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000199.slict": "3106e9fc67335357b3f959b61a38039bd353b7fcaa35126eaa5b97ff616c0347",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000217.slict": "252e77b3356e97c0cb2f12751cba99ab0204bb41c4e2017351a40ed26e5554b8",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000235.slict": "09b65a562b166555eef57ce64e81ed8376d683af57a0c9eac719dfb4ce60892b",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000253.slict": "9622fd5a383845c6f9b621990919364b019f4625b602543c63360a2b1f20ce6f",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000271.slict": "e42cec7a01f77212b27b0bc70254af3ab7ab5911d63e27d138a3c0f650ff383c",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000289.slict": "db44a89db5394a58ff01af210fdf3a567ff7c30e5997925aa19c95aec51fca47",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000307.slict": "0880448f119f33742cd500c8e62222b6304eb24b9884dee2794656b5708ee058",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000325.slict": "82c410d0d8983c3cd3b208611d6e79957acd46adf25ebc2ed62d62f1720c374b",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000343.slict": "717dc8aa45a1b0894843fc1ed1c7ee3771f089c9613d05ced6e23d2ea81ba5d9",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000361.slict": "4865e1e73e98d0af5bfd8d7939806b12f5972b7bd7ace664474cb586c3851ff2",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000379.slict": "b8d541f565b5d8f90b221ae7bec20c8e6c4a0c3e884859d9e77dac94f0cb06fc",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000397.slict": "c12495423c757dedbe43f1fb0b75b650cee2cd4407461db36bb649c214d609ae",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000415.slict": "32a5e0ca2f2bda6d397bc29f537735236135cc629068789edc159f0bf6b7c9d3",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000433.slict": "992483ca33a77ee56158af2d954c394a8b28b5a042f7939d4cee4b61bc2ebec9",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000451.slict": "7bedd24d145a30e016e07c22aab3292863389258c54b824091217f82493f65ca",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000469.slict": "bb33df354ba96aabcfaf8a9cdce293e2e33c99bb77219d9d018b95dc14b3d663",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000487.slict": "e9eaccdecf00abddc7e679c6c0ea2d8bc34d3f61a670d2516bd0bcdf91d9a0e7",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000505.slict": "30b17083af5d4947c636e51606c4a7f562632a21a29941efcb52df293f5899e6",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000523.slict": "f5f5bb718ae3ee8b42c39110892bcdea4e9f05ab86509ad4b1b859a4588a6f70",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000541.slict": "a8d5ae1477cf4aa057147ff1f814eb5b963aeb018178363b870ebe0b17dc1a3a",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000559.slict": "264117d537166bf603ff1e9d8504d71f9c95275ad66dddce4fef713fc4be62e4",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000577.slict": "18933f4c5c49f46a2b9d5d7b27d7a26c7e182631e281e42c7328f0069ebb6afc",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000595.slict": "a249ed0850d5134571f914ec89b9f418cc45a6c7dd0894351b711471dde50517",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000613.slict": "727bfc6b5b8b576f140647781011399eb34f93141a7284206cf805dbfab01920",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000631.slict": "eb53f4af813bc95edd09f3e7047394063c6eb366c08da99aa377c754210cb4c1",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000649.slict": "f53a42ceb0c657f1285d3564bb0a761a6576177453431f9ad4cc9bc44bdd5ee5",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000667.slict": "c34f3fbe9cf6427639e21e1a6b7c951951461b02f81ec6b36cf8aa7083957183",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000685.slict": "6b957d325b4f1de4cb63be445765c04bdb8454ce8cc0d8b03dd58ea88466a82b",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000703.slict": "51c47116bfe1b860d86cc09c3a3443008b18b07756295985da0d129582333d25",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000721.slict": "bdb47c7f634fd5fdda9b235395f7462df5c3592d37de627f662155da567e5f2e",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000739.slict": "82f9cd603b0b8f45308c5337ff674dba20cec6762d76b4ec0a1359b76d12f38b",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000757.slict": "4f60e0fbc289acf737bce6e32ff2cccf9cc7fa6a05b412514a6042a9b6c67e7e",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000775.slict": "c4e9db9af59bef540e1ef19e8fac177e8d0e5689a3ed5cf3826bf0ca7baf0245",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000793.slict": "bf1b87dff2168e7e3f3327e6c31b3f6882e401cb28b8bc81d1cd821b4acaa307",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000811.slict": "3b94b2f3250577853d3f0ccbe6fc500f52a3959ff9750bcd666840ac92dab972",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000829.slict": "fc69d4356c1cd1bb8286d3d997f572990a8cda0b93054286976fd86de227002e",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000847.slict": "b72af58bfffe7d8f56b670a15a0af69a07fe4517b87080f0602d8d937bf8d95e",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000865.slict": "bb9b97313bc3c9d676b4aa0b57e9481bc08ca816aefc13187fcd5dae7a724bd0",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000883.slict": "df7f2d1447a975411822cce8b9af7ebce5f93177a4fe1841b52b4d60dafdd28d",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000901.slict": "1e43ea12265797a8585b92b6ba524c364620b80d4da6f8bbb28281a40f4451ea",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000919.slict": "c5434e6d6bfa1bbb430f14ec2894ed9f4d9146e9e34b2296f79409056d115f99",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000937.slict": "25891720ddeae5f059720768ea98980f146d3c9ca7320812ec81b89a0551976f",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000955.slict": "d764dd27006f9b0f4ff3279e84594055e7628bae0b14f7421724cd5d18606bad",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000973.slict": "599cbdacac11d7f7aaae923379419d7a2c34f68cf05459cb4754e36f6d703fdf",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_000991.slict": "9d5a7dad7f3b7b16274a1fa0a2cdace2709b8866cc3ba82d7f0578806be57f8a",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001009.slict": "9f82911e55c92373251718ed7ce3ff68e437294e453f474c50ea0a627a5d0fd1",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001027.slict": "33fb9d0189b528af381038567681d18ef0a59142ad48949563e33a39a22d6013",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001045.slict": "bb041ca110a0a8978d9b0c883c49c560db0aa1a1898cf5522c3cfad483fe38f9",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001063.slict": "9c63a4c44f242481073d0263c6f64a26ca32feb83c780da05bbb3c41f78b4bc5",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001081.slict": "17a9f6c6e465442f75aa20384ee7ef76de3135c2710c8540399cd7d077388d57",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001099.slict": "35da0f5aadbf74310ff03c5f4f2456863f4b51d633aba3b3b5497cde13501770",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001117.slict": "b2305fab5558f797b3fcef2616895316721fa9d831df57a759c3d5ad52b6671b",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001135.slict": "772ccd16164ceda38cd4c60cea880087533442997321959e4a7ee775d9809f4a",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001153.slict": "4c2369d4ffd4fc2fd6ace3568972fe4569899d4c41ed7728aa43c09f2e53da57",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001171.slict": "48855320dbd70d5344ce0825befc06def67bbce03aa60f6d5e7e1682b1d6fec7",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001189.slict": "fdb607a80c7200f4eef5475233ac484398f58205dc5b36d5f62d881007328d98",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001207.slict": "bccfbd9a505b67950ee0951b3305d782080088c268837b4f26e4460f0ce35e56",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001225.slict": "f69e4816c353c585c17c6f42929e8cf6bc4b99876a6dc3b37c5fd34222642342",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001243.slict": "6ea3c0aac633d99ef2d5181f5cff314ea1102fd85fdfe2bb233884f0f05a56bf",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001261.slict": "6e648e866eef5f94b530b92509fa73a2711c8fa71e61d0de599517bcee029836",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001279.slict": "a868f886931dbe99da2e141235b07ca10b78d9779932cc0cdd4b33fdfa291c66",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001297.slict": "02ed89a1040cd9ea12c2c032ef6d66e4d9cd154ae12e4610f5a08e76b328292a",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001315.slict": "41c47023228d1462b928baa09e2ae11f645f46bad1d7ef11dd8e415885a92868",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001333.slict": "ac374a702c0095159fe11b909f8012f5755e42f4e43090eac26f31255e9ca086",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001351.slict": "d8d2d94b0e9e00a9360334787520b3373f75ac248315e537d7cb9f5ac770bc40",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001369.slict": "d00290cd529324901d9763272d2b06f189213fb0e8bd1de511fce0dabe212536",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001387.slict": "2080b408ba11065e59dce3549547dcdc1e3689fa3c758e2e5f8d969c5090821b",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001405.slict": "4a39983fbf6935373cadbb0a134f8147a492e465136bbe1a2644c9f8660bdb02",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001423.slict": "fe89629ff339419bc416fa3a03f00af46ccbd7ae9677e11ae50cdd9a50056ff6",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001441.slict": "ae9db7db9968c2fcbf9c4d79328240a7ca85e1e0e84eb045f2f0ac20b7805863",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001459.slict": "dc04c24dc36802da367e2293380dcb3bab354943828e25638b53c36ebc184f36",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001477.slict": "860c4105e1943a44fb2df5b55c694fa96f221a1ae3c149fb93f7ac28c7fdda8f",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001495.slict": "7e8f29a2976a7813bbc6cc9a357d2ce0576ca2b96d55a74cb9f710cbd6709701",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001513.slict": "08e5a3b6546a18aeb1fc6d9700252d3fda7308d88a30198d5bf1b6c83395af44",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001531.slict": "69569ee976845d58251f144360d4c5c0e4d54717a9faa7c9fbb1ddca22e88bdc",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001549.slict": "df1386b07613270a316fa8b4020cd024823d5fa9328e36f13cc7b92e7aaaaede",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001567.slict": "d307579bef2e232d2efbd5c4723e373c6ba3004bb945394c2740d8427113a469",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001585.slict": "1bc2951196e3a1335d2a78c9145da8a6988aa85b360aea1f8a76662b4688ec8f",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001603.slict": "7e85a0a9dc042cf876f3c7390801b89e9939d6dd43138e10639bbd012ee70d23",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001621.slict": "c4b0c627afa6c72bd9a49a95ac967f9396c79c1557f08e7b5c7abf446b9cd8a2",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001639.slict": "b0f9d3c0e3c0b100bca6bc22f93cd38237dc9cc27cc6592f28107a9a2b8374fe",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001657.slict": "cc4197856790e095646a7aaad194c6b1b49acb4fb977df8c3109e8074b9697a7",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001675.slict": "e2c23fbc14ba108b5101de1c747e6ec9125aad17a4130364946ef9dbbd8bac91",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001693.slict": "4bcebba920b079ce11411cfdb86103f3fee02c4904091afb4bb20d40b44768eb",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001711.slict": "8f2dfdf782a4c99ae74239f1555c4b1d7665800e4c3511d6c69e67c9968c8799",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001729.slict": "89fecb37239c00c4aa19c9f0f4d6758d1de66eebc47919fbab9a78960d6746c6",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001747.slict": "1ea29b8df2935e22e2b4d0e9c9a7e23b39a84879e19beb4b85d92d5aac2c565b",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001765.slict": "44cc478004e3fd9df07fd5ad1eae706666c61588cabbac5a5cfb645715f3a185",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001783.slict": "df30e1487ba2d5c16c72d7b8cb58890ef84e1d9e4f739d2fd867c2f94c5d54df",
+      "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots/window_001801.slict": "507ba6db9a3f6e88f786b3496b926cd3fe7cfd34aa981e191d05b91cd736db04"
+    }
+  },
+  "cpu_model": "AMD Ryzen 9 9950X 16-Core Processor",
+  "checks": {
+    "ctest": "3/3 passed",
+    "address_sanitizer": "passed",
+    "undefined_behavior_sanitizer": "passed",
+    "leak_sanitizer": "disabled: sandbox ptrace environment unsupported",
+    "existing_batch_binding_declarations_unchanged": true,
+    "incremental_header_unchanged": true,
+    "source_sha256": {
+      "tests/splbatch_ingestion_test.cpp": "0d852d2a7ab6a59c1b1aa57f27d9f3e08f4ec72b908884dcfecfdee0ba384217",
+      "third_party/splbatch/tests/test_incremental.cpp": "61aff3ac74661cdcc67335648b360a0c4501c89754ad8de58231ead913a4d2f0",
+      "third_party/splbatch/include/splbatch/incremental_problem_batcher.hpp": "a74df95295007251d010453622478be3e1edc62a629d57f850984ba04f5b3dbd",
+      "scripts/benchmark_splbatch_p1.py": "ffd12015d67df3a98b19fc48eecb97d52f862c9e0166ca764591c50bacac04ff"
+    }
+  },
+  "diagnostics": {
+    "method": "Separate diagnostic processes, stride 16 with all 16 offsets; empty-scope correction is approximate, not formal timing.",
+    "groups": {
+      "before": {
+        "rows": 1616,
+        "instrumented_build_mean_ms": 1.430577431311881,
+        "stages": {
+          "binding": 0.4749601732910891,
+          "support": 0.33358856440396034,
+          "prepare": 0.04614464853861385,
+          "batch_creation": 0.07887680274950495,
+          "jacobian_allocation": 0.06663576712475247,
+          "observation_storage": 0.228290906838812,
+          "native_registration": 0.023779159059009902,
+          "binding_cleanup": 0.09799649070574264,
+          "channel_cleanup": 0.0022807623653465347
+        },
+        "calibrated_sum_ms": 1.3525532750768319
+      },
+      "p1": {
+        "rows": 1616,
+        "instrumented_build_mean_ms": 1.0692497128712872,
+        "stages": {
+          "binding": 0.4663413912269307,
+          "support": 0.029428383312673268,
+          "prepare": 0.043454985286336636,
+          "batch_creation": 0.07899745990752474,
+          "jacobian_allocation": 0.06546202692257426,
+          "observation_storage": 0.13637902307841585,
+          "native_registration": 0.023576577270495048,
+          "binding_cleanup": 0.06739286154455447,
+          "channel_cleanup": 0.000771946719009901
+        },
+        "calibrated_sum_ms": 0.9118046552685148
+      }
+    },
+    "runs": [
+      {
+        "version": "before",
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_before/devel/lib/slict/slict_construction_diagnostics",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_diagnostics/before.csv",
+          "--threads",
+          "4",
+          "--repeat",
+          "16",
+          "--warmup",
+          "1",
+          "--stride",
+          "16",
+          "--offset",
+          "0",
+          "--enabled",
+          "1",
+          "--validate",
+          "101",
+          "--max-snapshots",
+          "101"
+        ],
+        "library_sha256": "4ea6d28897ed9388fdc3492e125553b9959d08444af3283aaa4f07c33949879d",
+        "binary_sha256": "f784f96a2e64818eaad22326af3d0f3a786f660ccde43d5c88875147816880aa"
+      },
+      {
+        "version": "p1",
+        "command": [
+          "/home/jiadong/workspace/slam_algorithms/slict/devel/lib/slict/slict_construction_diagnostics",
+          "--snapshots",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_capture/snapshots",
+          "--output",
+          "/home/jiadong/workspace/slam_algorithms/slict/build/p1_diagnostics/p1.csv",
+          "--threads",
+          "4",
+          "--repeat",
+          "16",
+          "--warmup",
+          "1",
+          "--stride",
+          "16",
+          "--offset",
+          "0",
+          "--enabled",
+          "1",
+          "--validate",
+          "101",
+          "--max-snapshots",
+          "101"
+        ],
+        "library_sha256": "a644bdf19f5ad4652c36ca04ac2a78b767132bb9d3e02c0457e05dcae654492a",
+        "binary_sha256": "f784f96a2e64818eaad22326af3d0f3a786f660ccde43d5c88875147816880aa"
+      }
+    ],
+    "max_absolute_cost_difference": 0.0
+  },
+  "replay": {
+    "manifest": [
+      {
+        "backend": "native_batch",
+        "dataset": "ntuviral",
+        "iteration_limit": 1,
+        "outer_iterations": 3,
+        "single_step_association_cadence": true,
+        "ceres_radius_continuity": true,
+        "returncode": 0,
+        "wall_seconds": 206.50604351700167,
+        "optimization_rows": 5418,
+        "frames": 1806,
+        "unusable": 0,
+        "coverage_seconds": 180.4800000190735,
+        "fatal_node_exit_codes": [],
+        "empty_lidar_frames": 0,
+        "max_empty_lidar_streak": 0,
+        "captures_snapshots": false,
+        "timed_out": false,
+        "frame_csv_rows": 1806,
+        "same_scan_timestamps": true,
+        "regular_scan_intervals": true,
+        "frame_mean_ms": 77.3524862641196,
+        "frame_p95_ms": 89.879467,
+        "max_queued_packets": 2,
+        "command": [
+          "roslaunch",
+          "--port",
+          "46495",
+          "slict",
+          "run_abc.launch",
+          "bag_file:=/home/jiadong/workspace/datasets/ntu/eee_03/eee_03.bag",
+          "backend:=native_batch",
+          "dataset:=ntuviral",
+          "threads:=4",
+          "outer_iterations:=3",
+          "output_dir:=/home/jiadong/workspace/slam_algorithms/slict/build/p1_eee03_replay/native_batch",
+          "duration:=0.0",
+          "rate:=1.0",
+          "snapshot_stride:=2",
+          "snapshot_limit:=500"
+        ],
+        "ros_master_uri": "http://127.0.0.1:46495"
+      }
+    ],
+    "same_scan_timestamps_as_before": true,
+    "accuracy": {
+      "ground_truth_source": "/home/jiadong/workspace/slam_algorithms/slict/build/abc_eee03_inputs/ground_truth.csv",
+      "ground_truth_total": 2990,
+      "common_samples": 2990,
+      "ground_truth_coverage_fraction": 1.0,
+      "common_start": 1609060363.469352,
+      "common_end": 1609060514.223515,
+      "evaluation": "Evaluate cubic SO(3)+R3 spline at GT header timestamps, transform body to prism, rigid SE(3) position alignment; no scale or time-offset fitting",
+      "prism_offset_body_m": [
+        -0.293656,
+        -0.012288,
+        -0.273095
+      ],
+      "calibration_sha256": "baa57f4242e5fbcbe89d987bb70afd2b48df38757ed44e343f240ba7841fde3f",
+      "groups": [
+        {
+          "backend": "native_batch",
+          "samples": 2990,
+          "ate_rmse_m": 0.02602967816990451,
+          "median_m": 0.021260329884411226,
+          "p95_m": 0.047219352748736745,
+          "max_m": 0.07064111304954497,
+          "axis_rmse_m": [
+            0.01848564778589441,
+            0.01608624997747811,
+            0.008778242035097212
+          ],
+          "alignment_rotation": [
+            [
+              -0.9586829999214679,
+              0.2837095518837446,
+              -0.020875723496432543
+            ],
+            [
+              -0.28350716627835204,
+              -0.9588931433355863,
+              -0.012150157728113014
+            ],
+            [
+              -0.023464703927258534,
+              -0.005729732447822317,
+              0.9997082463577476
+            ]
+          ],
+          "alignment_translation": [
+            -0.25580746362864826,
+            -0.09420059434276418,
+            -0.2775237130904422
+          ],
+          "spline_sha256": "ba16a18b8acaa3e21e34d480f690326111bf47aa9b20d9d1e77ced8bbc5540fd"
+        }
+      ]
+    },
+    "same_gt_timestamps_as_before": true,
+    "timing_scope": "Functional full replay; no interleaved pre-P1 full replay timing in this run.",
+    "mean_build_ms": 1.1622011321520855,
+    "mean_total_ms": 7.7543942303433,
+    "before_accuracy_reference": "build/native_batch_eee03_accuracy/accuracy.json",
+    "before_ate_rmse_m": 0.025977279683641784,
+    "sha256": {
+      "devel/lib/slict/slict_estimator": "6a78d4c4769abdd433df51a7035c06710331da6fc461bf5ae7a69de22ba3f7bf",
+      "devel/lib/libslict_comparison.so": "a8bb55a7791749c36ca2b4dbdea2a3d8b0c14800ef0979392ba36c1a19d4f92e",
+      "build/p1_eee03_replay/native_batch/frames.csv": "a84c88613d00a4af4763b9590c10036abd7dce3b0a713d4b5fac369cf3b35e40",
+      "build/p1_eee03_replay/native_batch/optimization.csv": "b590f8044469b0c7f5d45d2a480203d38c41d94450b9d78ef5cffe212ed9dcc6",
+      "build/abc_eee03_inputs/ground_truth.csv": "26f13566df9ed673ce59240e6ef1e0304ea992d0b1d69c4a909c0458c7ca0e63"
+    }
+  }
+}
