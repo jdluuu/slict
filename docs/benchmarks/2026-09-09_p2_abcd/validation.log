@@ -1,0 +1,712 @@
+validated frame=1 backend=ceres_scalar H=2.65309e-16 gradient=1.40368e-16 cost=0
+validated frame=1 backend=ceres_batch H=2.65309e-16 gradient=1.40368e-16 cost=0
+validated frame=1 backend=native_batch H=2.65309e-16 gradient=1.40368e-16 cost=0
+validated state frame=1 iterations=1 B_C_max_state_error=0
+validated native state frame=1 iterations=1 A_D_max_state_error=1.19691e-12 cost=2.96408e-12
+validated state frame=1 iterations=8 B_C_max_state_error=1.38795e-17
+validated native state frame=1 iterations=8 A_D_max_state_error=2.87176e-11 cost=1.01592e-10
+validated frame=19 backend=ceres_scalar H=3.84091e-16 gradient=7.58072e-15 cost=0
+validated frame=19 backend=ceres_batch H=3.84091e-16 gradient=7.58072e-15 cost=0
+validated frame=19 backend=native_batch H=3.84091e-16 gradient=7.58072e-15 cost=0
+validated state frame=19 iterations=1 B_C_max_state_error=1.3127e-15
+validated native state frame=19 iterations=1 A_D_max_state_error=1.71073e-13 cost=5.79997e-16
+validated state frame=19 iterations=8 B_C_max_state_error=6.70303e-14
+validated native state frame=19 iterations=8 A_D_max_state_error=7.34715e-17 cost=2.89999e-16
+validated frame=37 backend=ceres_scalar H=2.67315e-16 gradient=4.58082e-15 cost=0
+validated frame=37 backend=ceres_batch H=2.67315e-16 gradient=4.58082e-15 cost=0
+validated frame=37 backend=native_batch H=2.67315e-16 gradient=4.58082e-15 cost=0
+validated state frame=37 iterations=1 B_C_max_state_error=6.19921e-16
+validated native state frame=37 iterations=1 A_D_max_state_error=1.33401e-13 cost=1.24891e-16
+validated state frame=37 iterations=8 B_C_max_state_error=3.43641e-14
+validated native state frame=37 iterations=8 A_D_max_state_error=1.05994e-16 cost=2.49782e-16
+validated frame=55 backend=ceres_scalar H=4.06693e-16 gradient=1.12084e-14 cost=2.85498e-16
+validated frame=55 backend=ceres_batch H=4.06693e-16 gradient=1.12084e-14 cost=2.85498e-16
+validated frame=55 backend=native_batch H=4.06693e-16 gradient=1.12084e-14 cost=2.85498e-16
+validated state frame=55 iterations=1 B_C_max_state_error=1.03678e-16
+validated native state frame=55 iterations=1 A_D_max_state_error=1.51276e-13 cost=5.88431e-15
+validated state frame=55 iterations=8 B_C_max_state_error=4.12198e-14
+validated native state frame=55 iterations=8 A_D_max_state_error=1.09327e-16 cost=2.94216e-16
+validated frame=73 backend=ceres_scalar H=3.69263e-16 gradient=6.54503e-15 cost=2.39131e-16
+validated frame=73 backend=ceres_batch H=3.69263e-16 gradient=6.54503e-15 cost=2.39131e-16
+validated frame=73 backend=native_batch H=3.69263e-16 gradient=6.54503e-15 cost=2.39131e-16
+validated state frame=73 iterations=1 B_C_max_state_error=2.29343e-16
+validated native state frame=73 iterations=1 A_D_max_state_error=1.64885e-14 cost=8.77976e-16
+validated state frame=73 iterations=8 B_C_max_state_error=4.89384e-14
+validated native state frame=73 iterations=8 A_D_max_state_error=1.09317e-16 cost=0
+validated frame=91 backend=ceres_scalar H=2.64791e-16 gradient=5.96691e-15 cost=0
+validated frame=91 backend=ceres_batch H=2.64791e-16 gradient=5.96691e-15 cost=0
+validated frame=91 backend=native_batch H=2.64791e-16 gradient=5.96691e-15 cost=0
+validated state frame=91 iterations=1 B_C_max_state_error=6.8109e-16
+validated native state frame=91 iterations=1 A_D_max_state_error=4.47067e-14 cost=9.13292e-16
+validated state frame=91 iterations=8 B_C_max_state_error=4.95635e-14
+validated native state frame=91 iterations=8 A_D_max_state_error=3.48348e-17 cost=0
+validated frame=109 backend=ceres_scalar H=5.33677e-16 gradient=3.58291e-14 cost=4.32127e-16
+validated frame=109 backend=ceres_batch H=5.33677e-16 gradient=3.58291e-14 cost=4.32127e-16
+validated frame=109 backend=native_batch H=5.33677e-16 gradient=3.58291e-14 cost=4.32127e-16
+validated state frame=109 iterations=1 B_C_max_state_error=1.38464e-15
+validated native state frame=109 iterations=1 A_D_max_state_error=1.12195e-13 cost=6.75969e-16
+validated state frame=109 iterations=8 B_C_max_state_error=5.74352e-14
+validated native state frame=109 iterations=8 A_D_max_state_error=7.42101e-17 cost=2.25323e-16
+validated frame=127 backend=ceres_scalar H=3.74735e-16 gradient=7.5987e-15 cost=2.26833e-16
+validated frame=127 backend=ceres_batch H=3.74735e-16 gradient=7.5987e-15 cost=2.26833e-16
+validated frame=127 backend=native_batch H=3.74735e-16 gradient=7.5987e-15 cost=2.26833e-16
+validated state frame=127 iterations=1 B_C_max_state_error=6.05469e-16
+validated native state frame=127 iterations=1 A_D_max_state_error=1.00152e-13 cost=7.15211e-16
+validated state frame=127 iterations=8 B_C_max_state_error=2.36604e-14
+validated native state frame=127 iterations=8 A_D_max_state_error=6.29514e-17 cost=0
+validated frame=145 backend=ceres_scalar H=5.10763e-16 gradient=1.22383e-14 cost=0
+validated frame=145 backend=ceres_batch H=5.10763e-16 gradient=1.22383e-14 cost=0
+validated frame=145 backend=native_batch H=5.10763e-16 gradient=1.22383e-14 cost=0
+validated state frame=145 iterations=1 B_C_max_state_error=1.37752e-16
+validated native state frame=145 iterations=1 A_D_max_state_error=5.48372e-14 cost=2.33896e-16
+validated state frame=145 iterations=8 B_C_max_state_error=1.66899e-14
+validated native state frame=145 iterations=8 A_D_max_state_error=1.51909e-16 cost=2.33896e-16
+validated frame=163 backend=ceres_scalar H=3.93e-16 gradient=1.24035e-14 cost=2.32643e-16
+validated frame=163 backend=ceres_batch H=3.93e-16 gradient=1.24035e-14 cost=2.32643e-16
+validated frame=163 backend=native_batch H=3.93e-16 gradient=1.24035e-14 cost=2.32643e-16
+validated state frame=163 iterations=1 B_C_max_state_error=3.34134e-16
+validated native state frame=163 iterations=1 A_D_max_state_error=1.86324e-14 cost=2.77317e-15
+validated state frame=163 iterations=8 B_C_max_state_error=4.93191e-14
+validated native state frame=163 iterations=8 A_D_max_state_error=9.37935e-17 cost=1.20573e-16
+validated frame=181 backend=ceres_scalar H=3.95721e-16 gradient=5.55252e-15 cost=1.26795e-16
+validated frame=181 backend=ceres_batch H=3.95721e-16 gradient=5.55252e-15 cost=1.26795e-16
+validated frame=181 backend=native_batch H=3.95721e-16 gradient=5.55252e-15 cost=1.26795e-16
+validated state frame=181 iterations=1 B_C_max_state_error=9.08001e-16
+validated native state frame=181 iterations=1 A_D_max_state_error=9.3046e-14 cost=1.86818e-15
+validated state frame=181 iterations=8 B_C_max_state_error=3.36021e-14
+validated native state frame=181 iterations=8 A_D_max_state_error=3.96622e-17 cost=1.33441e-16
+validated frame=199 backend=ceres_scalar H=5.1271e-16 gradient=1.09532e-14 cost=4.44054e-16
+validated frame=199 backend=ceres_batch H=5.1271e-16 gradient=1.09532e-14 cost=4.44054e-16
+validated frame=199 backend=native_batch H=5.1271e-16 gradient=1.09532e-14 cost=4.44054e-16
+validated state frame=199 iterations=1 B_C_max_state_error=5.36155e-16
+validated native state frame=199 iterations=1 A_D_max_state_error=6.65936e-14 cost=1.15215e-15
+validated state frame=199 iterations=8 B_C_max_state_error=1.73511e-14
+validated native state frame=199 iterations=8 A_D_max_state_error=1.70302e-16 cost=6.91291e-16
+validated frame=217 backend=ceres_scalar H=3.76886e-16 gradient=6.09989e-15 cost=0
+validated frame=217 backend=ceres_batch H=3.76886e-16 gradient=6.09989e-15 cost=0
+validated frame=217 backend=native_batch H=3.76886e-16 gradient=6.09989e-15 cost=0
+validated state frame=217 iterations=1 B_C_max_state_error=1.33786e-15
+validated native state frame=217 iterations=1 A_D_max_state_error=4.24005e-14 cost=6.765e-16
+validated state frame=217 iterations=8 B_C_max_state_error=6.04304e-14
+validated native state frame=217 iterations=8 A_D_max_state_error=3.55197e-16 cost=6.76501e-16
+validated frame=235 backend=ceres_scalar H=4.06825e-16 gradient=1.56332e-14 cost=0
+validated frame=235 backend=ceres_batch H=4.06825e-16 gradient=1.56332e-14 cost=0
+validated frame=235 backend=native_batch H=4.06825e-16 gradient=1.56332e-14 cost=0
+validated state frame=235 iterations=1 B_C_max_state_error=7.52774e-17
+validated native state frame=235 iterations=1 A_D_max_state_error=5.26219e-14 cost=1.11774e-16
+validated state frame=235 iterations=8 B_C_max_state_error=7.11646e-15
+validated native state frame=235 iterations=8 A_D_max_state_error=8.6081e-17 cost=1.11774e-16
+validated frame=253 backend=ceres_scalar H=4.07937e-16 gradient=1.02298e-14 cost=2.62027e-16
+validated frame=253 backend=ceres_batch H=4.07937e-16 gradient=1.02298e-14 cost=2.62027e-16
+validated frame=253 backend=native_batch H=4.07937e-16 gradient=1.02298e-14 cost=2.62027e-16
+validated state frame=253 iterations=1 B_C_max_state_error=1.29154e-15
+validated native state frame=253 iterations=1 A_D_max_state_error=1.58235e-13 cost=6.91382e-16
+validated state frame=253 iterations=8 B_C_max_state_error=9.64129e-14
+validated native state frame=253 iterations=8 A_D_max_state_error=1.25986e-16 cost=6.91383e-16
+validated frame=271 backend=ceres_scalar H=2.7559e-16 gradient=2.38907e-14 cost=4.33688e-16
+validated frame=271 backend=ceres_batch H=2.7559e-16 gradient=2.38907e-14 cost=4.33688e-16
+validated frame=271 backend=native_batch H=2.7559e-16 gradient=2.38907e-14 cost=4.33688e-16
+validated state frame=271 iterations=1 B_C_max_state_error=4.53937e-16
+validated native state frame=271 iterations=1 A_D_max_state_error=4.38859e-14 cost=1.12296e-16
+validated state frame=271 iterations=8 B_C_max_state_error=1.42869e-14
+validated native state frame=271 iterations=8 A_D_max_state_error=1.39887e-16 cost=2.24592e-16
+validated frame=289 backend=ceres_scalar H=3.98485e-16 gradient=5.75866e-15 cost=4.99604e-16
+validated frame=289 backend=ceres_batch H=3.98485e-16 gradient=5.75866e-15 cost=4.99604e-16
+validated frame=289 backend=native_batch H=3.98485e-16 gradient=5.75866e-15 cost=4.99604e-16
+validated state frame=289 iterations=1 B_C_max_state_error=3.73791e-16
+validated native state frame=289 iterations=1 A_D_max_state_error=5.17175e-14 cost=3.93119e-16
+validated state frame=289 iterations=8 B_C_max_state_error=2.16009e-14
+validated native state frame=289 iterations=8 A_D_max_state_error=1.44441e-16 cost=1.3104e-16
+validated frame=307 backend=ceres_scalar H=3.76579e-16 gradient=4.46153e-15 cost=4.09485e-16
+validated frame=307 backend=ceres_batch H=3.76579e-16 gradient=4.46153e-15 cost=4.09485e-16
+validated frame=307 backend=native_batch H=3.76579e-16 gradient=4.46153e-15 cost=4.09485e-16
+validated state frame=307 iterations=1 B_C_max_state_error=2.24894e-15
+validated native state frame=307 iterations=1 A_D_max_state_error=2.10401e-13 cost=1.32514e-15
+validated state frame=307 iterations=8 B_C_max_state_error=2.56573e-14
+validated native state frame=307 iterations=8 A_D_max_state_error=1.21885e-16 cost=1.32515e-16
+validated frame=325 backend=ceres_scalar H=5.33471e-16 gradient=3.27703e-15 cost=0
+validated frame=325 backend=ceres_batch H=5.33471e-16 gradient=3.27703e-15 cost=0
+validated frame=325 backend=native_batch H=5.33471e-16 gradient=3.27703e-15 cost=0
+validated state frame=325 iterations=1 B_C_max_state_error=6.45381e-16
+validated native state frame=325 iterations=1 A_D_max_state_error=2.00094e-14 cost=7.35047e-16
+validated state frame=325 iterations=8 B_C_max_state_error=2.12135e-14
+validated native state frame=325 iterations=8 A_D_max_state_error=2.75426e-16 cost=4.90033e-16
+validated frame=343 backend=ceres_scalar H=2.61622e-16 gradient=1.81458e-14 cost=1.12255e-15
+validated frame=343 backend=ceres_batch H=2.61622e-16 gradient=1.81458e-14 cost=1.12255e-15
+validated frame=343 backend=native_batch H=2.61622e-16 gradient=1.81458e-14 cost=1.12255e-15
+validated state frame=343 iterations=1 B_C_max_state_error=1.78011e-14
+validated native state frame=343 iterations=1 A_D_max_state_error=1.50327e-12 cost=3.59024e-15
+validated state frame=343 iterations=8 B_C_max_state_error=5.1585e-13
+validated native state frame=343 iterations=8 A_D_max_state_error=2.05684e-15 cost=2.18237e-15
+validated frame=361 backend=ceres_scalar H=3.73611e-16 gradient=9.02326e-14 cost=3.31888e-14
+validated frame=361 backend=ceres_batch H=3.73611e-16 gradient=9.02326e-14 cost=3.31888e-14
+validated frame=361 backend=native_batch H=3.73611e-16 gradient=9.02326e-14 cost=3.31888e-14
+validated state frame=361 iterations=1 B_C_max_state_error=9.86069e-15
+validated native state frame=361 iterations=1 A_D_max_state_error=5.59278e-13 cost=4.84993e-15
+validated state frame=361 iterations=8 B_C_max_state_error=1.24083e-12
+validated native state frame=361 iterations=8 A_D_max_state_error=5.01724e-15 cost=8.70543e-16
+validated frame=379 backend=ceres_scalar H=3.97345e-16 gradient=7.52324e-14 cost=1.81193e-14
+validated frame=379 backend=ceres_batch H=3.97345e-16 gradient=7.52324e-14 cost=1.81193e-14
+validated frame=379 backend=native_batch H=3.97345e-16 gradient=7.52324e-14 cost=1.81193e-14
+validated state frame=379 iterations=1 B_C_max_state_error=4.08286e-14
+validated native state frame=379 iterations=1 A_D_max_state_error=6.29297e-14 cost=2.56879e-15
+validated state frame=379 iterations=8 B_C_max_state_error=4.10476e-14
+validated native state frame=379 iterations=8 A_D_max_state_error=1.49847e-14 cost=2.15159e-14
+validated frame=397 backend=ceres_scalar H=4.10902e-16 gradient=1.89892e-13 cost=5.24631e-14
+validated frame=397 backend=ceres_batch H=4.10902e-16 gradient=1.89892e-13 cost=5.24631e-14
+validated frame=397 backend=native_batch H=4.10902e-16 gradient=1.89892e-13 cost=5.24631e-14
+validated state frame=397 iterations=1 B_C_max_state_error=9.77249e-15
+validated native state frame=397 iterations=1 A_D_max_state_error=2.34135e-13 cost=4.28231e-14
+validated state frame=397 iterations=8 B_C_max_state_error=7.95924e-14
+validated native state frame=397 iterations=8 A_D_max_state_error=6.60186e-15 cost=1.16791e-15
+validated frame=415 backend=ceres_scalar H=3.9133e-16 gradient=2.76049e-13 cost=2.42062e-14
+validated frame=415 backend=ceres_batch H=3.9133e-16 gradient=2.76049e-13 cost=2.42062e-14
+validated frame=415 backend=native_batch H=3.9133e-16 gradient=2.76049e-13 cost=2.42062e-14
+validated state frame=415 iterations=1 B_C_max_state_error=1.07043e-14
+validated native state frame=415 iterations=1 A_D_max_state_error=2.91966e-13 cost=2.43182e-15
+validated state frame=415 iterations=8 B_C_max_state_error=1.29867e-13
+validated native state frame=415 iterations=8 A_D_max_state_error=4.9494e-14 cost=9.87043e-15
+validated frame=433 backend=ceres_scalar H=3.9087e-16 gradient=1.8805e-13 cost=5.73057e-15
+validated frame=433 backend=ceres_batch H=3.9087e-16 gradient=1.8805e-13 cost=5.73057e-15
+validated frame=433 backend=native_batch H=3.9087e-16 gradient=1.8805e-13 cost=5.73057e-15
+validated state frame=433 iterations=1 B_C_max_state_error=1.71075e-14
+validated native state frame=433 iterations=1 A_D_max_state_error=5.1745e-13 cost=7.86913e-14
+validated state frame=433 iterations=8 B_C_max_state_error=3.35287e-13
+validated native state frame=433 iterations=8 A_D_max_state_error=2.36881e-14 cost=1.3081e-13
+validated frame=451 backend=ceres_scalar H=5.22943e-16 gradient=7.35321e-14 cost=1.27591e-14
+validated frame=451 backend=ceres_batch H=5.22943e-16 gradient=7.35321e-14 cost=1.27591e-14
+validated frame=451 backend=native_batch H=5.22943e-16 gradient=7.35321e-14 cost=1.27591e-14
+validated state frame=451 iterations=1 B_C_max_state_error=1.39447e-14
+validated native state frame=451 iterations=1 A_D_max_state_error=4.06492e-13 cost=7.71079e-15
+validated state frame=451 iterations=8 B_C_max_state_error=3.31048e-14
+validated native state frame=451 iterations=8 A_D_max_state_error=5.97461e-15 cost=1.57093e-14
+validated frame=469 backend=ceres_scalar H=3.97139e-16 gradient=1.70645e-13 cost=1.1158e-14
+validated frame=469 backend=ceres_batch H=3.97139e-16 gradient=1.70645e-13 cost=1.1158e-14
+validated frame=469 backend=native_batch H=3.97139e-16 gradient=1.70645e-13 cost=1.1158e-14
+validated state frame=469 iterations=1 B_C_max_state_error=2.02585e-14
+validated native state frame=469 iterations=1 A_D_max_state_error=1.08877e-12 cost=6.53607e-14
+validated state frame=469 iterations=8 B_C_max_state_error=1.01008e-13
+validated native state frame=469 iterations=8 A_D_max_state_error=4.09069e-14 cost=1.87894e-14
+validated frame=487 backend=ceres_scalar H=3.85118e-16 gradient=1.06815e-13 cost=2.8248e-15
+validated frame=487 backend=ceres_batch H=3.85118e-16 gradient=1.06815e-13 cost=2.8248e-15
+validated frame=487 backend=native_batch H=3.85118e-16 gradient=1.06815e-13 cost=2.8248e-15
+validated state frame=487 iterations=1 B_C_max_state_error=1.97819e-14
+validated native state frame=487 iterations=1 A_D_max_state_error=1.74257e-13 cost=2.76873e-14
+validated state frame=487 iterations=8 B_C_max_state_error=7.13479e-14
+validated native state frame=487 iterations=8 A_D_max_state_error=1.61407e-14 cost=2.26627e-14
+validated frame=505 backend=ceres_scalar H=5.32776e-16 gradient=1.03388e-13 cost=4.58273e-15
+validated frame=505 backend=ceres_batch H=5.32776e-16 gradient=1.03388e-13 cost=4.58273e-15
+validated frame=505 backend=native_batch H=5.32776e-16 gradient=1.03388e-13 cost=4.58273e-15
+validated state frame=505 iterations=1 B_C_max_state_error=1.59999e-14
+validated native state frame=505 iterations=1 A_D_max_state_error=3.21663e-13 cost=1.86755e-14
+validated state frame=505 iterations=8 B_C_max_state_error=3.61955e-14
+validated native state frame=505 iterations=8 A_D_max_state_error=1.96789e-14 cost=4.70477e-14
+validated frame=523 backend=ceres_scalar H=3.89256e-16 gradient=9.03754e-14 cost=3.91928e-15
+validated frame=523 backend=ceres_batch H=3.89256e-16 gradient=9.03754e-14 cost=3.91928e-15
+validated frame=523 backend=native_batch H=3.89256e-16 gradient=9.03754e-14 cost=3.91928e-15
+validated state frame=523 iterations=1 B_C_max_state_error=4.11855e-14
+validated native state frame=523 iterations=1 A_D_max_state_error=1.25418e-12 cost=4.26531e-14
+validated state frame=523 iterations=8 B_C_max_state_error=1.0874e-13
+validated native state frame=523 iterations=8 A_D_max_state_error=2.87048e-14 cost=8.08443e-15
+validated frame=541 backend=ceres_scalar H=3.89577e-16 gradient=1.08439e-13 cost=1.12114e-14
+validated frame=541 backend=ceres_batch H=3.89577e-16 gradient=1.08439e-13 cost=1.12114e-14
+validated frame=541 backend=native_batch H=3.89577e-16 gradient=1.08439e-13 cost=1.12114e-14
+validated state frame=541 iterations=1 B_C_max_state_error=1.40714e-14
+validated native state frame=541 iterations=1 A_D_max_state_error=6.30057e-13 cost=3.34156e-14
+validated state frame=541 iterations=8 B_C_max_state_error=7.06437e-14
+validated native state frame=541 iterations=8 A_D_max_state_error=8.15239e-15 cost=1.13029e-14
+validated frame=559 backend=ceres_scalar H=2.53487e-16 gradient=7.4518e-14 cost=7.36372e-16
+validated frame=559 backend=ceres_batch H=2.53487e-16 gradient=7.4518e-14 cost=7.36372e-16
+validated frame=559 backend=native_batch H=2.53487e-16 gradient=7.4518e-14 cost=7.36372e-16
+validated state frame=559 iterations=1 B_C_max_state_error=2.24e-14
+validated native state frame=559 iterations=1 A_D_max_state_error=5.19043e-13 cost=5.66773e-14
+validated state frame=559 iterations=8 B_C_max_state_error=8.91528e-14
+validated native state frame=559 iterations=8 A_D_max_state_error=1.15389e-14 cost=1.37379e-15
+validated frame=577 backend=ceres_scalar H=6.07087e-16 gradient=1.1416e-13 cost=9.33275e-15
+validated frame=577 backend=ceres_batch H=6.07087e-16 gradient=1.1416e-13 cost=9.33275e-15
+validated frame=577 backend=native_batch H=6.07087e-16 gradient=1.1416e-13 cost=9.33275e-15
+validated state frame=577 iterations=1 B_C_max_state_error=1.41935e-14
+validated native state frame=577 iterations=1 A_D_max_state_error=9.1299e-13 cost=3.56031e-14
+validated state frame=577 iterations=8 B_C_max_state_error=2.10707e-13
+validated native state frame=577 iterations=8 A_D_max_state_error=2.9552e-14 cost=9.18872e-14
+validated frame=595 backend=ceres_scalar H=5.18192e-16 gradient=1.1628e-13 cost=1.86617e-14
+validated frame=595 backend=ceres_batch H=5.18192e-16 gradient=1.1628e-13 cost=1.86617e-14
+validated frame=595 backend=native_batch H=5.18192e-16 gradient=1.1628e-13 cost=1.86617e-14
+validated state frame=595 iterations=1 B_C_max_state_error=1.98407e-14
+validated native state frame=595 iterations=1 A_D_max_state_error=8.09227e-13 cost=1.01013e-13
+validated state frame=595 iterations=8 B_C_max_state_error=7.69329e-14
+validated native state frame=595 iterations=8 A_D_max_state_error=2.14043e-14 cost=5.06113e-14
+validated frame=613 backend=ceres_scalar H=3.76797e-16 gradient=1.26875e-13 cost=4.46612e-15
+validated frame=613 backend=ceres_batch H=3.76797e-16 gradient=1.26875e-13 cost=4.46612e-15
+validated frame=613 backend=native_batch H=3.76797e-16 gradient=1.26875e-13 cost=4.46612e-15
+validated state frame=613 iterations=1 B_C_max_state_error=3.69758e-14
+validated native state frame=613 iterations=1 A_D_max_state_error=3.40882e-13 cost=3.62463e-14
+validated state frame=613 iterations=8 B_C_max_state_error=8.57196e-14
+validated native state frame=613 iterations=8 A_D_max_state_error=1.33527e-14 cost=1.91266e-14
+validated frame=631 backend=ceres_scalar H=3.87121e-16 gradient=6.30397e-14 cost=5.75575e-15
+validated frame=631 backend=ceres_batch H=3.87121e-16 gradient=6.30397e-14 cost=5.75575e-15
+validated frame=631 backend=native_batch H=3.87121e-16 gradient=6.30397e-14 cost=5.75575e-15
+validated state frame=631 iterations=1 B_C_max_state_error=5.58529e-14
+validated native state frame=631 iterations=1 A_D_max_state_error=1.96193e-13 cost=9.64616e-14
+validated state frame=631 iterations=8 B_C_max_state_error=7.08681e-14
+validated native state frame=631 iterations=8 A_D_max_state_error=9.42055e-15 cost=4.06847e-14
+validated frame=649 backend=ceres_scalar H=3.90595e-16 gradient=9.52238e-14 cost=2.37145e-15
+validated frame=649 backend=ceres_batch H=3.90595e-16 gradient=9.52238e-14 cost=2.37145e-15
+validated frame=649 backend=native_batch H=3.90595e-16 gradient=9.52238e-14 cost=2.37145e-15
+validated state frame=649 iterations=1 B_C_max_state_error=3.00625e-14
+validated native state frame=649 iterations=1 A_D_max_state_error=1.0326e-13 cost=6.55184e-14
+validated state frame=649 iterations=8 B_C_max_state_error=8.41131e-14
+validated native state frame=649 iterations=8 A_D_max_state_error=3.57983e-14 cost=4.73815e-14
+validated frame=667 backend=ceres_scalar H=3.7977e-16 gradient=3.58782e-13 cost=2.01251e-14
+validated frame=667 backend=ceres_batch H=3.7977e-16 gradient=3.58782e-13 cost=2.01251e-14
+validated frame=667 backend=native_batch H=3.7977e-16 gradient=3.58782e-13 cost=2.01251e-14
+validated state frame=667 iterations=1 B_C_max_state_error=1.43101e-14
+validated native state frame=667 iterations=1 A_D_max_state_error=2.54012e-13 cost=2.83502e-14
+validated state frame=667 iterations=8 B_C_max_state_error=3.58541e-13
+validated native state frame=667 iterations=8 A_D_max_state_error=6.36785e-15 cost=1.50246e-14
+validated frame=685 backend=ceres_scalar H=4.0046e-16 gradient=1.18527e-13 cost=2.47908e-15
+validated frame=685 backend=ceres_batch H=4.0046e-16 gradient=1.18527e-13 cost=2.47908e-15
+validated frame=685 backend=native_batch H=4.0046e-16 gradient=1.18527e-13 cost=2.47908e-15
+validated state frame=685 iterations=1 B_C_max_state_error=2.11736e-14
+validated native state frame=685 iterations=1 A_D_max_state_error=9.88495e-14 cost=2.62619e-14
+validated state frame=685 iterations=8 B_C_max_state_error=4.36864e-14
+validated native state frame=685 iterations=8 A_D_max_state_error=1.28402e-14 cost=3.25768e-14
+validated frame=703 backend=ceres_scalar H=5.34537e-16 gradient=1.47115e-13 cost=4.46038e-14
+validated frame=703 backend=ceres_batch H=5.34537e-16 gradient=1.47115e-13 cost=4.46038e-14
+validated frame=703 backend=native_batch H=5.34537e-16 gradient=1.47115e-13 cost=4.46038e-14
+validated state frame=703 iterations=1 B_C_max_state_error=2.28523e-14
+validated native state frame=703 iterations=1 A_D_max_state_error=2.20936e-13 cost=4.09457e-14
+validated state frame=703 iterations=8 B_C_max_state_error=1.00923e-13
+validated native state frame=703 iterations=8 A_D_max_state_error=1.30308e-14 cost=1.67189e-15
+validated frame=721 backend=ceres_scalar H=4.12523e-16 gradient=1.20587e-13 cost=3.48209e-15
+validated frame=721 backend=ceres_batch H=4.12523e-16 gradient=1.20587e-13 cost=3.48209e-15
+validated frame=721 backend=native_batch H=4.12523e-16 gradient=1.20587e-13 cost=3.48209e-15
+validated state frame=721 iterations=1 B_C_max_state_error=7.11929e-15
+validated native state frame=721 iterations=1 A_D_max_state_error=3.00704e-13 cost=4.01644e-14
+validated state frame=721 iterations=8 B_C_max_state_error=5.02292e-14
+validated native state frame=721 iterations=8 A_D_max_state_error=1.29397e-14 cost=1.37426e-14
+validated frame=739 backend=ceres_scalar H=3.77716e-16 gradient=2.94782e-13 cost=1.06552e-13
+validated frame=739 backend=ceres_batch H=3.77716e-16 gradient=2.94782e-13 cost=1.06552e-13
+validated frame=739 backend=native_batch H=3.77716e-16 gradient=2.94782e-13 cost=1.06552e-13
+validated state frame=739 iterations=1 B_C_max_state_error=8.37906e-15
+validated native state frame=739 iterations=1 A_D_max_state_error=3.54416e-13 cost=2.95051e-14
+validated state frame=739 iterations=8 B_C_max_state_error=1.7294e-13
+validated native state frame=739 iterations=8 A_D_max_state_error=3.00146e-14 cost=6.86039e-14
+validated frame=757 backend=ceres_scalar H=3.86294e-16 gradient=1.35191e-13 cost=1.7819e-13
+validated frame=757 backend=ceres_batch H=3.86294e-16 gradient=1.35191e-13 cost=1.7819e-13
+validated frame=757 backend=native_batch H=3.86294e-16 gradient=1.35191e-13 cost=1.7819e-13
+validated state frame=757 iterations=1 B_C_max_state_error=4.567e-14
+validated native state frame=757 iterations=1 A_D_max_state_error=8.86089e-14 cost=2.61471e-13
+validated state frame=757 iterations=8 B_C_max_state_error=8.40878e-14
+validated native state frame=757 iterations=8 A_D_max_state_error=4.5808e-14 cost=1.48752e-13
+validated frame=775 backend=ceres_scalar H=5.82508e-16 gradient=2.75426e-13 cost=1.16125e-13
+validated frame=775 backend=ceres_batch H=5.82508e-16 gradient=2.75426e-13 cost=1.16125e-13
+validated frame=775 backend=native_batch H=5.82508e-16 gradient=2.75426e-13 cost=1.16125e-13
+validated state frame=775 iterations=1 B_C_max_state_error=1.34699e-14
+validated native state frame=775 iterations=1 A_D_max_state_error=5.58726e-13 cost=5.68357e-14
+validated state frame=775 iterations=8 B_C_max_state_error=1.62908e-13
+validated native state frame=775 iterations=8 A_D_max_state_error=4.22352e-14 cost=3.87105e-14
+validated frame=793 backend=ceres_scalar H=4.92268e-16 gradient=8.46065e-13 cost=2.33154e-13
+validated frame=793 backend=ceres_batch H=4.92268e-16 gradient=8.46065e-13 cost=2.33154e-13
+validated frame=793 backend=native_batch H=4.92268e-16 gradient=8.46065e-13 cost=2.33154e-13
+validated state frame=793 iterations=1 B_C_max_state_error=5.34754e-15
+validated native state frame=793 iterations=1 A_D_max_state_error=4.40724e-14 cost=3.34787e-14
+validated state frame=793 iterations=8 B_C_max_state_error=4.39177e-14
+validated native state frame=793 iterations=8 A_D_max_state_error=2.27007e-14 cost=9.31373e-14
+validated frame=811 backend=ceres_scalar H=6.85047e-16 gradient=2.34173e-12 cost=5.11371e-14
+validated frame=811 backend=ceres_batch H=6.85047e-16 gradient=2.34173e-12 cost=5.11371e-14
+validated frame=811 backend=native_batch H=6.85047e-16 gradient=2.34173e-12 cost=5.11371e-14
+validated state frame=811 iterations=1 B_C_max_state_error=3.3528e-15
+validated native state frame=811 iterations=1 A_D_max_state_error=1.28021e-13 cost=1.08324e-13
+validated state frame=811 iterations=8 B_C_max_state_error=1.76139e-13
+validated native state frame=811 iterations=8 A_D_max_state_error=3.06261e-14 cost=1.54649e-13
+validated frame=829 backend=ceres_scalar H=5.77594e-16 gradient=4.61268e-13 cost=5.77394e-14
+validated frame=829 backend=ceres_batch H=5.77594e-16 gradient=4.61268e-13 cost=5.77394e-14
+validated frame=829 backend=native_batch H=5.77594e-16 gradient=4.61268e-13 cost=5.77394e-14
+validated state frame=829 iterations=1 B_C_max_state_error=1.24345e-14
+validated native state frame=829 iterations=1 A_D_max_state_error=6.47883e-14 cost=3.25877e-14
+validated state frame=829 iterations=8 B_C_max_state_error=4.77308e-14
+validated native state frame=829 iterations=8 A_D_max_state_error=9.01053e-14 cost=1.33925e-14
+validated frame=847 backend=ceres_scalar H=4.27195e-16 gradient=1.57285e-13 cost=2.78572e-14
+validated frame=847 backend=ceres_batch H=4.27195e-16 gradient=1.57285e-13 cost=2.78572e-14
+validated frame=847 backend=native_batch H=4.27195e-16 gradient=1.57285e-13 cost=2.78572e-14
+validated state frame=847 iterations=1 B_C_max_state_error=1.28402e-14
+validated native state frame=847 iterations=1 A_D_max_state_error=4.19547e-13 cost=1.32036e-13
+validated state frame=847 iterations=8 B_C_max_state_error=9.27371e-14
+validated native state frame=847 iterations=8 A_D_max_state_error=1.76522e-14 cost=9.28453e-14
+validated frame=865 backend=ceres_scalar H=5.13746e-16 gradient=2.43829e-13 cost=2.1408e-14
+validated frame=865 backend=ceres_batch H=5.13746e-16 gradient=2.43829e-13 cost=2.1408e-14
+validated frame=865 backend=native_batch H=5.13746e-16 gradient=2.43829e-13 cost=2.1408e-14
+validated state frame=865 iterations=1 B_C_max_state_error=1.92348e-14
+validated native state frame=865 iterations=1 A_D_max_state_error=4.56224e-13 cost=8.31574e-14
+validated state frame=865 iterations=8 B_C_max_state_error=7.94262e-14
+validated native state frame=865 iterations=8 A_D_max_state_error=3.73035e-14 cost=2.43853e-14
+validated frame=883 backend=ceres_scalar H=3.8462e-16 gradient=1.31335e-13 cost=2.14852e-14
+validated frame=883 backend=ceres_batch H=3.8462e-16 gradient=1.31335e-13 cost=2.14852e-14
+validated frame=883 backend=native_batch H=3.8462e-16 gradient=1.31335e-13 cost=2.14852e-14
+validated state frame=883 iterations=1 B_C_max_state_error=3.06261e-14
+validated native state frame=883 iterations=1 A_D_max_state_error=6.97618e-13 cost=1.48742e-13
+validated state frame=883 iterations=8 B_C_max_state_error=1.93127e-13
+validated native state frame=883 iterations=8 A_D_max_state_error=2.45337e-14 cost=1.99168e-14
+validated frame=901 backend=ceres_scalar H=5.16594e-16 gradient=7.72964e-14 cost=4.04463e-14
+validated frame=901 backend=ceres_batch H=5.16594e-16 gradient=7.72964e-14 cost=4.04463e-14
+validated frame=901 backend=native_batch H=5.16594e-16 gradient=7.72964e-14 cost=4.04463e-14
+validated state frame=901 iterations=1 B_C_max_state_error=3.15835e-14
+validated native state frame=901 iterations=1 A_D_max_state_error=5.87992e-13 cost=4.2571e-14
+validated state frame=901 iterations=8 B_C_max_state_error=6.42826e-14
+validated native state frame=901 iterations=8 A_D_max_state_error=3.21651e-14 cost=6.96177e-15
+validated frame=919 backend=ceres_scalar H=2.61185e-16 gradient=9.56365e-14 cost=1.08675e-14
+validated frame=919 backend=ceres_batch H=2.61185e-16 gradient=9.56365e-14 cost=1.08675e-14
+validated frame=919 backend=native_batch H=2.61185e-16 gradient=9.56365e-14 cost=1.08675e-14
+validated state frame=919 iterations=1 B_C_max_state_error=4.45137e-14
+validated native state frame=919 iterations=1 A_D_max_state_error=9.73996e-13 cost=6.70754e-15
+validated state frame=919 iterations=8 B_C_max_state_error=1.58748e-13
+validated native state frame=919 iterations=8 A_D_max_state_error=1.20805e-14 cost=5.90868e-14
+validated frame=937 backend=ceres_scalar H=3.82378e-16 gradient=1.4172e-13 cost=2.62378e-14
+validated frame=937 backend=ceres_batch H=3.82378e-16 gradient=1.4172e-13 cost=2.62378e-14
+validated frame=937 backend=native_batch H=3.82378e-16 gradient=1.4172e-13 cost=2.62378e-14
+validated state frame=937 iterations=1 B_C_max_state_error=3.44145e-14
+validated native state frame=937 iterations=1 A_D_max_state_error=1.00148e-12 cost=2.98508e-14
+validated state frame=937 iterations=8 B_C_max_state_error=1.98513e-13
+validated native state frame=937 iterations=8 A_D_max_state_error=3.56075e-14 cost=4.40748e-15
+validated frame=955 backend=ceres_scalar H=3.9274e-16 gradient=1.2487e-13 cost=9.75727e-14
+validated frame=955 backend=ceres_batch H=3.9274e-16 gradient=1.2487e-13 cost=9.75727e-14
+validated frame=955 backend=native_batch H=3.9274e-16 gradient=1.2487e-13 cost=9.75727e-14
+validated state frame=955 iterations=1 B_C_max_state_error=4.60763e-14
+validated native state frame=955 iterations=1 A_D_max_state_error=2.31643e-13 cost=1.17997e-14
+validated state frame=955 iterations=8 B_C_max_state_error=1.33288e-13
+validated native state frame=955 iterations=8 A_D_max_state_error=2.051e-14 cost=1.44212e-13
+validated frame=973 backend=ceres_scalar H=4.45902e-16 gradient=2.36434e-13 cost=7.04438e-14
+validated frame=973 backend=ceres_batch H=4.45902e-16 gradient=2.36434e-13 cost=7.04438e-14
+validated frame=973 backend=native_batch H=4.45902e-16 gradient=2.36434e-13 cost=7.04438e-14
+validated state frame=973 iterations=1 B_C_max_state_error=3.77345e-14
+validated native state frame=973 iterations=1 A_D_max_state_error=1.18683e-12 cost=8.22764e-14
+validated state frame=973 iterations=8 B_C_max_state_error=2.97596e-13
+validated native state frame=973 iterations=8 A_D_max_state_error=2.73764e-14 cost=2.4625e-14
+validated frame=991 backend=ceres_scalar H=6.61354e-16 gradient=2.26769e-13 cost=1.17221e-13
+validated frame=991 backend=ceres_batch H=6.61354e-16 gradient=2.26769e-13 cost=1.17221e-13
+validated frame=991 backend=native_batch H=6.61354e-16 gradient=2.26769e-13 cost=1.17221e-13
+validated state frame=991 iterations=1 B_C_max_state_error=5.16257e-14
+validated native state frame=991 iterations=1 A_D_max_state_error=3.13278e-13 cost=1.41654e-13
+validated state frame=991 iterations=8 B_C_max_state_error=4.54288e-13
+validated native state frame=991 iterations=8 A_D_max_state_error=2.69773e-14 cost=1.47924e-15
+validated frame=1009 backend=ceres_scalar H=5.48724e-16 gradient=3.25535e-13 cost=9.0164e-14
+validated frame=1009 backend=ceres_batch H=5.48724e-16 gradient=3.25535e-13 cost=9.0164e-14
+validated frame=1009 backend=native_batch H=5.48724e-16 gradient=3.25535e-13 cost=9.0164e-14
+validated state frame=1009 iterations=1 B_C_max_state_error=3.08092e-14
+validated native state frame=1009 iterations=1 A_D_max_state_error=9.17592e-13 cost=1.96225e-13
+validated state frame=1009 iterations=8 B_C_max_state_error=1.04098e-13
+validated native state frame=1009 iterations=8 A_D_max_state_error=9.11465e-15 cost=1.10903e-15
+validated frame=1027 backend=ceres_scalar H=1.29798e-15 gradient=4.37733e-13 cost=4.3383e-14
+validated frame=1027 backend=ceres_batch H=1.29798e-15 gradient=4.37733e-13 cost=4.3383e-14
+validated frame=1027 backend=native_batch H=1.29798e-15 gradient=4.37733e-13 cost=4.3383e-14
+validated state frame=1027 iterations=1 B_C_max_state_error=3.04063e-14
+validated native state frame=1027 iterations=1 A_D_max_state_error=6.98065e-13 cost=1.6613e-13
+validated state frame=1027 iterations=8 B_C_max_state_error=6.67317e-14
+validated native state frame=1027 iterations=8 A_D_max_state_error=4.25816e-14 cost=1.57659e-14
+validated frame=1045 backend=ceres_scalar H=5.58879e-16 gradient=2.73857e-13 cost=6.98725e-14
+validated frame=1045 backend=ceres_batch H=5.58879e-16 gradient=2.73857e-13 cost=6.98725e-14
+validated frame=1045 backend=native_batch H=5.58879e-16 gradient=2.73857e-13 cost=6.98725e-14
+validated state frame=1045 iterations=1 B_C_max_state_error=1.4349e-14
+validated native state frame=1045 iterations=1 A_D_max_state_error=4.0308e-13 cost=5.37767e-13
+validated state frame=1045 iterations=8 B_C_max_state_error=1.11345e-13
+validated native state frame=1045 iterations=8 A_D_max_state_error=7.53226e-14 cost=4.19248e-14
+validated frame=1063 backend=ceres_scalar H=8.92946e-16 gradient=5.5756e-13 cost=2.25169e-14
+validated frame=1063 backend=ceres_batch H=8.92946e-16 gradient=5.5756e-13 cost=2.25169e-14
+validated frame=1063 backend=native_batch H=8.92946e-16 gradient=5.5756e-13 cost=2.25169e-14
+validated state frame=1063 iterations=1 B_C_max_state_error=6.42012e-15
+validated native state frame=1063 iterations=1 A_D_max_state_error=3.11624e-13 cost=8.27915e-14
+validated state frame=1063 iterations=8 B_C_max_state_error=1.05159e-13
+validated native state frame=1063 iterations=8 A_D_max_state_error=2.76942e-14 cost=1.42361e-13
+validated frame=1081 backend=ceres_scalar H=5.78267e-16 gradient=2.83422e-13 cost=4.10083e-14
+validated frame=1081 backend=ceres_batch H=5.78267e-16 gradient=2.83422e-13 cost=4.10083e-14
+validated frame=1081 backend=native_batch H=5.78267e-16 gradient=2.83422e-13 cost=4.10083e-14
+validated state frame=1081 iterations=1 B_C_max_state_error=3.26579e-14
+validated native state frame=1081 iterations=1 A_D_max_state_error=6.60186e-14 cost=1.1966e-13
+validated state frame=1081 iterations=8 B_C_max_state_error=1.4349e-13
+validated native state frame=1081 iterations=8 A_D_max_state_error=4.46658e-14 cost=1.0058e-13
+validated frame=1099 backend=ceres_scalar H=8.60943e-16 gradient=8.71827e-13 cost=1.271e-13
+validated frame=1099 backend=ceres_batch H=8.60943e-16 gradient=8.71827e-13 cost=1.271e-13
+validated frame=1099 backend=native_batch H=8.60943e-16 gradient=8.71827e-13 cost=1.271e-13
+validated state frame=1099 iterations=1 B_C_max_state_error=1.42663e-14
+validated native state frame=1099 iterations=1 A_D_max_state_error=2.01773e-13 cost=1.30468e-13
+validated state frame=1099 iterations=8 B_C_max_state_error=1.79159e-13
+validated native state frame=1099 iterations=8 A_D_max_state_error=4.38908e-14 cost=3.5797e-14
+validated frame=1117 backend=ceres_scalar H=7.31284e-16 gradient=4.77643e-13 cost=1.84055e-13
+validated frame=1117 backend=ceres_batch H=7.31284e-16 gradient=4.77643e-13 cost=1.84055e-13
+validated frame=1117 backend=native_batch H=7.31284e-16 gradient=4.77643e-13 cost=1.84055e-13
+validated state frame=1117 iterations=1 B_C_max_state_error=1.97008e-14
+validated native state frame=1117 iterations=1 A_D_max_state_error=3.85102e-13 cost=1.15793e-13
+validated state frame=1117 iterations=8 B_C_max_state_error=2.12792e-13
+validated native state frame=1117 iterations=8 A_D_max_state_error=7.36117e-14 cost=4.83165e-14
+validated frame=1135 backend=ceres_scalar H=8.0382e-16 gradient=4.15446e-13 cost=3.31815e-13
+validated frame=1135 backend=ceres_batch H=8.0382e-16 gradient=4.15446e-13 cost=3.31815e-13
+validated frame=1135 backend=native_batch H=8.0382e-16 gradient=4.15446e-13 cost=3.31815e-13
+validated state frame=1135 iterations=1 B_C_max_state_error=1.78522e-14
+validated native state frame=1135 iterations=1 A_D_max_state_error=3.53197e-13 cost=3.15192e-13
+validated state frame=1135 iterations=8 B_C_max_state_error=4.32936e-14
+validated native state frame=1135 iterations=8 A_D_max_state_error=4.02336e-14 cost=6.04242e-13
+validated frame=1153 backend=ceres_scalar H=8.08876e-16 gradient=5.05054e-13 cost=1.39352e-13
+validated frame=1153 backend=ceres_batch H=8.08876e-16 gradient=5.05054e-13 cost=1.39352e-13
+validated frame=1153 backend=native_batch H=8.08876e-16 gradient=5.05054e-13 cost=1.39352e-13
+validated state frame=1153 iterations=1 B_C_max_state_error=2.00382e-14
+validated native state frame=1153 iterations=1 A_D_max_state_error=8.42834e-14 cost=1.73019e-13
+validated state frame=1153 iterations=8 B_C_max_state_error=1.84416e-13
+validated native state frame=1153 iterations=8 A_D_max_state_error=3.34691e-14 cost=7.16853e-14
+validated frame=1171 backend=ceres_scalar H=1.27603e-15 gradient=1.95588e-12 cost=4.15911e-13
+validated frame=1171 backend=ceres_batch H=1.27603e-15 gradient=1.95588e-12 cost=4.15911e-13
+validated frame=1171 backend=native_batch H=1.27603e-15 gradient=1.95588e-12 cost=4.15911e-13
+validated state frame=1171 iterations=1 B_C_max_state_error=1.80499e-14
+validated native state frame=1171 iterations=1 A_D_max_state_error=2.05369e-13 cost=6.21217e-13
+validated state frame=1171 iterations=8 B_C_max_state_error=4.03375e-13
+validated native state frame=1171 iterations=8 A_D_max_state_error=7.2809e-14 cost=1.1131e-12
+validated frame=1189 backend=ceres_scalar H=1.03495e-15 gradient=1.34271e-12 cost=3.56434e-13
+validated frame=1189 backend=ceres_batch H=1.03495e-15 gradient=1.34271e-12 cost=3.56434e-13
+validated frame=1189 backend=native_batch H=1.03495e-15 gradient=1.34271e-12 cost=3.56434e-13
+validated state frame=1189 iterations=1 B_C_max_state_error=6.64652e-15
+validated native state frame=1189 iterations=1 A_D_max_state_error=2.60198e-13 cost=4.00424e-13
+validated state frame=1189 iterations=8 B_C_max_state_error=2.05875e-13
+validated native state frame=1189 iterations=8 A_D_max_state_error=6.41767e-14 cost=8.47864e-14
+validated frame=1207 backend=ceres_scalar H=7.70403e-16 gradient=3.33763e-13 cost=1.14554e-13
+validated frame=1207 backend=ceres_batch H=7.70403e-16 gradient=3.33763e-13 cost=1.14554e-13
+validated frame=1207 backend=native_batch H=7.70403e-16 gradient=3.33763e-13 cost=1.14554e-13
+validated state frame=1207 iterations=1 B_C_max_state_error=2.91344e-14
+validated native state frame=1207 iterations=1 A_D_max_state_error=1.05154e-13 cost=1.60638e-13
+validated state frame=1207 iterations=8 B_C_max_state_error=1.21473e-13
+validated native state frame=1207 iterations=8 A_D_max_state_error=3.91605e-14 cost=8.46156e-14
+validated frame=1225 backend=ceres_scalar H=8.12434e-16 gradient=3.46044e-13 cost=1.77676e-13
+validated frame=1225 backend=ceres_batch H=8.12434e-16 gradient=3.46044e-13 cost=1.77676e-13
+validated frame=1225 backend=native_batch H=8.12434e-16 gradient=3.46044e-13 cost=1.77676e-13
+validated state frame=1225 iterations=1 B_C_max_state_error=6.40721e-14
+validated native state frame=1225 iterations=1 A_D_max_state_error=2.88456e-13 cost=1.19003e-13
+validated state frame=1225 iterations=8 B_C_max_state_error=2.57058e-13
+validated native state frame=1225 iterations=8 A_D_max_state_error=5.1911e-14 cost=1.47582e-13
+validated frame=1243 backend=ceres_scalar H=5.97058e-16 gradient=3.53215e-13 cost=1.68139e-13
+validated frame=1243 backend=ceres_batch H=5.97058e-16 gradient=3.53215e-13 cost=1.68139e-13
+validated frame=1243 backend=native_batch H=5.97058e-16 gradient=3.53215e-13 cost=1.68139e-13
+validated state frame=1243 iterations=1 B_C_max_state_error=1.64013e-14
+validated native state frame=1243 iterations=1 A_D_max_state_error=5.9162e-13 cost=2.03928e-13
+validated state frame=1243 iterations=8 B_C_max_state_error=5.17359e-14
+validated native state frame=1243 iterations=8 A_D_max_state_error=3.4502e-14 cost=2.52881e-13
+validated frame=1261 backend=ceres_scalar H=5.22946e-16 gradient=1.38999e-13 cost=8.3593e-15
+validated frame=1261 backend=ceres_batch H=5.22946e-16 gradient=1.38999e-13 cost=8.3593e-15
+validated frame=1261 backend=native_batch H=5.22946e-16 gradient=1.38999e-13 cost=8.3593e-15
+validated state frame=1261 iterations=1 B_C_max_state_error=1.29625e-14
+validated native state frame=1261 iterations=1 A_D_max_state_error=1.24354e-12 cost=2.56408e-15
+validated state frame=1261 iterations=8 B_C_max_state_error=1.27663e-13
+validated native state frame=1261 iterations=8 A_D_max_state_error=3.96907e-14 cost=6.68109e-14
+validated frame=1279 backend=ceres_scalar H=6.34659e-16 gradient=1.90159e-13 cost=3.22594e-14
+validated frame=1279 backend=ceres_batch H=6.34659e-16 gradient=1.90159e-13 cost=3.22594e-14
+validated frame=1279 backend=native_batch H=6.34659e-16 gradient=1.90159e-13 cost=3.22594e-14
+validated state frame=1279 iterations=1 B_C_max_state_error=1.78963e-14
+validated native state frame=1279 iterations=1 A_D_max_state_error=4.99293e-13 cost=1.14331e-13
+validated state frame=1279 iterations=8 B_C_max_state_error=2.58727e-13
+validated native state frame=1279 iterations=8 A_D_max_state_error=5.64814e-14 cost=6.8119e-14
+validated frame=1297 backend=ceres_scalar H=5.08069e-16 gradient=1.92537e-13 cost=4.75618e-14
+validated frame=1297 backend=ceres_batch H=5.08069e-16 gradient=1.92537e-13 cost=4.75618e-14
+validated frame=1297 backend=native_batch H=5.08069e-16 gradient=1.92537e-13 cost=4.75618e-14
+validated state frame=1297 iterations=1 B_C_max_state_error=1.86517e-14
+validated native state frame=1297 iterations=1 A_D_max_state_error=6.045e-13 cost=9.76092e-14
+validated state frame=1297 iterations=8 B_C_max_state_error=8.85955e-14
+validated native state frame=1297 iterations=8 A_D_max_state_error=2.54374e-14 cost=3.76727e-13
+validated frame=1315 backend=ceres_scalar H=6.07021e-16 gradient=2.14312e-13 cost=8.01416e-14
+validated frame=1315 backend=ceres_batch H=6.07021e-16 gradient=2.14312e-13 cost=8.01416e-14
+validated frame=1315 backend=native_batch H=6.07021e-16 gradient=2.14312e-13 cost=8.01416e-14
+validated state frame=1315 iterations=1 B_C_max_state_error=5.66436e-14
+validated native state frame=1315 iterations=1 A_D_max_state_error=4.25437e-13 cost=1.37144e-13
+validated state frame=1315 iterations=8 B_C_max_state_error=1.79338e-13
+validated native state frame=1315 iterations=8 A_D_max_state_error=1.52794e-13 cost=2.53149e-14
+validated frame=1333 backend=ceres_scalar H=9.6868e-16 gradient=3.4755e-13 cost=9.53308e-14
+validated frame=1333 backend=ceres_batch H=9.6868e-16 gradient=3.4755e-13 cost=9.53308e-14
+validated frame=1333 backend=native_batch H=9.6868e-16 gradient=3.4755e-13 cost=9.53308e-14
+validated state frame=1333 iterations=1 B_C_max_state_error=7.87254e-14
+validated native state frame=1333 iterations=1 A_D_max_state_error=1.77645e-13 cost=3.24934e-13
+validated state frame=1333 iterations=8 B_C_max_state_error=1.61761e-13
+validated native state frame=1333 iterations=8 A_D_max_state_error=9.04133e-14 cost=2.29977e-13
+validated frame=1351 backend=ceres_scalar H=1.26973e-15 gradient=3.83041e-13 cost=6.17419e-15
+validated frame=1351 backend=ceres_batch H=1.26973e-15 gradient=3.83041e-13 cost=6.17419e-15
+validated frame=1351 backend=native_batch H=1.26973e-15 gradient=3.83041e-13 cost=6.17419e-15
+validated state frame=1351 iterations=1 B_C_max_state_error=5.24326e-14
+validated native state frame=1351 iterations=1 A_D_max_state_error=1.17658e-12 cost=2.85872e-13
+validated state frame=1351 iterations=8 B_C_max_state_error=1.19535e-13
+validated native state frame=1351 iterations=8 A_D_max_state_error=2.62276e-14 cost=1.09053e-13
+validated frame=1369 backend=ceres_scalar H=7.72554e-16 gradient=2.93339e-13 cost=1.01165e-13
+validated frame=1369 backend=ceres_batch H=7.72554e-16 gradient=2.93339e-13 cost=1.01165e-13
+validated frame=1369 backend=native_batch H=7.72554e-16 gradient=2.93339e-13 cost=1.01165e-13
+validated state frame=1369 iterations=1 B_C_max_state_error=5.76838e-14
+validated native state frame=1369 iterations=1 A_D_max_state_error=6.23562e-13 cost=2.92168e-13
+validated state frame=1369 iterations=8 B_C_max_state_error=5.95543e-14
+validated native state frame=1369 iterations=8 A_D_max_state_error=6.77465e-14 cost=1.47122e-13
+validated frame=1387 backend=ceres_scalar H=1.40977e-15 gradient=6.82562e-13 cost=5.06777e-14
+validated frame=1387 backend=ceres_batch H=1.40977e-15 gradient=6.82562e-13 cost=5.06777e-14
+validated frame=1387 backend=native_batch H=1.40977e-15 gradient=6.82562e-13 cost=5.06777e-14
+validated state frame=1387 iterations=1 B_C_max_state_error=1.15121e-14
+validated native state frame=1387 iterations=1 A_D_max_state_error=1.74346e-13 cost=2.84558e-13
+validated state frame=1387 iterations=8 B_C_max_state_error=1.54502e-13
+validated native state frame=1387 iterations=8 A_D_max_state_error=5.04075e-14 cost=6.08488e-13
+validated frame=1405 backend=ceres_scalar H=9.00422e-16 gradient=7.55659e-13 cost=1.26559e-14
+validated frame=1405 backend=ceres_batch H=9.00422e-16 gradient=7.55659e-13 cost=1.26559e-14
+validated frame=1405 backend=native_batch H=9.00422e-16 gradient=7.55659e-13 cost=1.26559e-14
+validated state frame=1405 iterations=1 B_C_max_state_error=7.37776e-15
+validated native state frame=1405 iterations=1 A_D_max_state_error=1.36595e-13 cost=7.09362e-13
+validated state frame=1405 iterations=8 B_C_max_state_error=1.45064e-13
+validated native state frame=1405 iterations=8 A_D_max_state_error=8.23711e-14 cost=1.38949e-13
+validated frame=1423 backend=ceres_scalar H=5.87313e-16 gradient=4.5028e-13 cost=1.06513e-13
+validated frame=1423 backend=ceres_batch H=5.87313e-16 gradient=4.5028e-13 cost=1.06513e-13
+validated frame=1423 backend=native_batch H=5.87313e-16 gradient=4.5028e-13 cost=1.06513e-13
+validated state frame=1423 iterations=1 B_C_max_state_error=1.51772e-14
+validated native state frame=1423 iterations=1 A_D_max_state_error=8.35073e-13 cost=7.00564e-14
+validated state frame=1423 iterations=8 B_C_max_state_error=1.179e-13
+validated native state frame=1423 iterations=8 A_D_max_state_error=1.0663e-13 cost=2.46048e-13
+validated frame=1441 backend=ceres_scalar H=1.18428e-15 gradient=6.71608e-13 cost=3.96788e-13
+validated frame=1441 backend=ceres_batch H=1.18428e-15 gradient=6.71608e-13 cost=3.96788e-13
+validated frame=1441 backend=native_batch H=1.18428e-15 gradient=6.71608e-13 cost=3.96788e-13
+validated state frame=1441 iterations=1 B_C_max_state_error=1.30535e-14
+validated native state frame=1441 iterations=1 A_D_max_state_error=3.10762e-13 cost=2.98493e-13
+validated state frame=1441 iterations=8 B_C_max_state_error=1.51743e-13
+validated native state frame=1441 iterations=8 A_D_max_state_error=6.50314e-14 cost=8.95615e-14
+validated frame=1459 backend=ceres_scalar H=6.43528e-16 gradient=3.44393e-13 cost=4.30375e-14
+validated frame=1459 backend=ceres_batch H=6.43528e-16 gradient=3.44393e-13 cost=4.30375e-14
+validated frame=1459 backend=native_batch H=6.43528e-16 gradient=3.44393e-13 cost=4.30375e-14
+validated state frame=1459 iterations=1 B_C_max_state_error=2.23461e-14
+validated native state frame=1459 iterations=1 A_D_max_state_error=4.32593e-13 cost=5.46063e-13
+validated state frame=1459 iterations=8 B_C_max_state_error=1.32491e-13
+validated native state frame=1459 iterations=8 A_D_max_state_error=3.19991e-14 cost=1.11198e-13
+validated frame=1477 backend=ceres_scalar H=7.36837e-16 gradient=6.7886e-13 cost=1.34264e-13
+validated frame=1477 backend=ceres_batch H=7.36837e-16 gradient=6.7886e-13 cost=1.34264e-13
+validated frame=1477 backend=native_batch H=7.36837e-16 gradient=6.7886e-13 cost=1.34264e-13
+validated state frame=1477 iterations=1 B_C_max_state_error=2.54374e-14
+validated native state frame=1477 iterations=1 A_D_max_state_error=5.94157e-13 cost=2.13989e-13
+validated state frame=1477 iterations=8 B_C_max_state_error=1.3951e-13
+validated native state frame=1477 iterations=8 A_D_max_state_error=2.74798e-14 cost=7.418e-14
+validated frame=1495 backend=ceres_scalar H=5.23459e-16 gradient=1.99353e-13 cost=1.14946e-13
+validated frame=1495 backend=ceres_batch H=5.23459e-16 gradient=1.99353e-13 cost=1.14946e-13
+validated frame=1495 backend=native_batch H=5.23459e-16 gradient=1.99353e-13 cost=1.14946e-13
+validated state frame=1495 iterations=1 B_C_max_state_error=4.70756e-14
+validated native state frame=1495 iterations=1 A_D_max_state_error=3.671e-13 cost=7.87489e-15
+validated state frame=1495 iterations=8 B_C_max_state_error=4.77721e-14
+validated native state frame=1495 iterations=8 A_D_max_state_error=2.97904e-14 cost=1.45933e-13
+validated frame=1513 backend=ceres_scalar H=6.32714e-16 gradient=4.57057e-13 cost=2.73568e-14
+validated frame=1513 backend=ceres_batch H=6.32714e-16 gradient=4.57057e-13 cost=2.73568e-14
+validated frame=1513 backend=native_batch H=6.32714e-16 gradient=4.57057e-13 cost=2.73568e-14
+validated state frame=1513 iterations=1 B_C_max_state_error=2.22975e-14
+validated native state frame=1513 iterations=1 A_D_max_state_error=4.79173e-13 cost=9.76843e-15
+validated state frame=1513 iterations=8 B_C_max_state_error=1.36913e-13
+validated native state frame=1513 iterations=8 A_D_max_state_error=5.49685e-14 cost=8.06831e-14
+validated frame=1531 backend=ceres_scalar H=3.83372e-16 gradient=1.4165e-13 cost=6.80381e-14
+validated frame=1531 backend=ceres_batch H=3.83372e-16 gradient=1.4165e-13 cost=6.80381e-14
+validated frame=1531 backend=native_batch H=3.83372e-16 gradient=1.4165e-13 cost=6.80381e-14
+validated state frame=1531 iterations=1 B_C_max_state_error=1.80554e-14
+validated native state frame=1531 iterations=1 A_D_max_state_error=8.69717e-13 cost=6.5923e-14
+validated state frame=1531 iterations=8 B_C_max_state_error=2.65781e-13
+validated native state frame=1531 iterations=8 A_D_max_state_error=2.13579e-14 cost=7.92556e-14
+validated frame=1549 backend=ceres_scalar H=3.63537e-16 gradient=1.72295e-13 cost=4.47202e-14
+validated frame=1549 backend=ceres_batch H=3.63537e-16 gradient=1.72295e-13 cost=4.47202e-14
+validated frame=1549 backend=native_batch H=3.63537e-16 gradient=1.72295e-13 cost=4.47202e-14
+validated state frame=1549 iterations=1 B_C_max_state_error=6.08775e-14
+validated native state frame=1549 iterations=1 A_D_max_state_error=3.44058e-13 cost=1.84536e-15
+validated state frame=1549 iterations=8 B_C_max_state_error=1.17012e-13
+validated native state frame=1549 iterations=8 A_D_max_state_error=2.38695e-14 cost=8.77021e-14
+validated frame=1567 backend=ceres_scalar H=3.94989e-16 gradient=9.52168e-14 cost=9.0043e-14
+validated frame=1567 backend=ceres_batch H=3.94989e-16 gradient=9.52168e-14 cost=9.0043e-14
+validated frame=1567 backend=native_batch H=3.94989e-16 gradient=9.52168e-14 cost=9.0043e-14
+validated state frame=1567 iterations=1 B_C_max_state_error=3.15272e-14
+validated native state frame=1567 iterations=1 A_D_max_state_error=4.47855e-13 cost=1.90813e-13
+validated state frame=1567 iterations=8 B_C_max_state_error=2.2452e-13
+validated native state frame=1567 iterations=8 A_D_max_state_error=6.59065e-15 cost=4.1132e-14
+validated frame=1585 backend=ceres_scalar H=3.9394e-16 gradient=5.2291e-14 cost=1.12181e-14
+validated frame=1585 backend=ceres_batch H=3.9394e-16 gradient=5.2291e-14 cost=1.12181e-14
+validated frame=1585 backend=native_batch H=3.9394e-16 gradient=5.2291e-14 cost=1.12181e-14
+validated state frame=1585 iterations=1 B_C_max_state_error=2.4655e-14
+validated native state frame=1585 iterations=1 A_D_max_state_error=1.1225e-12 cost=8.49166e-14
+validated state frame=1585 iterations=8 B_C_max_state_error=2.76072e-13
+validated native state frame=1585 iterations=8 A_D_max_state_error=1.62294e-14 cost=4.29916e-14
+validated frame=1603 backend=ceres_scalar H=3.7818e-16 gradient=6.86482e-14 cost=5.26904e-15
+validated frame=1603 backend=ceres_batch H=3.7818e-16 gradient=6.86482e-14 cost=5.26904e-15
+validated frame=1603 backend=native_batch H=3.7818e-16 gradient=6.86482e-14 cost=5.26904e-15
+validated state frame=1603 iterations=1 B_C_max_state_error=1.20071e-14
+validated native state frame=1603 iterations=1 A_D_max_state_error=7.23981e-13 cost=6.66968e-14
+validated state frame=1603 iterations=8 B_C_max_state_error=2.64737e-13
+validated native state frame=1603 iterations=8 A_D_max_state_error=4.90891e-15 cost=5.93264e-14
+validated frame=1621 backend=ceres_scalar H=4.7259e-16 gradient=5.33085e-14 cost=5.13644e-15
+validated frame=1621 backend=ceres_batch H=4.7259e-16 gradient=5.33085e-14 cost=5.13644e-15
+validated frame=1621 backend=native_batch H=4.7259e-16 gradient=5.33085e-14 cost=5.13644e-15
+validated state frame=1621 iterations=1 B_C_max_state_error=1.51732e-14
+validated native state frame=1621 iterations=1 A_D_max_state_error=7.87141e-13 cost=1.34839e-14
+validated state frame=1621 iterations=8 B_C_max_state_error=1.50459e-13
+validated native state frame=1621 iterations=8 A_D_max_state_error=7.10044e-15 cost=2.168e-14
+validated frame=1639 backend=ceres_scalar H=2.56635e-16 gradient=5.6472e-14 cost=4.39144e-15
+validated frame=1639 backend=ceres_batch H=2.56635e-16 gradient=5.6472e-14 cost=4.39144e-15
+validated frame=1639 backend=native_batch H=2.56635e-16 gradient=5.6472e-14 cost=4.39144e-15
+validated state frame=1639 iterations=1 B_C_max_state_error=2.46862e-14
+validated native state frame=1639 iterations=1 A_D_max_state_error=2.56055e-13 cost=1.70524e-14
+validated state frame=1639 iterations=8 B_C_max_state_error=1.09466e-13
+validated native state frame=1639 iterations=8 A_D_max_state_error=1.14654e-14 cost=6.72821e-14
+validated frame=1657 backend=ceres_scalar H=2.53938e-16 gradient=2.51903e-13 cost=4.43822e-14
+validated frame=1657 backend=ceres_batch H=2.53938e-16 gradient=2.51903e-13 cost=4.43822e-14
+validated frame=1657 backend=native_batch H=2.53938e-16 gradient=2.51903e-13 cost=4.43822e-14
+validated state frame=1657 iterations=1 B_C_max_state_error=1.05465e-14
+validated native state frame=1657 iterations=1 A_D_max_state_error=4.79851e-13 cost=1.66888e-14
+validated state frame=1657 iterations=8 B_C_max_state_error=2.30977e-13
+validated native state frame=1657 iterations=8 A_D_max_state_error=4.59113e-14 cost=4.35743e-14
+validated frame=1675 backend=ceres_scalar H=3.84861e-16 gradient=3.59668e-13 cost=5.89694e-15
+validated frame=1675 backend=ceres_batch H=3.84861e-16 gradient=3.59668e-13 cost=5.89694e-15
+validated frame=1675 backend=native_batch H=3.84861e-16 gradient=3.59668e-13 cost=5.89694e-15
+validated state frame=1675 iterations=1 B_C_max_state_error=2.14684e-14
+validated native state frame=1675 iterations=1 A_D_max_state_error=1.09198e-12 cost=3.23723e-15
+validated state frame=1675 iterations=8 B_C_max_state_error=2.65405e-13
+validated native state frame=1675 iterations=8 A_D_max_state_error=1.53905e-14 cost=5.66562e-15
+validated frame=1693 backend=ceres_scalar H=3.70625e-16 gradient=3.30054e-13 cost=9.99049e-14
+validated frame=1693 backend=ceres_batch H=3.70625e-16 gradient=3.30054e-13 cost=9.99049e-14
+validated frame=1693 backend=native_batch H=3.70625e-16 gradient=3.30054e-13 cost=9.99049e-14
+validated state frame=1693 iterations=1 B_C_max_state_error=1.26487e-14
+validated native state frame=1693 iterations=1 A_D_max_state_error=1.10641e-12 cost=8.18826e-14
+validated state frame=1693 iterations=8 B_C_max_state_error=3.72682e-13
+validated native state frame=1693 iterations=8 A_D_max_state_error=1.11311e-14 cost=5.53216e-14
+validated frame=1711 backend=ceres_scalar H=5.24813e-16 gradient=6.48068e-13 cost=1.97094e-14
+validated frame=1711 backend=ceres_batch H=5.24813e-16 gradient=6.48068e-13 cost=1.97094e-14
+validated frame=1711 backend=native_batch H=5.24813e-16 gradient=6.48068e-13 cost=1.97094e-14
+validated state frame=1711 iterations=1 B_C_max_state_error=3.92366e-15
+validated native state frame=1711 iterations=1 A_D_max_state_error=6.79001e-13 cost=6.06851e-14
+validated state frame=1711 iterations=8 B_C_max_state_error=1.36255e-13
+validated native state frame=1711 iterations=8 A_D_max_state_error=1.46284e-14 cost=3.10077e-15
+validated frame=1729 backend=ceres_scalar H=3.89578e-16 gradient=5.82428e-13 cost=6.88065e-14
+validated frame=1729 backend=ceres_batch H=3.89578e-16 gradient=5.82428e-13 cost=6.88065e-14
+validated frame=1729 backend=native_batch H=3.89578e-16 gradient=5.82428e-13 cost=6.88065e-14
+validated state frame=1729 iterations=1 B_C_max_state_error=5.8632e-15
+validated native state frame=1729 iterations=1 A_D_max_state_error=4.89728e-13 cost=2.19187e-14
+validated state frame=1729 iterations=8 B_C_max_state_error=2.87596e-13
+validated native state frame=1729 iterations=8 A_D_max_state_error=2.77587e-14 cost=1.73049e-14
+validated frame=1747 backend=ceres_scalar H=4.89078e-16 gradient=6.36357e-13 cost=2.82407e-14
+validated frame=1747 backend=ceres_batch H=4.89078e-16 gradient=6.36357e-13 cost=2.82407e-14
+validated frame=1747 backend=native_batch H=4.89078e-16 gradient=6.36357e-13 cost=2.82407e-14
+validated state frame=1747 iterations=1 B_C_max_state_error=1.31828e-14
+validated native state frame=1747 iterations=1 A_D_max_state_error=3.13204e-13 cost=2.63264e-14
+validated state frame=1747 iterations=8 B_C_max_state_error=2.16478e-13
+validated native state frame=1747 iterations=8 A_D_max_state_error=1.59988e-14 cost=3.66927e-14
+validated frame=1765 backend=ceres_scalar H=4.34821e-16 gradient=1.48373e-12 cost=2.29908e-13
+validated frame=1765 backend=ceres_batch H=4.34821e-16 gradient=1.48373e-12 cost=2.29908e-13
+validated frame=1765 backend=native_batch H=4.34821e-16 gradient=1.48373e-12 cost=2.29908e-13
+validated state frame=1765 iterations=1 B_C_max_state_error=4.91575e-15
+validated native state frame=1765 iterations=1 A_D_max_state_error=8.57593e-13 cost=2.85607e-14
+validated state frame=1765 iterations=8 B_C_max_state_error=1.55168e-13
+validated native state frame=1765 iterations=8 A_D_max_state_error=2.72877e-14 cost=1.05004e-14
+validated frame=1783 backend=ceres_scalar H=3.89713e-16 gradient=9.44542e-13 cost=1.54121e-13
+validated frame=1783 backend=ceres_batch H=3.89713e-16 gradient=9.44542e-13 cost=1.54121e-13
+validated frame=1783 backend=native_batch H=3.89713e-16 gradient=9.44542e-13 cost=1.54121e-13
+validated state frame=1783 iterations=1 B_C_max_state_error=6.78832e-15
+validated native state frame=1783 iterations=1 A_D_max_state_error=4.14973e-13 cost=3.27782e-14
+validated state frame=1783 iterations=8 B_C_max_state_error=1.76177e-13
+validated native state frame=1783 iterations=8 A_D_max_state_error=3.88058e-15 cost=1.69546e-15
+validated frame=1801 backend=ceres_scalar H=3.55209e-16 gradient=1.54568e-12 cost=7.92763e-14
+validated frame=1801 backend=ceres_batch H=3.55209e-16 gradient=1.54568e-12 cost=7.92763e-14
+validated frame=1801 backend=native_batch H=3.55209e-16 gradient=1.54568e-12 cost=7.92763e-14
+validated state frame=1801 iterations=1 B_C_max_state_error=2.89956e-15
+validated native state frame=1801 iterations=1 A_D_max_state_error=8.15423e-14 cost=8.82272e-15
+validated state frame=1801 iterations=8 B_C_max_state_error=7.29619e-14
+validated native state frame=1801 iterations=8 A_D_max_state_error=1.6877e-14 cost=4.71917e-15
+native n=101 mean_ms=17.4523 p95_ms=19.1873
+ceres_scalar n=101 mean_ms=32.6742 p95_ms=36.024
+ceres_batch n=101 mean_ms=8.57504 p95_ms=9.38211
+native_batch n=101 mean_ms=8.03869 p95_ms=9.03862
+CSV: /home/jiadong/workspace/slam_algorithms/slict/build/p2_abcd_20260909_frozen/validation.csv; unusable=0. Compare final_cost as well as time; A and Ceres use different step strategies.

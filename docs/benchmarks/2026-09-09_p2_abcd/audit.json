@@ -1,0 +1,554 @@
+{
+  "date": "2026-09-09",
+  "code_version": "P1 plus P2; serial batch construction; no direct H/g accumulation",
+  "formal_samples": 6060,
+  "paired_windows": 1515,
+  "validation": {
+    "windows": 101,
+    "threads": 1,
+    "state_iteration_limits": [
+      1,
+      8
+    ],
+    "max_relative_hessian_error": 1.40977e-15,
+    "max_relative_gradient_error": 2.34173e-12,
+    "max_relative_initial_cost_error": 4.15911e-13,
+    "max_B_C_state_error": 1.24083e-12,
+    "max_A_D_state_error": 2.87176e-11
+  },
+  "round_means": [
+    {
+      "threads": 1,
+      "backend": "native",
+      "round": 0,
+      "samples": 101,
+      "mean_ms": 17.759045366336633
+    },
+    {
+      "threads": 1,
+      "backend": "native",
+      "round": 1,
+      "samples": 101,
+      "mean_ms": 16.885900871287127
+    },
+    {
+      "threads": 1,
+      "backend": "native",
+      "round": 2,
+      "samples": 101,
+      "mean_ms": 16.900378663366336
+    },
+    {
+      "threads": 1,
+      "backend": "native",
+      "round": 3,
+      "samples": 101,
+      "mean_ms": 16.90413040594059
+    },
+    {
+      "threads": 1,
+      "backend": "native",
+      "round": 4,
+      "samples": 101,
+      "mean_ms": 16.923733138613862
+    },
+    {
+      "threads": 1,
+      "backend": "native_batch",
+      "round": 0,
+      "samples": 101,
+      "mean_ms": 7.780279346534654
+    },
+    {
+      "threads": 1,
+      "backend": "native_batch",
+      "round": 1,
+      "samples": 101,
+      "mean_ms": 7.917345425742574
+    },
+    {
+      "threads": 1,
+      "backend": "native_batch",
+      "round": 2,
+      "samples": 101,
+      "mean_ms": 7.689609138613862
+    },
+    {
+      "threads": 1,
+      "backend": "native_batch",
+      "round": 3,
+      "samples": 101,
+      "mean_ms": 7.804615514851485
+    },
+    {
+      "threads": 1,
+      "backend": "native_batch",
+      "round": 4,
+      "samples": 101,
+      "mean_ms": 7.711009495049505
+    },
+    {
+      "threads": 1,
+      "backend": "ceres_scalar",
+      "round": 0,
+      "samples": 101,
+      "mean_ms": 32.8264429009901
+    },
+    {
+      "threads": 1,
+      "backend": "ceres_scalar",
+      "round": 1,
+      "samples": 101,
+      "mean_ms": 33.37214042574257
+    },
+    {
+      "threads": 1,
+      "backend": "ceres_scalar",
+      "round": 2,
+      "samples": 101,
+      "mean_ms": 33.10371641584159
+    },
+    {
+      "threads": 1,
+      "backend": "ceres_scalar",
+      "round": 3,
+      "samples": 101,
+      "mean_ms": 32.912624495049506
+    },
+    {
+      "threads": 1,
+      "backend": "ceres_scalar",
+      "round": 4,
+      "samples": 101,
+      "mean_ms": 32.775824792079206
+    },
+    {
+      "threads": 1,
+      "backend": "ceres_batch",
+      "round": 0,
+      "samples": 101,
+      "mean_ms": 8.25731681188119
+    },
+    {
+      "threads": 1,
+      "backend": "ceres_batch",
+      "round": 1,
+      "samples": 101,
+      "mean_ms": 8.342637742574258
+    },
+    {
+      "threads": 1,
+      "backend": "ceres_batch",
+      "round": 2,
+      "samples": 101,
+      "mean_ms": 8.243672376237624
+    },
+    {
+      "threads": 1,
+      "backend": "ceres_batch",
+      "round": 3,
+      "samples": 101,
+      "mean_ms": 8.280640396039605
+    },
+    {
+      "threads": 1,
+      "backend": "ceres_batch",
+      "round": 4,
+      "samples": 101,
+      "mean_ms": 8.220949069306931
+    },
+    {
+      "threads": 4,
+      "backend": "native",
+      "round": 0,
+      "samples": 101,
+      "mean_ms": 7.547440693069307
+    },
+    {
+      "threads": 4,
+      "backend": "native",
+      "round": 1,
+      "samples": 101,
+      "mean_ms": 7.670994049504951
+    },
+    {
+      "threads": 4,
+      "backend": "native",
+      "round": 2,
+      "samples": 101,
+      "mean_ms": 7.670310465346535
+    },
+    {
+      "threads": 4,
+      "backend": "native",
+      "round": 3,
+      "samples": 101,
+      "mean_ms": 7.646467613861386
+    },
+    {
+      "threads": 4,
+      "backend": "native",
+      "round": 4,
+      "samples": 101,
+      "mean_ms": 7.5298861881188115
+    },
+    {
+      "threads": 4,
+      "backend": "native_batch",
+      "round": 0,
+      "samples": 101,
+      "mean_ms": 6.418118405940594
+    },
+    {
+      "threads": 4,
+      "backend": "native_batch",
+      "round": 1,
+      "samples": 101,
+      "mean_ms": 6.393120663366337
+    },
+    {
+      "threads": 4,
+      "backend": "native_batch",
+      "round": 2,
+      "samples": 101,
+      "mean_ms": 6.400363623762376
+    },
+    {
+      "threads": 4,
+      "backend": "native_batch",
+      "round": 3,
+      "samples": 101,
+      "mean_ms": 6.307381247524753
+    },
+    {
+      "threads": 4,
+      "backend": "native_batch",
+      "round": 4,
+      "samples": 101,
+      "mean_ms": 6.409972861386138
+    },
+    {
+      "threads": 4,
+      "backend": "ceres_scalar",
+      "round": 0,
+      "samples": 101,
+      "mean_ms": 29.10397792079208
+    },
+    {
+      "threads": 4,
+      "backend": "ceres_scalar",
+      "round": 1,
+      "samples": 101,
+      "mean_ms": 29.727828306930693
+    },
+    {
+      "threads": 4,
+      "backend": "ceres_scalar",
+      "round": 2,
+      "samples": 101,
+      "mean_ms": 29.605539386138613
+    },
+    {
+      "threads": 4,
+      "backend": "ceres_scalar",
+      "round": 3,
+      "samples": 101,
+      "mean_ms": 29.25388217821782
+    },
+    {
+      "threads": 4,
+      "backend": "ceres_scalar",
+      "round": 4,
+      "samples": 101,
+      "mean_ms": 29.55511700990099
+    },
+    {
+      "threads": 4,
+      "backend": "ceres_batch",
+      "round": 0,
+      "samples": 101,
+      "mean_ms": 4.469906633663366
+    },
+    {
+      "threads": 4,
+      "backend": "ceres_batch",
+      "round": 1,
+      "samples": 101,
+      "mean_ms": 4.449911534653465
+    },
+    {
+      "threads": 4,
+      "backend": "ceres_batch",
+      "round": 2,
+      "samples": 101,
+      "mean_ms": 4.518683900990099
+    },
+    {
+      "threads": 4,
+      "backend": "ceres_batch",
+      "round": 3,
+      "samples": 101,
+      "mean_ms": 4.468817207920792
+    },
+    {
+      "threads": 4,
+      "backend": "ceres_batch",
+      "round": 4,
+      "samples": 101,
+      "mean_ms": 4.431242673267327
+    },
+    {
+      "threads": 8,
+      "backend": "native",
+      "round": 0,
+      "samples": 101,
+      "mean_ms": 6.199323801980198
+    },
+    {
+      "threads": 8,
+      "backend": "native",
+      "round": 1,
+      "samples": 101,
+      "mean_ms": 6.499631752475247
+    },
+    {
+      "threads": 8,
+      "backend": "native",
+      "round": 2,
+      "samples": 101,
+      "mean_ms": 6.586390188118812
+    },
+    {
+      "threads": 8,
+      "backend": "native",
+      "round": 3,
+      "samples": 101,
+      "mean_ms": 7.370236455445545
+    },
+    {
+      "threads": 8,
+      "backend": "native",
+      "round": 4,
+      "samples": 101,
+      "mean_ms": 6.423565396039605
+    },
+    {
+      "threads": 8,
+      "backend": "native_batch",
+      "round": 0,
+      "samples": 101,
+      "mean_ms": 6.502212069306931
+    },
+    {
+      "threads": 8,
+      "backend": "native_batch",
+      "round": 1,
+      "samples": 101,
+      "mean_ms": 6.724269980198019
+    },
+    {
+      "threads": 8,
+      "backend": "native_batch",
+      "round": 2,
+      "samples": 101,
+      "mean_ms": 6.084608514851485
+    },
+    {
+      "threads": 8,
+      "backend": "native_batch",
+      "round": 3,
+      "samples": 101,
+      "mean_ms": 6.302602534653466
+    },
+    {
+      "threads": 8,
+      "backend": "native_batch",
+      "round": 4,
+      "samples": 101,
+      "mean_ms": 6.094895999999999
+    },
+    {
+      "threads": 8,
+      "backend": "ceres_scalar",
+      "round": 0,
+      "samples": 101,
+      "mean_ms": 28.500157544554455
+    },
+    {
+      "threads": 8,
+      "backend": "ceres_scalar",
+      "round": 1,
+      "samples": 101,
+      "mean_ms": 28.314932000000002
+    },
+    {
+      "threads": 8,
+      "backend": "ceres_scalar",
+      "round": 2,
+      "samples": 101,
+      "mean_ms": 28.295811099009903
+    },
+    {
+      "threads": 8,
+      "backend": "ceres_scalar",
+      "round": 3,
+      "samples": 101,
+      "mean_ms": 28.153555613861386
+    },
+    {
+      "threads": 8,
+      "backend": "ceres_scalar",
+      "round": 4,
+      "samples": 101,
+      "mean_ms": 28.364808752475245
+    },
+    {
+      "threads": 8,
+      "backend": "ceres_batch",
+      "round": 0,
+      "samples": 101,
+      "mean_ms": 3.883626396039604
+    },
+    {
+      "threads": 8,
+      "backend": "ceres_batch",
+      "round": 1,
+      "samples": 101,
+      "mean_ms": 3.9699659504950495
+    },
+    {
+      "threads": 8,
+      "backend": "ceres_batch",
+      "round": 2,
+      "samples": 101,
+      "mean_ms": 3.951161108910891
+    },
+    {
+      "threads": 8,
+      "backend": "ceres_batch",
+      "round": 3,
+      "samples": 101,
+      "mean_ms": 3.9155751188118813
+    },
+    {
+      "threads": 8,
+      "backend": "ceres_batch",
+      "round": 4,
+      "samples": 101,
+      "mean_ms": 4.053628495049505
+    }
+  ],
+  "build_command": "cmake --build build/noetic --parallel 16 --target slict_solver_benchmark slict_solver_comparison_test slict_splbatch_ingestion_test slict_splbatch_incremental_test",
+  "benchmark_command": "python3 scripts/run_abc_benchmark.py --snapshots build/abc_eee03_capture/snapshots --output build/p2_abcd_20260909_frozen --backends native native_batch ceres_scalar ceres_batch --threads 1 4 8 --iterations 1 --ceres-initial-radius 1e4 --rounds 5 --max-snapshots 101 --validate 101",
+  "snapshot_sha256": {
+    "window_000001.slict": "8e8d60be1c61ff9cc3bab4286dff3857612971dbd0f71858460b9b1bc000717a",
+    "window_000019.slict": "ef2781cc673a6ceca015ab8cb921df4edcfa65e37aa764d5fec50a120ceacd10",
+    "window_000037.slict": "cc0e6ec9a7bcf2888381ff5d630cdafa4dfa1b36aab013bba89f83b82a63e5ea",
+    "window_000055.slict": "6983c54dae07f3c4918c29e89790ef3c8f22dd7ca60dbb5d890e99ac7391ad2a",
+    "window_000073.slict": "48b395e0ad78c8125fd24c26ced4f5fa3d2af2b0f33b7b96daa34d3c06fd4a11",
+    "window_000091.slict": "26c79cfd43a6dda0525eb730d7c012fd8eb138e02dc1748d10fb3db146dcd010",
+    "window_000109.slict": "7a2d4bf98e9fd9b3c1352cd9511e3b6bfa9f3f6ff152e36273fa20c0e6fa2adb",
+    "window_000127.slict": "53946b16886c4f00eebec1258b0df3b397ff5d9c03295be14233c861a8aee382",
+    "window_000145.slict": "7a74eb1b08724c25967e0ea4a488a1f324f42f852693f3b06c8e24bba3676ab3",
+    "window_000163.slict": "356426430d213cac705f1934187d015b39afa2d5b33655396d699815d1200ff8",
+    "window_000181.slict": "3626cb079c9c3a4595a3666cad434f40e505c790c18e1c4948f268f2302e29c3",
+    "window_000199.slict": "3106e9fc67335357b3f959b61a38039bd353b7fcaa35126eaa5b97ff616c0347",
+    "window_000217.slict": "252e77b3356e97c0cb2f12751cba99ab0204bb41c4e2017351a40ed26e5554b8",
+    "window_000235.slict": "09b65a562b166555eef57ce64e81ed8376d683af57a0c9eac719dfb4ce60892b",
+    "window_000253.slict": "9622fd5a383845c6f9b621990919364b019f4625b602543c63360a2b1f20ce6f",
+    "window_000271.slict": "e42cec7a01f77212b27b0bc70254af3ab7ab5911d63e27d138a3c0f650ff383c",
+    "window_000289.slict": "db44a89db5394a58ff01af210fdf3a567ff7c30e5997925aa19c95aec51fca47",
+    "window_000307.slict": "0880448f119f33742cd500c8e62222b6304eb24b9884dee2794656b5708ee058",
+    "window_000325.slict": "82c410d0d8983c3cd3b208611d6e79957acd46adf25ebc2ed62d62f1720c374b",
+    "window_000343.slict": "717dc8aa45a1b0894843fc1ed1c7ee3771f089c9613d05ced6e23d2ea81ba5d9",
+    "window_000361.slict": "4865e1e73e98d0af5bfd8d7939806b12f5972b7bd7ace664474cb586c3851ff2",
+    "window_000379.slict": "b8d541f565b5d8f90b221ae7bec20c8e6c4a0c3e884859d9e77dac94f0cb06fc",
+    "window_000397.slict": "c12495423c757dedbe43f1fb0b75b650cee2cd4407461db36bb649c214d609ae",
+    "window_000415.slict": "32a5e0ca2f2bda6d397bc29f537735236135cc629068789edc159f0bf6b7c9d3",
+    "window_000433.slict": "992483ca33a77ee56158af2d954c394a8b28b5a042f7939d4cee4b61bc2ebec9",
+    "window_000451.slict": "7bedd24d145a30e016e07c22aab3292863389258c54b824091217f82493f65ca",
+    "window_000469.slict": "bb33df354ba96aabcfaf8a9cdce293e2e33c99bb77219d9d018b95dc14b3d663",
+    "window_000487.slict": "e9eaccdecf00abddc7e679c6c0ea2d8bc34d3f61a670d2516bd0bcdf91d9a0e7",
+    "window_000505.slict": "30b17083af5d4947c636e51606c4a7f562632a21a29941efcb52df293f5899e6",
+    "window_000523.slict": "f5f5bb718ae3ee8b42c39110892bcdea4e9f05ab86509ad4b1b859a4588a6f70",
+    "window_000541.slict": "a8d5ae1477cf4aa057147ff1f814eb5b963aeb018178363b870ebe0b17dc1a3a",
+    "window_000559.slict": "264117d537166bf603ff1e9d8504d71f9c95275ad66dddce4fef713fc4be62e4",
+    "window_000577.slict": "18933f4c5c49f46a2b9d5d7b27d7a26c7e182631e281e42c7328f0069ebb6afc",
+    "window_000595.slict": "a249ed0850d5134571f914ec89b9f418cc45a6c7dd0894351b711471dde50517",
+    "window_000613.slict": "727bfc6b5b8b576f140647781011399eb34f93141a7284206cf805dbfab01920",
+    "window_000631.slict": "eb53f4af813bc95edd09f3e7047394063c6eb366c08da99aa377c754210cb4c1",
+    "window_000649.slict": "f53a42ceb0c657f1285d3564bb0a761a6576177453431f9ad4cc9bc44bdd5ee5",
+    "window_000667.slict": "c34f3fbe9cf6427639e21e1a6b7c951951461b02f81ec6b36cf8aa7083957183",
+    "window_000685.slict": "6b957d325b4f1de4cb63be445765c04bdb8454ce8cc0d8b03dd58ea88466a82b",
+    "window_000703.slict": "51c47116bfe1b860d86cc09c3a3443008b18b07756295985da0d129582333d25",
+    "window_000721.slict": "bdb47c7f634fd5fdda9b235395f7462df5c3592d37de627f662155da567e5f2e",
+    "window_000739.slict": "82f9cd603b0b8f45308c5337ff674dba20cec6762d76b4ec0a1359b76d12f38b",
+    "window_000757.slict": "4f60e0fbc289acf737bce6e32ff2cccf9cc7fa6a05b412514a6042a9b6c67e7e",
+    "window_000775.slict": "c4e9db9af59bef540e1ef19e8fac177e8d0e5689a3ed5cf3826bf0ca7baf0245",
+    "window_000793.slict": "bf1b87dff2168e7e3f3327e6c31b3f6882e401cb28b8bc81d1cd821b4acaa307",
+    "window_000811.slict": "3b94b2f3250577853d3f0ccbe6fc500f52a3959ff9750bcd666840ac92dab972",
+    "window_000829.slict": "fc69d4356c1cd1bb8286d3d997f572990a8cda0b93054286976fd86de227002e",
+    "window_000847.slict": "b72af58bfffe7d8f56b670a15a0af69a07fe4517b87080f0602d8d937bf8d95e",
+    "window_000865.slict": "bb9b97313bc3c9d676b4aa0b57e9481bc08ca816aefc13187fcd5dae7a724bd0",
+    "window_000883.slict": "df7f2d1447a975411822cce8b9af7ebce5f93177a4fe1841b52b4d60dafdd28d",
+    "window_000901.slict": "1e43ea12265797a8585b92b6ba524c364620b80d4da6f8bbb28281a40f4451ea",
+    "window_000919.slict": "c5434e6d6bfa1bbb430f14ec2894ed9f4d9146e9e34b2296f79409056d115f99",
+    "window_000937.slict": "25891720ddeae5f059720768ea98980f146d3c9ca7320812ec81b89a0551976f",
+    "window_000955.slict": "d764dd27006f9b0f4ff3279e84594055e7628bae0b14f7421724cd5d18606bad",
+    "window_000973.slict": "599cbdacac11d7f7aaae923379419d7a2c34f68cf05459cb4754e36f6d703fdf",
+    "window_000991.slict": "9d5a7dad7f3b7b16274a1fa0a2cdace2709b8866cc3ba82d7f0578806be57f8a",
+    "window_001009.slict": "9f82911e55c92373251718ed7ce3ff68e437294e453f474c50ea0a627a5d0fd1",
+    "window_001027.slict": "33fb9d0189b528af381038567681d18ef0a59142ad48949563e33a39a22d6013",
+    "window_001045.slict": "bb041ca110a0a8978d9b0c883c49c560db0aa1a1898cf5522c3cfad483fe38f9",
+    "window_001063.slict": "9c63a4c44f242481073d0263c6f64a26ca32feb83c780da05bbb3c41f78b4bc5",
+    "window_001081.slict": "17a9f6c6e465442f75aa20384ee7ef76de3135c2710c8540399cd7d077388d57",
+    "window_001099.slict": "35da0f5aadbf74310ff03c5f4f2456863f4b51d633aba3b3b5497cde13501770",
+    "window_001117.slict": "b2305fab5558f797b3fcef2616895316721fa9d831df57a759c3d5ad52b6671b",
+    "window_001135.slict": "772ccd16164ceda38cd4c60cea880087533442997321959e4a7ee775d9809f4a",
+    "window_001153.slict": "4c2369d4ffd4fc2fd6ace3568972fe4569899d4c41ed7728aa43c09f2e53da57",
+    "window_001171.slict": "48855320dbd70d5344ce0825befc06def67bbce03aa60f6d5e7e1682b1d6fec7",
+    "window_001189.slict": "fdb607a80c7200f4eef5475233ac484398f58205dc5b36d5f62d881007328d98",
+    "window_001207.slict": "bccfbd9a505b67950ee0951b3305d782080088c268837b4f26e4460f0ce35e56",
+    "window_001225.slict": "f69e4816c353c585c17c6f42929e8cf6bc4b99876a6dc3b37c5fd34222642342",
+    "window_001243.slict": "6ea3c0aac633d99ef2d5181f5cff314ea1102fd85fdfe2bb233884f0f05a56bf",
+    "window_001261.slict": "6e648e866eef5f94b530b92509fa73a2711c8fa71e61d0de599517bcee029836",
+    "window_001279.slict": "a868f886931dbe99da2e141235b07ca10b78d9779932cc0cdd4b33fdfa291c66",
+    "window_001297.slict": "02ed89a1040cd9ea12c2c032ef6d66e4d9cd154ae12e4610f5a08e76b328292a",
+    "window_001315.slict": "41c47023228d1462b928baa09e2ae11f645f46bad1d7ef11dd8e415885a92868",
+    "window_001333.slict": "ac374a702c0095159fe11b909f8012f5755e42f4e43090eac26f31255e9ca086",
+    "window_001351.slict": "d8d2d94b0e9e00a9360334787520b3373f75ac248315e537d7cb9f5ac770bc40",
+    "window_001369.slict": "d00290cd529324901d9763272d2b06f189213fb0e8bd1de511fce0dabe212536",
+    "window_001387.slict": "2080b408ba11065e59dce3549547dcdc1e3689fa3c758e2e5f8d969c5090821b",
+    "window_001405.slict": "4a39983fbf6935373cadbb0a134f8147a492e465136bbe1a2644c9f8660bdb02",
+    "window_001423.slict": "fe89629ff339419bc416fa3a03f00af46ccbd7ae9677e11ae50cdd9a50056ff6",
+    "window_001441.slict": "ae9db7db9968c2fcbf9c4d79328240a7ca85e1e0e84eb045f2f0ac20b7805863",
+    "window_001459.slict": "dc04c24dc36802da367e2293380dcb3bab354943828e25638b53c36ebc184f36",
+    "window_001477.slict": "860c4105e1943a44fb2df5b55c694fa96f221a1ae3c149fb93f7ac28c7fdda8f",
+    "window_001495.slict": "7e8f29a2976a7813bbc6cc9a357d2ce0576ca2b96d55a74cb9f710cbd6709701",
+    "window_001513.slict": "08e5a3b6546a18aeb1fc6d9700252d3fda7308d88a30198d5bf1b6c83395af44",
+    "window_001531.slict": "69569ee976845d58251f144360d4c5c0e4d54717a9faa7c9fbb1ddca22e88bdc",
+    "window_001549.slict": "df1386b07613270a316fa8b4020cd024823d5fa9328e36f13cc7b92e7aaaaede",
+    "window_001567.slict": "d307579bef2e232d2efbd5c4723e373c6ba3004bb945394c2740d8427113a469",
+    "window_001585.slict": "1bc2951196e3a1335d2a78c9145da8a6988aa85b360aea1f8a76662b4688ec8f",
+    "window_001603.slict": "7e85a0a9dc042cf876f3c7390801b89e9939d6dd43138e10639bbd012ee70d23",
+    "window_001621.slict": "c4b0c627afa6c72bd9a49a95ac967f9396c79c1557f08e7b5c7abf446b9cd8a2",
+    "window_001639.slict": "b0f9d3c0e3c0b100bca6bc22f93cd38237dc9cc27cc6592f28107a9a2b8374fe",
+    "window_001657.slict": "cc4197856790e095646a7aaad194c6b1b49acb4fb977df8c3109e8074b9697a7",
+    "window_001675.slict": "e2c23fbc14ba108b5101de1c747e6ec9125aad17a4130364946ef9dbbd8bac91",
+    "window_001693.slict": "4bcebba920b079ce11411cfdb86103f3fee02c4904091afb4bb20d40b44768eb",
+    "window_001711.slict": "8f2dfdf782a4c99ae74239f1555c4b1d7665800e4c3511d6c69e67c9968c8799",
+    "window_001729.slict": "89fecb37239c00c4aa19c9f0f4d6758d1de66eebc47919fbab9a78960d6746c6",
+    "window_001747.slict": "1ea29b8df2935e22e2b4d0e9c9a7e23b39a84879e19beb4b85d92d5aac2c565b",
+    "window_001765.slict": "44cc478004e3fd9df07fd5ad1eae706666c61588cabbac5a5cfb645715f3a185",
+    "window_001783.slict": "df30e1487ba2d5c16c72d7b8cb58890ef84e1d9e4f739d2fd867c2f94c5d54df",
+    "window_001801.slict": "507ba6db9a3f6e88f786b3496b926cd3fe7cfd34aa981e191d05b91cd736db04"
+  },
+  "archive_sha256": {
+    "all.csv": "135ea5e70b5bf625ad92889dc93db807a979b1e9ee5b32c75ea241523fc3e101",
+    "ctest.log": "a484660478ee18b6ac5d15949b5396b1babcd96fac0f2ad3503ed1bca7ff23bc",
+    "linkage.txt": "9c60c223e28b5241405939c213bcbb653e286ed34c3ebd227b0b689fccb864b8",
+    "manifest.json": "4b3615d7666d8ecfd17a15f639bbca00b053e50254c060953ae27f8a25dbe3ff",
+    "summary.json": "dbc12e8663210cabd6fa4631a9df5e45b4cd21a61a1550b51675b8a83e8a228c",
+    "validation.log": "7ac1a1b445e8aed707540c2aeb0dd386ce96df3366e78ded786344a2d248c534"
+  }
+}
